@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\UnrealTest.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{7AA67E37-5543-4843-AC82-D3E52A961C97}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UnrealTest.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\UnrealTestEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{08E7B6D1-16B8-4492-98ED-BE3A21037B44}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\UnrealTest">
+      <UniqueIdentifier>{44710A8F-A52F-4ED3-AD98-F3C62D6C6691}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UnrealTest\UnrealTest.Build.cs">
+      <Filter>Source\UnrealTest</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\UnrealTest\UnrealTest.cpp">
+      <Filter>Source\UnrealTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealTest\UnrealTest.h">
+      <Filter>Source\UnrealTest</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealTest\UnrealTestGameMode.cpp">
+      <Filter>Source\UnrealTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealTest\UnrealTestGameMode.h">
+      <Filter>Source\UnrealTest</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealTest\UnrealTestPawn.cpp">
+      <Filter>Source\UnrealTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealTest\UnrealTestPawn.h">
+      <Filter>Source\UnrealTest</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UnrealTest",
+			"Path": "C:\\Users\\_Maddi\\projects\\games\\unreal\\1-test\\UnrealTest\\Source\\UnrealTest.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UnrealTestEditor",
+			"Path": "C:\\Users\\_Maddi\\projects\\games\\unreal\\1-test\\UnrealTest\\Source\\UnrealTestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
