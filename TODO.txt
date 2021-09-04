@@ -1,0 +1,57 @@
+Ok, something something flying car what do I need?
+
+- A level(s)
+- Car
+- Audio (optional? Though kinda important in some places)
+- I want to take advantage of unreal's lighting effects (also kind of optional)
+- An end to the game or way to exit (semi-optional depending on how sandboxy I go)
+- A start to the game (definately optional & will probably have to learn a whole UI system to do)
+- Multiple levels (definately optional again: I'm learning the engine so it's useful in the long run but I just want to be able to make a game at this point)
+
+
+Essential tasks:
+	- level
+		- learn level building
+		- create sandboxy terrain area
+		- create some roadways
+
+	- car
+		- create/use a car shaped mesh thingy
+		- code up a hover mechanic (flying car)
+			- trigger a certain distance above the ground (from multiple points)
+			- apply force to those points depending on how close to the ground
+			- this way u get the over but also landing jumps and stuff feels impactful cuz u crash into the ground before floating back up
+		- code up a car control mechanic
+			- I want to apply force to the car specifically from the back of it, so that it's slippery/drifty
+			- Car may be harder to turn at higher speeds so maybe modify force based on both speed and turn angle?
+			- not sure if car will flip over / get stuck in stuff with these mechanics alone so will need to check that
+
+	- audio
+		- crash noises on collisions
+		- thruster noises on using car thrusters
+		- hover noises? (maybe optional & potentially adds sound clutter if too loud)
+
+	- end game
+		- press escape to end game
+
+Optionals (in priority order):
+	- unreal lighting effects
+		- learn the lighting system
+		- pick a nice atmospheric lighting
+		- lights coming out of car for thrusters and hover thingies
+		- I want a dynamic sun that moves around based on how fast player is moving and where, that would seem really cool (imagine going super fast and the sun drops right in front of u and casts super long shadows oh damn)
+
+	- end to the game
+		- add some kind of target to reach
+
+	- start to the game
+		- add a start menu
+		- add help screen to start menu with controls and a description of the objective
+
+	- multiple levels
+		- I don't think I'll get to this lol
+
+
+
+Done!!!
+	- write TODO list! lol
