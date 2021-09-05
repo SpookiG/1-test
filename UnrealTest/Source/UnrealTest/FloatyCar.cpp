@@ -11,6 +11,8 @@
 #include "Engine/World.h"
 #include "Engine/StaticMesh.h"
 
+#include "Thruster.h"
+
 // Sets default values
 AFloatyCar::AFloatyCar()
 {
@@ -37,12 +39,18 @@ AFloatyCar::AFloatyCar()
 	// set up thrusters
 	BackThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("BackThrusterSpringArm"));
 	BackThrusterSpringArm->SetupAttachment(RootComponent);
+	BackThruster = CreateDefaultSubobject<UThruster>(TEXT("BackThruster"));
+	BackThruster->SetupAttachment(BackThrusterSpringArm);
 
 	LeftThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("LeftThrusterSpringArm"));
 	LeftThrusterSpringArm->SetupAttachment(RootComponent);
+	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
+	LeftThruster->SetupAttachment(LeftThrusterSpringArm);
 
 	RightThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("RightThrusterSpringArm"));
 	RightThrusterSpringArm->SetupAttachment(RootComponent);
+	RightThruster = CreateDefaultSubobject<UThruster>(TEXT("RightThruster"));
+	RightThruster->SetupAttachment(RightThrusterSpringArm);
 
 	// set up camera
 	CamSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraSpringArm"));

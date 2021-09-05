@@ -29,6 +29,12 @@ class UNREALTEST_API AFloatyCar : public APawn
 	class USpringArmComponent* RightThrusterSpringArm;
 
 	/** The 3 thrusters, I want these to function independantly so they're gonna be a custom C++ pawn component */
+	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UThruster* BackThruster;
+	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UThruster* LeftThruster;
+	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UThruster* RightThruster;
 
 	/** Spring arm for the camera ofc */
 	UPROPERTY(Category = Cam, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
