@@ -15,6 +15,30 @@ class UNREALTEST_API AFloatyCar : public APawn
 	UPROPERTY(Category = Wrapper, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class USceneComponent* CarWrapper;
 
+
+	/** Body mesh */
+	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UStaticMeshComponent* CarMesh;
+
+	/** I think I need 3 springarms for the 3 thrusters */
+	//UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	//class USpringArmComponent* BackThrusterSpringArm;
+	//UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	//class USpringArmComponent* LeftThrusterSpringArm;
+	//UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	//class USpringArmComponent* RightThrusterSpringArm;
+
+	/** The 3 thrusters, I want these to function independantly so they're gonna be a custom C++ pawn component */
+
+	/** Spring arm for the camera ofc */
+	//UPROPERTY(Category = Cam, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	//class USpringArmComponent* CamSpringArm;
+
+	/** The camera */
+	//UPROPERTY(Category = Cam, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	//class UCameraComponent* Cam;
+
+
 public:
 	// Sets default values for this pawn's properties
 	AFloatyCar();

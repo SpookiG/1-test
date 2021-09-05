@@ -6,9 +6,24 @@
 // Sets default values
 AFloatyCar::AFloatyCar()
 {
+	// Structure to hold one-time initialization
+	struct FConstructorStatics
+	{
+		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> CarMesh;
+		FConstructorStatics()
+			: CarMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone"))
+		{
+		}
+	};
+	static FConstructorStatics ConstructorStatics;
+
 	// Create car wrapper component
-	CarWrapper = CreateDefaultSubobject<USceneComponent>(TEXT("PlaneMesh0"));
+	CarWrapper = CreateDefaultSubobject<USceneComponent>(TEXT("CarWrapper0"));
 	RootComponent = CarWrapper;
+
+	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarBody0"));
+	CarMesh->SetupAttachment(RootComponent);
+	CarMesh->SetStaticMesh(ConstructorStatics.CarMesh.Get());	// Set static mesh
 
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
