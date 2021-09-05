@@ -2,6 +2,14 @@
 
 
 #include "FloatyCar.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Camera/CameraComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/InputComponent.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Engine/StaticMesh.h"
+#include "Engine/World.h"
+#include "Engine/StaticMesh.h"
 
 // Sets default values
 AFloatyCar::AFloatyCar()
@@ -18,12 +26,30 @@ AFloatyCar::AFloatyCar()
 	static FConstructorStatics ConstructorStatics;
 
 	// Create car wrapper component
-	CarWrapper = CreateDefaultSubobject<USceneComponent>(TEXT("CarWrapper0"));
+	CarWrapper = CreateDefaultSubobject<USceneComponent>(TEXT("CarWrapper"));
 	RootComponent = CarWrapper;
 
-	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarBody0"));
+	// set up car body
+	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarBody"));
 	CarMesh->SetupAttachment(RootComponent);
 	CarMesh->SetStaticMesh(ConstructorStatics.CarMesh.Get());	// Set static mesh
+
+	// set up thrusters
+	BackThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("BackThrusterSpringArm"));
+	BackThrusterSpringArm->SetupAttachment(RootComponent);
+
+	LeftThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("LeftThrusterSpringArm"));
+	LeftThrusterSpringArm->SetupAttachment(RootComponent);
+
+	RightThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("RightThrusterSpringArm"));
+	RightThrusterSpringArm->SetupAttachment(RootComponent);
+
+	// set up camera
+	CamSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraSpringArm"));
+	CamSpringArm->SetupAttachment(RootComponent);
+
+	Cam = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	Cam->SetupAttachment(CamSpringArm);
 
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
