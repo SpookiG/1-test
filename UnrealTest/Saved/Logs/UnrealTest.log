@@ -1810,3 +1810,72 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.09.06-20.54.00:182][117]AssetCheck: New page: Asset Save: multiple assets
 [2021.09.06-20.54.00:182][117]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
 [2021.09.06-20.54.00:182][117]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.06-21.02.44:340][950]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-21.02.44:340][950]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-21.02.44:340][950]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-21.02.44:341][950]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-21.02.44:349][950]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-21.02.44:366][950]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-21.02.44:372][950]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-21.02.44:372][950]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-21.02.44:374][950]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-21.02.44:414][950]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-21.02.44:416][950]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2021.09.06-21.02.44:480][951]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2021.09.06-21.03.16:791][807]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-21.03.16:802][807]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-21.03.16:802][807]PIE: New page: PIE session: FlyingExampleMap (6 Sep 2021, 23:03:16)
+[2021.09.06-21.03.16:802][807]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-21.03.16:831][807]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028809s)
+[2021.09.06-21.03.16:832][807]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-21.03.16:833][807]LogPlayLevel: PIE: World Init took: (0.001939s)
+[2021.09.06-21.03.16:833][807]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.031046s)
+[2021.09.06-21.03.16:853][807]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2021.09.06-21.03.16:855][807]LogAudio: Display: Creating Audio Device:                 Id: 17, Scope: Unique, Realtime: True
+[2021.09.06-21.03.16:856][807]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-21.03.16:856][807]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-21.03.16:856][807]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-21.03.16:856][807]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-21.03.16:856][807]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-21.03.16:856][807]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-21.03.16:856][807]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-21.03.16:856][807]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-21.03.16:856][807]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-21.03.16:856][807]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-21.03.16:862][807]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-21.03.16:862][807]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-21.03.16:862][807]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-21.03.16:862][807]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-21.03.16:862][807]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-21.03.16:862][807]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-21.03.16:862][807]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-21.03.16:862][807]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-21.03.16:912][807]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-21.03.16:912][807]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-21.03.16:912][807]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-21.03.16:912][807]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-21.03.16:913][807]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-21.03.16:913][807]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-21.03.16:913][807]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-21.03.16:940][807]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-21.03.16:940][807]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-21.03.16:940][807]LogInit: FAudioDevice initialized.
+[2021.09.06-21.03.16:940][807]LogAudio: Display: Audio Device (ID: 17) registered with world 'FlyingExampleMap'.
+[2021.09.06-21.03.16:952][807]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-21.03.16:959][807]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.06-22.03.16
+[2021.09.06-21.03.16:960][807]LogWorld: Bringing up level for play took: 0.006804
+[2021.09.06-21.03.16:960][807]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2021.09.06-21.03.16:963][807]PIE: Server logged in
+[2021.09.06-21.03.16:964][807]PIE: Play in editor total start time 0.166 seconds.
+[2021.09.06-21.04.05:880][729]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-21.04.05:881][729]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-21.04.05:881][729]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-21.04.05:883][729]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-21.04.05:891][729]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-21.04.05:907][729]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-21.04.05:912][729]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-21.04.05:912][729]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-21.04.05:913][729]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-21.04.05:946][729]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-21.04.05:949][729]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2021.09.06-21.04.05:998][730]LogPlayLevel: Display: Destroying online subsystem :Context_20
