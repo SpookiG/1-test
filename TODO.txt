@@ -1,11 +1,5 @@
 Ok, something something flying car what do I need?
 
-Header files are @
-~\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes
-
-How the headers are organized is a fun adventure, I don't know what is going on here lol, components are everywhere. I found the file I need tho
-
-
 - A level(s)
 - Car
 - Audio (optional? Though kinda important in some places)
@@ -24,11 +18,14 @@ Essential tasks:
 	- car
 		- didn't take into account actually building the car from components (this requires planning whilst I learn because it's all done programatically in C++)
 			- body (scene component container)
+				-flattened cone inside the body object (why inside? Because flattening the cone distorts the space and there's other stuff I want to be part of the body)
 				-spring connectors
 					-3 boxes also on the body (but not on the cone) these need control scripts (not on the body because of the way these work)
+			- camera control script (this could just be on the main class)
+				- spring connector
+					-camera
 			
 		- create/use a car shaped mesh thingy
-
 		- code up a hover mechanic (flying car)
 			- trigger a certain distance above the ground (from multiple points)
 			- apply force to those points depending on how close to the ground
@@ -67,7 +64,3 @@ Optionals (in priority order):
 
 Done!!!
 	- write TODO list! lol
-	- car body container
-	- flattened cone main body
-	- spring connector for camera
-	- camera
