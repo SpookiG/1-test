@@ -13,12 +13,15 @@ class UNREALTEST_API AFloatyCar : public APawn
 
 	/** Wrapper to contain the car & stuff because the mesh used for the body is going to be distorted */
 	UPROPERTY(Category = Wrapper, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class USceneComponent* CarWrapper;
-
+	class UStaticMeshComponent* CarWrapper;		// this is a static mesh because unreal only likes physics stuff on physics specific objects, the actual mesh is gonna be empty this is just a wrapper
 
 	/** Body mesh */
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* CarMesh;
+
+	/** Physics constraint to attach the car wrapper to the body mesh */
+	UPROPERTY(Category = Constraint, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UPhysicsConstraintComponent* PhysicsConstraint;
 
 	/** I think I need 3 springarms for the 3 thrusters */
 	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))

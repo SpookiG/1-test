@@ -22,10 +22,18 @@ UThruster::UThruster()
 	static FConstructorStatics ConstructorStatics;
 
 	// Create thruster mesh with custom name
-	ThrusterMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Hello"));
+	ThrusterMesh = CreateDefaultSubobject<UStaticMeshComponent>(*(GetName().Append("Mesh")));
 	ThrusterMesh->SetupAttachment(this);
 	ThrusterMesh->SetStaticMesh(ConstructorStatics.ThrusterMesh.Get());
 	ThrusterMesh->SetRelativeScale3D(FVector(0.25f, 0.25f, 0.25f));
+
+
+	// create and attach the physics constraint using the names
+	PhysicsConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(*(GetName().Append("PhysicsConstraint")));
+	PhysicsConstraint->SetupAttachment(this);
+	
+
+	
 
 	
 	//PhysicsConstraint->ConstraintActor1 = this;
@@ -41,23 +49,14 @@ UThruster::UThruster()
 }
 
 
-void UThruster::SetupPhysicsConstraint(AActor* ParentActor, FString ThrusterName, FString MeshName)
+void UThruster::SetupPhysicsConstraint(AActor* ParentActor)
 {
+	PhysicsConstraint->ConstraintActor1 = ParentActor;
+	PhysicsConstraint->ComponentName1.ComponentName = *GetName();
+	PhysicsConstraint->ConstraintActor2 = ParentActor;
+	PhysicsConstraint->ComponentName2.ComponentName = *(GetName().Append("Mesh"));
 
 	
-	
-	//ThrusterMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Hello?"));
-	//ThrusterMesh->SetupAttachment(this);
-	//ThrusterMesh->SetStaticMesh(ConstructorStatics.ThrusterMesh.Get());
-	//ThrusterMesh->SetRelativeScale3D(FVector(0.25f, 0.25f, 0.25f));
-
-	// create and attach the physics constraint using the names
-	//PhysicsConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(TEXT("PhysicsConstraint"));
-	//PhysicsConstraint->SetupAttachment(this);
-	//PhysicsConstraint->ConstraintActor1 = ParentActor;
-	//PhysicsConstraint->ComponentName1.ComponentName = *ThrusterName;
-	//PhysicsConstraint->ConstraintActor2 = ParentActor;
-	//PhysicsConstraint->ComponentName2.ComponentName = *MeshName;
 
 	
 }
@@ -78,7 +77,7 @@ void UThruster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	ThrusterMesh->AddForce(FVector(50.f, 50.f, 50.f));
+	//ThrusterMesh->AddForce(FVector(50.f, 50.f, 50.f));
 
 	// ...
 }

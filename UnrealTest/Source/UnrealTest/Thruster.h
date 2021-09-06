@@ -26,7 +26,7 @@ public:
 	UThruster();
 
 	// 
-	void SetupPhysicsConstraint(AActor* ParentActor, FString ThrusterName, FString MeshName);
+	void SetupPhysicsConstraint(AActor* ParentActor);
 
 protected:
 	// Called when the game starts
