@@ -2756,3 +2756,72 @@ Try to find the chain of references to that object (may take some time)?
 [2021.09.06-00.22.00:622][311]LogMainFrame: MainFrame: Module compiling took 11.306 seconds
 [2021.09.06-00.22.00:642][311]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0146 seconds. Added 3605 classes and 861 folders.
 [2021.09.06-00.22.00:642][311]Display: HotReload took 11.4s.
+[2021.09.06-00.25.58:227][501]Candidate modules for hot reload:
+[2021.09.06-00.25.58:227][501]  UnrealTest
+[2021.09.06-00.25.58:227][501]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,7093 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-00.25.58:236][501]Warning: Starting HotReload took  0.0s.
+[2021.09.06-00.26.00:910][587]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 02:26:00
+[2021.09.06-00.26.00:910][587]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-00.26.00:910][587]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-00.26.00:910][587]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-00.26.00:911][587]CompilerResultsLog: Building 3 actions with 8 processes...
+[2021.09.06-00.26.00:911][587]CompilerResultsLog:   [1/3] UE4Editor-UnrealTest-7093.lib
+[2021.09.06-00.26.00:911][587]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7093.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7093.exp
+[2021.09.06-00.26.00:911][587]CompilerResultsLog:   [2/3] UE4Editor-UnrealTest-7093.dll
+[2021.09.06-00.26.00:911][587]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7093.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7093.suppressed.exp
+[2021.09.06-00.26.00:911][587]CompilerResultsLog:   [3/3] UnrealTestEditor.target
+[2021.09.06-00.26.00:911][587]CompilerResultsLog: Total time in Parallel executor: 1.47 seconds
+[2021.09.06-00.26.00:911][587]CompilerResultsLog: Total execution time: 2.48 seconds
+[2021.09.06-00.26.00:911][587]LogMainFrame: MainFrame: Module compiling took 2.694 seconds
+[2021.09.06-00.26.00:958][587]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.06-00.26.00:960][587]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.06-00.26.01:018][587]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0152 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-00.26.01:018][587]Display: HotReload took  2.8s.
+[2021.09.06-00.26.04:747][646]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.09.06-00.26.04:828][646]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMapF0FC71314874261B31D1DC958027FBBD.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.06-00.26.05:561][646]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltData2208DACF44D67573FCADDD839BDEAC93.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.06-00.26.05:607][646]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.06-00.26.05:607][646]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.06-00.26.05:607][646]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.06-00.27.55:458][562]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Ground)
+[2021.09.06-00.27.56:790][637]Cmd: TRANSACTION UNDO
+[2021.09.06-00.27.56:790][637]LogEditorTransaction: Undo Clicking on Actors
+[2021.09.06-00.27.57:289][650]Cmd: TRANSACTION UNDO
+[2021.09.06-00.27.57:289][650]LogEditorTransaction: Undo Move Components
+[2021.09.06-00.29.35:128][475]Cmd: TRANSACTION UNDO
+[2021.09.06-00.29.35:128][475]LogEditorTransaction: Undo Edit Probe Size
+[2021.09.06-00.29.38:559][666]Cmd: TRANSACTION UNDO
+[2021.09.06-00.29.38:559][666]LogEditorTransaction: Undo Clicking on Component (tree view)
+[2021.09.06-00.30.56:918][272]Cmd: TRANSACTION UNDO
+[2021.09.06-00.30.56:918][272]LogEditorTransaction: Undo Move Components
+[2021.09.06-00.30.58:432][348]Cmd: TRANSACTION UNDO
+[2021.09.06-00.30.58:432][348]LogEditorTransaction: Undo Edit Probe Size
+[2021.09.06-00.31.00:145][449]Cmd: TRANSACTION REDO
+[2021.09.06-00.31.00:145][449]LogEditorTransaction: Redo Edit Probe Size
+[2021.09.06-00.34.15:208][942]Candidate modules for hot reload:
+[2021.09.06-00.34.15:208][942]  UnrealTest
+[2021.09.06-00.34.15:208][942]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,9031 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-00.34.15:216][942]Warning: Starting HotReload took  0.0s.
+[2021.09.06-00.34.19:447][ 86]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 02:34:19
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-9031.lib
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-9031.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-9031.exp
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-9031.dll
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-9031.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-9031.suppressed.exp
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog: Total time in Parallel executor: 2.82 seconds
+[2021.09.06-00.34.19:448][ 86]CompilerResultsLog: Total execution time: 3.75 seconds
+[2021.09.06-00.34.19:448][ 86]LogMainFrame: MainFrame: Module compiling took 4.250 seconds
+[2021.09.06-00.34.19:465][ 86]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.06-00.34.19:493][ 86]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0005 seconds. Added 4 classes and 2 folders.
+[2021.09.06-00.34.19:494][ 86]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.06-00.34.19:548][ 86]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0136 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-00.34.19:549][ 86]Display: HotReload took  4.4s.
+[2021.09.06-00.36.05:114][400]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2021.09.06-00.36.05:209][400]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_Auto26A4506DB40B345A63885C0A2CE7955AF.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap'
+[2021.09.06-00.36.05:212][400]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FlyingCPP/Maps/FlyingExampleMap' took 0.107
+[2021.09.06-00.36.05:212][400]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.107

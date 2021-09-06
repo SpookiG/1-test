@@ -50,6 +50,7 @@ AFloatyCar::AFloatyCar()
 	LeftThrusterSpringArm->SetRelativeLocation(FVector(260.f, 0.f, -12.5f));
 	LeftThrusterSpringArm->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
 	LeftThrusterSpringArm->TargetArmLength = 47.f;
+	LeftThrusterSpringArm->ProbeSize = 3.f;
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
 	LeftThruster->SetupAttachment(LeftThrusterSpringArm);
 
@@ -58,6 +59,7 @@ AFloatyCar::AFloatyCar()
 	RightThrusterSpringArm->SetRelativeLocation(FVector(260.f, 0.f, -12.5f));
 	RightThrusterSpringArm->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
 	RightThrusterSpringArm->TargetArmLength = 47.f;
+	RightThrusterSpringArm->ProbeSize = 3.f;
 	RightThruster = CreateDefaultSubobject<UThruster>(TEXT("RightThruster"));
 	RightThruster->SetupAttachment(RightThrusterSpringArm);
 
