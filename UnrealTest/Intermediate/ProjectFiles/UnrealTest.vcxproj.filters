@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UnrealTest.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{385C41CD-1D67-40B6-ADB8-DFC8FAFFD225}</UniqueIdentifier>
+      <UniqueIdentifier>{41C26DB8-AC65-45E7-86A1-BA6E00A249E8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealTest.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{D49D665E-BFC3-47F0-8E36-8CA9F4DE9920}</UniqueIdentifier>
+      <UniqueIdentifier>{F5D70437-9C40-4AB6-B01C-56707CD5CB01}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UnrealTest">
-      <UniqueIdentifier>{23CB35F0-8210-4519-A686-991085FE8FF4}</UniqueIdentifier>
+      <UniqueIdentifier>{D93D0F34-356A-4F98-BE19-2CFA922D2DA7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealTest\FloatyCar.cpp">
       <Filter>Source\UnrealTest</Filter>

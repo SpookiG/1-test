@@ -35,6 +35,9 @@ AFloatyCar::AFloatyCar()
 	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarBody"));
 	CarMesh->SetupAttachment(RootComponent);
 	CarMesh->SetStaticMesh(ConstructorStatics.CarMesh.Get());	// Set static mesh
+	CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f));
+	CarMesh->SetRelativeScale3D(FVector(0.25f, 1.f, 2.7f));
+	
 
 	// set up thrusters
 	BackThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("BackThrusterSpringArm"));
@@ -44,11 +47,17 @@ AFloatyCar::AFloatyCar()
 
 	LeftThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("LeftThrusterSpringArm"));
 	LeftThrusterSpringArm->SetupAttachment(RootComponent);
+	LeftThrusterSpringArm->SetRelativeLocation(FVector(260.f, 0.f, -12.5f));
+	LeftThrusterSpringArm->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
+	LeftThrusterSpringArm->TargetArmLength = 47.f;
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
 	LeftThruster->SetupAttachment(LeftThrusterSpringArm);
 
 	RightThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("RightThrusterSpringArm"));
 	RightThrusterSpringArm->SetupAttachment(RootComponent);
+	RightThrusterSpringArm->SetRelativeLocation(FVector(260.f, 0.f, -12.5f));
+	RightThrusterSpringArm->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
+	RightThrusterSpringArm->TargetArmLength = 47.f;
 	RightThruster = CreateDefaultSubobject<UThruster>(TEXT("RightThruster"));
 	RightThruster->SetupAttachment(RightThrusterSpringArm);
 

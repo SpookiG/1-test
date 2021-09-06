@@ -2059,3 +2059,700 @@ Script Stack (0 frames):
 [2021.09.05-22.44.30:654][ 70]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
 [2021.09.05-22.44.30:708][ 70]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0134 seconds. Added 3605 classes and 861 folders.
 [2021.09.05-22.44.30:708][ 70]Display: HotReload took 11.5s.
+[2021.09.05-22.53.21:094][353]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2021.09.05-22.53.21:703][353]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_Auto99B8880C844F969A3E4506597D09CA2E0.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto9.umap'
+[2021.09.05-22.53.21:705][353]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FlyingCPP/Maps/FlyingExampleMap' took 0.619
+[2021.09.05-22.53.21:705][353]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.619
+[2021.09.05-23.04.43:151][921]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2021.09.05-23.04.43:732][921]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_Auto037DA2C724FD946435BF352A5D5D65A59.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto0.umap'
+[2021.09.05-23.04.43:734][921]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FlyingCPP/Maps/FlyingExampleMap' took 0.591
+[2021.09.05-23.04.43:734][921]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.591
+[2021.09.05-23.14.43:928][705]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2021.09.05-23.14.43:931][705]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FlyingCPP/Maps/FlyingExampleMap' took 0.008
+[2021.09.05-23.17.25:253][ 69]Candidate modules for hot reload:
+[2021.09.05-23.17.25:253][ 69]  UnrealTest
+[2021.09.05-23.17.25:253][ 69]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,1099 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.05-23.17.25:263][ 69]Warning: Starting HotReload took  0.0s.
+[2021.09.05-23.17.44:770][202]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 01:17:44
+[2021.09.05-23.17.44:771][202]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.05-23.17.44:771][202]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.05-23.17.44:771][202]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.05-23.17.44:771][202]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.05-23.17.44:771][202]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.05-23.17.44:771][202]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-1099.lib
+[2021.09.05-23.17.44:771][202]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1099.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1099.exp
+[2021.09.05-23.17.44:771][202]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-1099.dll
+[2021.09.05-23.17.44:771][202]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1099.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1099.suppressed.exp
+[2021.09.05-23.17.44:771][202]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.05-23.17.44:771][202]CompilerResultsLog: Total time in Parallel executor: 18.06 seconds
+[2021.09.05-23.17.44:771][202]CompilerResultsLog: Total execution time: 19.28 seconds
+[2021.09.05-23.17.44:771][202]LogMainFrame: MainFrame: Module compiling took 19.528 seconds
+[2021.09.05-23.17.44:795][202]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.05-23.17.44:841][202]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.05-23.17.44:844][202]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.05-23.17.44:894][202]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0135 seconds. Added 3605 classes and 861 folders.
+[2021.09.05-23.17.44:894][202]Display: HotReload took 19.7s.
+[2021.09.05-23.17.48:583][410]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1240.00,-160.00,1150.00
+[2021.09.05-23.17.51:232][568]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -530.00,320.00,100.00
+[2021.09.05-23.19.54:883][769]Cmd: DELETE
+[2021.09.05-23.19.54:883][769]Cmd: ACTOR DELETE
+[2021.09.05-23.19.59:956][ 65]Cmd: DELETE
+[2021.09.05-23.19.59:957][ 65]Cmd: ACTOR DELETE
+[2021.09.05-23.19.59:961][ 65]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.05-23.19.59:980][ 65]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2021.09.05-23.19.59:984][ 65]LogEditorActor: Deleted 1 Actors (0.028 secs)
+[2021.09.05-23.20.06:677][347]Candidate modules for hot reload:
+[2021.09.05-23.20.06:677][347]  UnrealTest
+[2021.09.05-23.20.06:677][347]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,4439 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.05-23.20.06:685][347]Warning: Starting HotReload took  0.0s.
+[2021.09.05-23.20.10:247][536]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 01:20:10
+[2021.09.05-23.20.10:250][536]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.05-23.20.10:250][536]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.05-23.20.10:250][536]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.05-23.20.10:250][536]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.05-23.20.10:250][536]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.05-23.20.10:250][536]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-4439.lib
+[2021.09.05-23.20.10:251][536]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4439.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4439.exp
+[2021.09.05-23.20.10:251][536]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-4439.dll
+[2021.09.05-23.20.10:251][536]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4439.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4439.suppressed.exp
+[2021.09.05-23.20.10:251][536]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.05-23.20.10:251][536]CompilerResultsLog: Total time in Parallel executor: 2.48 seconds
+[2021.09.05-23.20.10:251][536]CompilerResultsLog: Total execution time: 3.42 seconds
+[2021.09.05-23.20.10:251][536]LogMainFrame: MainFrame: Module compiling took 3.583 seconds
+[2021.09.05-23.20.10:298][536]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.05-23.20.10:316][536]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.05-23.20.10:318][536]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.05-23.20.10:369][536]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0131 seconds. Added 3605 classes and 861 folders.
+[2021.09.05-23.20.10:369][536]Display: HotReload took  3.7s.
+[2021.09.05-23.20.14:925][803]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1830.00,-60.00,100.00
+[2021.09.05-23.20.16:160][876]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1220.00,440.00,100.00
+[2021.09.05-23.21.10:651][127]Cmd: DELETE
+[2021.09.05-23.21.10:651][127]Cmd: ACTOR DELETE
+[2021.09.05-23.21.10:656][127]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.05-23.21.10:671][127]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2021.09.05-23.21.10:675][127]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2021.09.05-23.22.17:165][ 39]Cmd: TRANSACTION UNDO
+[2021.09.05-23.22.17:165][ 39]LogEditorTransaction: Undo Modify Component Location
+[2021.09.05-23.22.25:405][518]Cmd: TRANSACTION UNDO
+[2021.09.05-23.22.25:405][518]LogEditorTransaction: Undo Modify Component(s)
+[2021.09.05-23.22.30:189][791]Cmd: TRANSACTION UNDO
+[2021.09.05-23.22.30:189][791]LogEditorTransaction: Undo Modify Component(s)
+[2021.09.05-23.22.33:740][991]Cmd: TRANSACTION UNDO
+[2021.09.05-23.22.33:741][991]LogEditorTransaction: Undo Clicking on Component (tree view)
+[2021.09.05-23.24.09:975][714]Cmd: POLY SELECT ADJACENT WALLS
+[2021.09.05-23.24.10:782][762]Cmd: POLY SELECT ADJACENT WALLS
+[2021.09.05-23.31.58:352][477]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2021.09.05-23.31.58:442][477]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_Auto1C049B61B4A569EEB4460CA995FE1C0A3.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto1.umap'
+[2021.09.05-23.31.58:444][477]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FlyingCPP/Maps/FlyingExampleMap' took 0.099
+[2021.09.05-23.31.58:444][477]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.099
+[2021.09.05-23.41.50:982][211]Candidate modules for hot reload:
+[2021.09.05-23.41.50:982][211]  UnrealTest
+[2021.09.05-23.41.50:982][211]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,4926 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.05-23.41.50:990][211]Warning: Starting HotReload took  0.0s.
+[2021.09.05-23.41.54:901][411]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 01:41:54
+[2021.09.05-23.41.54:901][411]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.05-23.41.54:901][411]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.05-23.41.54:901][411]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.05-23.41.54:901][411]CompilerResultsLog: Building 5 actions with 8 processes...
+[2021.09.05-23.41.54:901][411]CompilerResultsLog:   [1/5] Thruster.cpp
+[2021.09.05-23.41.54:901][411]CompilerResultsLog:   [2/5] FloatyCar.cpp
+[2021.09.05-23.41.54:901][411]CompilerResultsLog:   [3/5] UE4Editor-UnrealTest-4926.lib
+[2021.09.05-23.41.54:901][411]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4926.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4926.exp
+[2021.09.05-23.41.54:901][411]CompilerResultsLog:   [4/5] UE4Editor-UnrealTest-4926.dll
+[2021.09.05-23.41.54:901][411]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4926.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4926.suppressed.exp
+[2021.09.05-23.41.54:901][411]CompilerResultsLog:   [5/5] UnrealTestEditor.target
+[2021.09.05-23.41.54:901][411]CompilerResultsLog: Total time in Parallel executor: 2.78 seconds
+[2021.09.05-23.41.54:901][411]CompilerResultsLog: Total execution time: 3.73 seconds
+[2021.09.05-23.41.54:901][411]LogMainFrame: MainFrame: Module compiling took 3.928 seconds
+[2021.09.05-23.41.54:953][411]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.05-23.41.54:995][411]LogHotReload: Re-instancing Thruster after hot-reload.
+[2021.09.05-23.41.55:004][411]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2021.09.05-23.41.55:006][411]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.05-23.41.55:057][411]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0129 seconds. Added 3605 classes and 861 folders.
+[2021.09.05-23.41.55:057][411]Display: HotReload took  4.1s.
+[2021.09.05-23.41.59:124][641]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1600.00,-520.00,100.00
+[2021.09.05-23.42.02:242][826]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1110.00,-290.00,100.00
+[2021.09.05-23.42.13:293][483]Cmd: DELETE
+[2021.09.05-23.42.13:293][483]Cmd: ACTOR DELETE
+[2021.09.05-23.42.13:298][483]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.05-23.42.13:313][483]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2021.09.05-23.42.13:318][483]LogEditorActor: Deleted 1 Actors (0.025 secs)
+[2021.09.05-23.43.40:024][668]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2021.09.05-23.43.50:988][668]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.43.50:996][668]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.43.51:045][668]EditorErrors: New page: Save Output
+[2021.09.05-23.43.51:045][668]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.43.51:144][668]LogSlate: Took 0.001207 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.09.05-23.43.51:227][669]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2021.09.05-23.43.53:872][669]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.43.53:881][669]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.43.53:883][669]EditorErrors: New page: Save Output
+[2021.09.05-23.43.53:884][669]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.43.53:885][669]LogFileHelpers: Editor autosave (incl. sublevels) failed for file '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap' which belongs to world '/Game/FlyingCPP/Maps/FlyingExampleMap'. Aborting autosave.
+[2021.09.05-23.43.56:296][804]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.43.56:304][804]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.43.58:714][945]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2021.09.05-23.44.11:465][945]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.44.11:472][945]Message dialog closed, result: Yes, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.44.11:473][945]LogSavePackage: Warning: 
+Referencers of StaticMeshComponent /Script/UnrealTest.Default__FloatyCar:BackThruster.ThrusterMesh:
+[2021.09.05-23.44.11:527][945]LogSavePackage: Warning: 	Thruster /Script/UnrealTest.Default__FloatyCar:BackThruster (1 refs)
+[2021.09.05-23.44.11:527][945]LogSavePackage: Warning: 		0) ObjectProperty /Script/UnrealTest.Thruster:ThrusterMesh
+[2021.09.05-23.44.11:527][945]LogSavePackage: Warning: 	FloatyCar /Script/UnrealTest.Default__FloatyCar (2 refs)
+[2021.09.05-23.44.11:527][945]LogSavePackage: Warning: 
+Referencers of StaticMeshComponent /Script/UnrealTest.Default__FloatyCar:LeftThruster.ThrusterMesh:
+[2021.09.05-23.44.11:569][945]LogSavePackage: Warning: 	Thruster /Script/UnrealTest.Default__FloatyCar:LeftThruster (1 refs)
+[2021.09.05-23.44.11:570][945]LogSavePackage: Warning: 		0) ObjectProperty /Script/UnrealTest.Thruster:ThrusterMesh
+[2021.09.05-23.44.11:570][945]LogSavePackage: Warning: 	FloatyCar /Script/UnrealTest.Default__FloatyCar (2 refs)
+[2021.09.05-23.44.11:570][945]LogSavePackage: Warning: 
+Referencers of StaticMeshComponent /Script/UnrealTest.Default__FloatyCar:RightThruster.ThrusterMesh:
+[2021.09.05-23.44.11:615][945]LogSavePackage: Warning: 	Thruster /Script/UnrealTest.Default__FloatyCar:RightThruster (1 refs)
+[2021.09.05-23.44.11:615][945]LogSavePackage: Warning: 		0) ObjectProperty /Script/UnrealTest.Thruster:ThrusterMesh
+[2021.09.05-23.44.11:615][945]LogSavePackage: Warning: 	FloatyCar /Script/UnrealTest.Default__FloatyCar (2 refs)
+[2021.09.05-23.44.11:617][945]EditorErrors: New page: Save Output
+[2021.09.05-23.44.11:617][945]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object StaticMeshComponent /Script/UnrealTest.Default__FloatyCar:RightThruster.ThrusterMesh (ThrusterMesh)
+[2021.09.05-23.44.34:593][313]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.44.34:602][313]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.44.49:777][621]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2021.09.05-23.45.52:882][621]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.45.52:890][621]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.45.52:893][621]EditorErrors: New page: Save Output
+[2021.09.05-23.45.52:893][621]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.45.54:484][709]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.45.54:491][709]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.46.49:493][510]Running C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" -game -rocket -progress
+[2021.09.05-23.46.49:902][510]Discovering modules, targets and source code for project...
+[2021.09.05-23.46.52:525][510]Binding IntelliSense data...
+[2021.09.05-23.46.56:062][510]Binding IntelliSense data... 100%
+[2021.09.05-23.46.56:062][510]Writing project files...
+[2021.09.05-23.47.02:513][510]Writing project files... 100%
+[2021.09.05-23.47.06:026][711]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2021.09.05-23.47.08:886][711]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.47.08:896][711]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.47.08:898][711]EditorErrors: New page: Save Output
+[2021.09.05-23.47.08:898][711]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.47.12:709][932]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.47.12:719][932]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.47.15:857][112]Candidate modules for hot reload:
+[2021.09.05-23.47.15:857][112]  UnrealTest
+[2021.09.05-23.47.15:857][112]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,104 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.05-23.47.15:864][112]Warning: Starting HotReload took  0.0s.
+[2021.09.05-23.47.20:756][376]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 01:47:20
+[2021.09.05-23.47.20:756][376]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.05-23.47.20:756][376]CompilerResultsLog: Creating makefile for UnrealTestEditor (no existing makefile)
+[2021.09.05-23.47.20:756][376]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.05-23.47.20:756][376]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.05-23.47.20:756][376]CompilerResultsLog: Building 3 actions with 8 processes...
+[2021.09.05-23.47.20:756][376]CompilerResultsLog:   [1/3] UE4Editor-UnrealTest-0104.lib
+[2021.09.05-23.47.20:756][376]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0104.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0104.exp
+[2021.09.05-23.47.20:756][376]CompilerResultsLog:   [2/3] UE4Editor-UnrealTest-0104.dll
+[2021.09.05-23.47.20:757][376]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0104.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0104.suppressed.exp
+[2021.09.05-23.47.20:757][376]CompilerResultsLog:   [3/3] UnrealTestEditor.target
+[2021.09.05-23.47.20:757][376]CompilerResultsLog: Total time in Parallel executor: 1.48 seconds
+[2021.09.05-23.47.20:757][376]CompilerResultsLog: Total execution time: 4.70 seconds
+[2021.09.05-23.47.20:757][376]LogMainFrame: MainFrame: Module compiling took 4.910 seconds
+[2021.09.05-23.47.20:779][376]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0156 seconds. Added 3605 classes and 861 folders.
+[2021.09.05-23.47.20:779][376]Display: HotReload took  4.9s.
+[2021.09.05-23.47.23:434][530]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2021.09.05-23.47.26:203][530]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.47.26:212][530]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.47.26:215][530]EditorErrors: New page: Save Output
+[2021.09.05-23.47.26:215][530]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.47.41:739][777]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.47.41:749][777]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.47.46:157][982]Cmd: DELETE
+[2021.09.05-23.47.46:157][982]Cmd: ACTOR DELETE
+[2021.09.05-23.47.46:162][982]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.05-23.47.46:177][982]LogUObjectHash: Compacting FUObjectHashTables data took   0.32ms
+[2021.09.05-23.47.46:179][982]LogEditorActor: Deleted 1 Actors (0.023 secs)
+[2021.09.05-23.47.48:422][115]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2021.09.05-23.47.48:499][115]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMapA73D4B0A4ED2AA07FDEC6C8D4FFDBEBA.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.05-23.47.49:481][115]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltData6109F5574F9DB0977875189BEB88E764.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.05-23.47.49:508][115]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.05-23.47.49:508][115]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.05-23.47.49:509][115]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.05-23.47.51:443][229]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1870.00,-670.00,100.00
+[2021.09.05-23.47.52:693][303]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -580.00,-310.00,100.00
+[2021.09.05-23.47.55:153][446]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2021.09.05-23.47.57:185][446]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.47.57:192][446]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.47.57:195][446]EditorErrors: New page: Save Output
+[2021.09.05-23.47.57:195][446]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.47.58:774][534]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.47.58:784][534]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.48.12:174][329]LogUObjectHash: Compacting FUObjectHashTables data took   0.32ms
+[2021.09.05-23.51.18:608][329]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.51.18:618][329]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.51.18:622][329]EditorErrors: New page: Save Output
+[2021.09.05-23.51.18:622][329]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.51.21:358][481]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.51.21:369][481]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.51.23:704][615]Candidate modules for hot reload:
+[2021.09.05-23.51.23:704][615]  UnrealTest
+[2021.09.05-23.51.23:704][615]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,5217 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.05-23.51.23:711][615]Warning: Starting HotReload took  0.0s.
+[2021.09.05-23.51.26:855][736]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 01:51:26
+[2021.09.05-23.51.26:855][736]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.05-23.51.26:855][736]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.05-23.51.26:855][736]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.05-23.51.26:855][736]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.05-23.51.26:855][736]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.05-23.51.26:855][736]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-5217.lib
+[2021.09.05-23.51.26:855][736]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-5217.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-5217.exp
+[2021.09.05-23.51.26:856][736]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-5217.dll
+[2021.09.05-23.51.26:856][736]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-5217.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-5217.suppressed.exp
+[2021.09.05-23.51.26:856][736]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.05-23.51.26:856][736]CompilerResultsLog: Total time in Parallel executor: 2.00 seconds
+[2021.09.05-23.51.26:856][736]CompilerResultsLog: Total execution time: 3.00 seconds
+[2021.09.05-23.51.26:856][736]LogMainFrame: MainFrame: Module compiling took 3.160 seconds
+[2021.09.05-23.51.26:908][736]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.05-23.51.26:950][736]LogHotReload: Re-instancing Thruster after hot-reload.
+[2021.09.05-23.51.26:959][736]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.05-23.51.26:961][736]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.05-23.51.27:011][736]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0138 seconds. Added 3605 classes and 861 folders.
+[2021.09.05-23.51.27:011][736]Display: HotReload took  3.3s.
+[2021.09.05-23.51.30:266][893]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2021.09.05-23.51.31:863][893]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.51.31:870][893]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.51.31:872][893]EditorErrors: New page: Save Output
+[2021.09.05-23.51.31:873][893]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.51.33:398][971]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.51.33:411][971]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.52.05:100][291]Candidate modules for hot reload:
+[2021.09.05-23.52.05:100][291]  UnrealTest
+[2021.09.05-23.52.05:101][291]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,8297 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.05-23.52.05:108][291]Warning: Starting HotReload took  0.0s.
+[2021.09.05-23.52.08:229][414]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 01:52:08
+[2021.09.05-23.52.08:229][414]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.05-23.52.08:229][414]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.05-23.52.08:229][414]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.05-23.52.08:229][414]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.05-23.52.08:229][414]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.05-23.52.08:230][414]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-8297.lib
+[2021.09.05-23.52.08:230][414]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8297.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8297.exp
+[2021.09.05-23.52.08:230][414]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-8297.dll
+[2021.09.05-23.52.08:230][414]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8297.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8297.suppressed.exp
+[2021.09.05-23.52.08:230][414]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.05-23.52.08:230][414]CompilerResultsLog: Total time in Parallel executor: 1.96 seconds
+[2021.09.05-23.52.08:230][414]CompilerResultsLog: Total execution time: 2.96 seconds
+[2021.09.05-23.52.08:230][414]LogMainFrame: MainFrame: Module compiling took 3.139 seconds
+[2021.09.05-23.52.08:271][414]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.05-23.52.08:312][414]LogHotReload: Re-instancing Thruster after hot-reload.
+[2021.09.05-23.52.08:322][414]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.05-23.52.08:324][414]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.05-23.52.08:373][414]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0139 seconds. Added 3605 classes and 861 folders.
+[2021.09.05-23.52.08:373][414]Display: HotReload took  3.3s.
+[2021.09.05-23.52.10:890][535]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2021.09.05-23.52.12:648][535]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.52.12:655][535]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.52.12:657][535]EditorErrors: New page: Save Output
+[2021.09.05-23.52.12:658][535]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.52.15:121][664]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.52.15:133][664]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.53.09:893][511]Candidate modules for hot reload:
+[2021.09.05-23.53.09:893][511]  UnrealTest
+[2021.09.05-23.53.09:893][511]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,8095 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.05-23.53.09:901][511]Warning: Starting HotReload took  0.0s.
+[2021.09.05-23.53.13:414][695]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 01:53:13
+[2021.09.05-23.53.13:417][695]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.05-23.53.13:417][695]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.05-23.53.13:417][695]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.05-23.53.13:417][695]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.05-23.53.13:417][695]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.05-23.53.13:417][695]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-8095.lib
+[2021.09.05-23.53.13:417][695]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8095.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8095.exp
+[2021.09.05-23.53.13:417][695]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-8095.dll
+[2021.09.05-23.53.13:417][695]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8095.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8095.suppressed.exp
+[2021.09.05-23.53.13:417][695]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.05-23.53.13:417][695]CompilerResultsLog: Total time in Parallel executor: 2.35 seconds
+[2021.09.05-23.53.13:417][695]CompilerResultsLog: Total execution time: 3.36 seconds
+[2021.09.05-23.53.13:417][695]LogMainFrame: MainFrame: Module compiling took 3.533 seconds
+[2021.09.05-23.53.13:455][695]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.05-23.53.13:497][695]LogHotReload: Re-instancing Thruster after hot-reload.
+[2021.09.05-23.53.13:508][695]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.05-23.53.13:510][695]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.05-23.53.13:564][695]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0140 seconds. Added 3605 classes and 861 folders.
+[2021.09.05-23.53.13:564][695]Display: HotReload took  3.7s.
+[2021.09.05-23.53.26:174][447]Cmd: DELETE
+[2021.09.05-23.53.26:174][447]Cmd: ACTOR DELETE
+[2021.09.05-23.53.26:179][447]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.05-23.53.26:197][447]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2021.09.05-23.53.26:202][447]LogEditorActor: Deleted 1 Actors (0.028 secs)
+[2021.09.05-23.53.27:856][544]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1810.00,-640.00,100.00
+[2021.09.05-23.53.28:872][604]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -780.00,70.00,100.00
+[2021.09.05-23.54.49:722][416]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2021.09.05-23.55.03:453][416]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.55.03:461][416]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.55.03:464][416]EditorErrors: New page: Save Output
+[2021.09.05-23.55.03:464][416]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.05-23.55.05:823][545]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.55.05:834][545]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.55.07:900][665]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2021.09.05-23.55.10:553][665]LogSlate: Window 'Message' being destroyed
+[2021.09.05-23.55.10:560][665]Message dialog closed, result: Yes, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.05-23.55.10:560][665]LogSavePackage: Warning: 
+Referencers of StaticMeshComponent /Script/UnrealTest.Default__FloatyCar:BackThruster.ThrusterMesh:
+[2021.09.05-23.55.10:608][665]LogSavePackage: Warning: 	Thruster /Script/UnrealTest.Default__FloatyCar:BackThruster (1 refs)
+[2021.09.05-23.55.10:608][665]LogSavePackage: Warning: 		0) ObjectProperty /Script/UnrealTest.Thruster:ThrusterMesh
+[2021.09.05-23.55.10:608][665]LogSavePackage: Warning: 	FloatyCar /Script/UnrealTest.Default__FloatyCar (2 refs)
+[2021.09.05-23.55.10:608][665]LogSavePackage: Warning: 
+Referencers of StaticMeshComponent /Script/UnrealTest.Default__FloatyCar:LeftThruster.ThrusterMesh:
+[2021.09.05-23.55.10:653][665]LogSavePackage: Warning: 	Thruster /Script/UnrealTest.Default__FloatyCar:LeftThruster (1 refs)
+[2021.09.05-23.55.10:653][665]LogSavePackage: Warning: 		0) ObjectProperty /Script/UnrealTest.Thruster:ThrusterMesh
+[2021.09.05-23.55.10:653][665]LogSavePackage: Warning: 	FloatyCar /Script/UnrealTest.Default__FloatyCar (2 refs)
+[2021.09.05-23.55.10:653][665]LogSavePackage: Warning: 
+Referencers of StaticMeshComponent /Script/UnrealTest.Default__FloatyCar:RightThruster.ThrusterMesh:
+[2021.09.05-23.55.10:700][665]LogSavePackage: Warning: 	Thruster /Script/UnrealTest.Default__FloatyCar:RightThruster (1 refs)
+[2021.09.05-23.55.10:700][665]LogSavePackage: Warning: 		0) ObjectProperty /Script/UnrealTest.Thruster:ThrusterMesh
+[2021.09.05-23.55.10:700][665]LogSavePackage: Warning: 	FloatyCar /Script/UnrealTest.Default__FloatyCar (2 refs)
+[2021.09.05-23.55.10:702][665]EditorErrors: New page: Save Output
+[2021.09.05-23.55.10:703][665]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object StaticMeshComponent /Script/UnrealTest.Default__FloatyCar:RightThruster.ThrusterMesh (ThrusterMesh)
+[2021.09.05-23.55.37:659][272]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.55.37:669][272]LogSlate: Window 'Message Log' being destroyed
+[2021.09.05-23.57.48:915][755]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2021.09.06-00.01.02:897][755]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.01.02:905][755]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.01.02:908][755]EditorErrors: New page: Save Output
+[2021.09.06-00.01.02:908][755]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.01.02:961][755]LogFileHelpers: Editor autosave (incl. sublevels) failed for file '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap' which belongs to world '/Game/FlyingCPP/Maps/FlyingExampleMap'. Aborting autosave.
+[2021.09.06-00.01.07:946][ 40]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.01.07:954][ 40]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.02.50:424][551]LogUObjectHash: Compacting FUObjectHashTables data took   0.35ms
+[2021.09.06-00.02.53:951][551]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.02.53:960][551]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.02.53:962][551]EditorErrors: New page: Save Output
+[2021.09.06-00.02.53:963][551]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.02.55:467][632]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.02.55:477][632]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.02.59:785][875]LogSlate: Window 'BackThrusterSpringArm - Property Editor' being destroyed
+[2021.09.06-00.03.14:494][732]LogSlate: Window 'FloatyCar_27 - Property Editor' being destroyed
+[2021.09.06-00.03.46:586][646]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2021.09.06-00.03.48:486][646]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.03.48:493][646]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.03.48:496][646]EditorErrors: New page: Save Output
+[2021.09.06-00.03.48:496][646]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.03.48:541][646]LogFileHelpers: Saving map 'FlyingExampleMap' took 1.962
+[2021.09.06-00.04.00:160][646]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.04.00:167][646]Message dialog closed, result: Continue, title: Message, text: The asset '/Game/FlyingCPP/Maps/FlyingExampleMap' (FlyingExampleMap.umap) failed to save.
+
+Cancel: Stop saving all assets and return to the editor.
+Retry: Attempt to save the asset again.
+Continue: Skip saving this asset only.
+[2021.09.06-00.04.02:199][646]LogSlate: Window 'Packages Failed To Save' being destroyed
+[2021.09.06-00.04.02:208][646]Message dialog closed, result: Ok, title: Packages Failed To Save, text: The following assets failed to save correctly:
+/Game/FlyingCPP/Maps/FlyingExampleMap
+[2021.09.06-00.04.04:335][774]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.04.04:341][774]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.07.14:561][208]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2021.09.06-00.08.04:409][208]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.08.04:416][208]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.08.04:419][208]EditorErrors: New page: Save Output
+[2021.09.06-00.08.04:419][208]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.08.06:241][306]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.08.06:248][306]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.11.03:404][987]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2021.09.06-00.16.25:007][987]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.16.25:016][987]Message dialog closed, result: Cancel, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.16.25:018][987]EditorErrors: New page: Save Output
+[2021.09.06-00.16.25:018][987]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.16.25:076][987]LogFileHelpers: Editor autosave (incl. sublevels) failed for file '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Autosaves/Game/FlyingCPP/Maps/FlyingExampleMap_Auto2.umap' which belongs to world '/Game/FlyingCPP/Maps/FlyingExampleMap'. Aborting autosave.
+[2021.09.06-00.16.26:669][ 63]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.16.26:679][ 63]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.16.29:625][224]Candidate modules for hot reload:
+[2021.09.06-00.16.29:625][224]  UnrealTest
+[2021.09.06-00.16.29:625][224]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,402 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-00.16.29:638][224]Warning: Starting HotReload took  0.0s.
+[2021.09.06-00.16.48:278][571]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 02:16:48
+[2021.09.06-00.16.48:278][571]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-00.16.48:279][571]CompilerResultsLog: Parsing headers for UnrealTestEditor
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\UnrealTest.uproject" "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UnrealTestEditor\Development\UnrealTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\layco\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.09.06-00.16.48:279][571]CompilerResultsLog: Reflection code generated for UnrealTestEditor in 6.9865736 seconds
+[2021.09.06-00.16.48:279][571]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-00.16.48:279][571]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-00.16.48:279][571]CompilerResultsLog: Building 8 actions with 8 processes...
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   [1/8] UnrealTest.init.gen.cpp
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   [2/8] Thruster.cpp
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   [3/8] FloatyCar.gen.cpp
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   [4/8] Thruster.gen.cpp
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   [5/8] FloatyCar.cpp
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   [6/8] UE4Editor-UnrealTest-0402.lib
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0402.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0402.exp
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   [7/8] UE4Editor-UnrealTest-0402.dll
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0402.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0402.suppressed.exp
+[2021.09.06-00.16.48:279][571]CompilerResultsLog:   [8/8] UnrealTestEditor.target
+[2021.09.06-00.16.48:279][571]CompilerResultsLog: Total time in Parallel executor: 10.06 seconds
+[2021.09.06-00.16.48:279][571]CompilerResultsLog: Total execution time: 18.40 seconds
+[2021.09.06-00.16.48:279][571]LogMainFrame: MainFrame: Module compiling took 18.664 seconds
+[2021.09.06-00.16.48:308][571]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0202 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-00.16.48:308][571]Display: HotReload took 18.7s.
+[2021.09.06-00.16.52:517][727]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2021.09.06-00.17.06:819][727]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.17.06:827][727]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.17.06:829][727]EditorErrors: New page: Save Output
+[2021.09.06-00.17.06:829][727]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.17.08:343][806]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.17.08:352][806]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.17.42:312][615]Cmd: DELETE
+[2021.09.06-00.17.42:313][615]Cmd: ACTOR DELETE
+[2021.09.06-00.17.42:317][615]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-00.17.42:334][615]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2021.09.06-00.17.42:336][615]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2021.09.06-00.17.43:692][695]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -800.00,-320.00,100.00
+[2021.09.06-00.17.44:228][726]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -360.00,440.00,100.00
+[2021.09.06-00.17.45:956][814]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2021.09.06-00.17.47:283][814]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.17.47:292][814]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.17.47:295][814]EditorErrors: New page: Save Output
+[2021.09.06-00.17.47:295][814]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.17.48:735][892]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.17.48:742][892]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.17.57:033][ 48]Candidate modules for hot reload:
+[2021.09.06-00.17.57:033][ 48]  UnrealTest
+[2021.09.06-00.17.57:033][ 48]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,273 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-00.17.57:040][ 48]Warning: Starting HotReload took  0.0s.
+[2021.09.06-00.18.10:277][615]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 02:18:10
+[2021.09.06-00.18.10:277][615]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-00.18.10:277][615]CompilerResultsLog: Parsing headers for UnrealTestEditor
+[2021.09.06-00.18.10:277][615]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\UnrealTest.uproject" "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UnrealTestEditor\Development\UnrealTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\layco\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.09.06-00.18.10:278][615]CompilerResultsLog: Reflection code generated for UnrealTestEditor in 6.6415052 seconds
+[2021.09.06-00.18.10:278][615]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-00.18.10:278][615]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-00.18.10:278][615]CompilerResultsLog: Building 6 actions with 8 processes...
+[2021.09.06-00.18.10:278][615]CompilerResultsLog:   [1/6] UnrealTest.init.gen.cpp
+[2021.09.06-00.18.10:278][615]CompilerResultsLog:   [2/6] FloatyCar.gen.cpp
+[2021.09.06-00.18.10:278][615]CompilerResultsLog:   [3/6] FloatyCar.cpp
+[2021.09.06-00.18.10:278][615]CompilerResultsLog:   [4/6] UE4Editor-UnrealTest-0273.lib
+[2021.09.06-00.18.10:278][615]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0273.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0273.exp
+[2021.09.06-00.18.10:278][615]CompilerResultsLog:   [5/6] UE4Editor-UnrealTest-0273.dll
+[2021.09.06-00.18.10:278][615]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0273.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0273.suppressed.exp
+[2021.09.06-00.18.10:278][615]CompilerResultsLog:   [6/6] UnrealTestEditor.target
+[2021.09.06-00.18.10:278][615]CompilerResultsLog: Total time in Parallel executor: 5.03 seconds
+[2021.09.06-00.18.10:278][615]CompilerResultsLog: Total execution time: 13.01 seconds
+[2021.09.06-00.18.10:278][615]LogMainFrame: MainFrame: Module compiling took 13.258 seconds
+[2021.09.06-00.18.10:302][615]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0170 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-00.18.10:302][615]Display: HotReload took 13.3s.
+[2021.09.06-00.18.15:192][854]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2021.09.06-00.18.16:681][854]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.18.16:689][854]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.18.16:691][854]EditorErrors: New page: Save Output
+[2021.09.06-00.18.16:691][854]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.18.17:949][923]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.18.17:956][923]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.18.20:709][ 88]Cmd: DELETE
+[2021.09.06-00.18.20:709][ 88]Cmd: ACTOR DELETE
+[2021.09.06-00.18.20:714][ 88]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-00.18.20:730][ 88]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+[2021.09.06-00.18.20:731][ 88]LogEditorActor: Deleted 1 Actors (0.022 secs)
+[2021.09.06-00.18.21:880][155]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -770.00,150.00,100.00
+[2021.09.06-00.18.22:195][173]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -410.00,590.00,100.00
+[2021.09.06-00.18.24:600][312]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2021.09.06-00.18.30:102][312]LogSlate: Window 'Message' being destroyed
+[2021.09.06-00.18.30:108][312]Message dialog closed, result: No, title: Message, text: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to private object(s) in an external package.
+External Object(s):
+ThrusterMesh
+ThrusterMesh
+ThrusterMesh
+  
+Try to find the chain of references to that object (may take some time)?
+[2021.09.06-00.18.30:111][312]EditorErrors: New page: Save Output
+[2021.09.06-00.18.30:111][312]EditorErrors: Warning: Can't save ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap: Graph is linked to external private object Unknown
+[2021.09.06-00.18.31:650][392]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.18.31:659][392]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-00.18.40:258][905]Cmd: DELETE
+[2021.09.06-00.18.40:258][905]Cmd: ACTOR DELETE
+[2021.09.06-00.18.40:263][905]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-00.18.40:281][905]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2021.09.06-00.18.40:284][905]LogEditorActor: Deleted 1 Actors (0.025 secs)
+[2021.09.06-00.19.15:176][234]Candidate modules for hot reload:
+[2021.09.06-00.19.15:176][234]  UnrealTest
+[2021.09.06-00.19.15:176][234]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,2062 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-00.19.15:184][234]Warning: Starting HotReload took  0.0s.
+[2021.09.06-00.19.25:234][819]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 02:19:25
+[2021.09.06-00.19.25:235][819]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-00.19.25:235][819]CompilerResultsLog: Parsing headers for UnrealTestEditor
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\UnrealTest.uproject" "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UnrealTestEditor\Development\UnrealTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\layco\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.09.06-00.19.25:235][819]CompilerResultsLog: Reflection code generated for UnrealTestEditor in 5.5432674 seconds
+[2021.09.06-00.19.25:235][819]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-00.19.25:235][819]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-00.19.25:235][819]CompilerResultsLog: Building 8 actions with 8 processes...
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:   [1/8] UnrealTest.init.gen.cpp
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:   [2/8] Thruster.cpp
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:   [3/8] FloatyCar.gen.cpp
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:   [4/8] Thruster.gen.cpp
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:   [5/8] FloatyCar.cpp
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:   [6/8] UE4Editor-UnrealTest-2062.lib
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2062.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2062.exp
+[2021.09.06-00.19.25:235][819]CompilerResultsLog:   [7/8] UE4Editor-UnrealTest-2062.dll
+[2021.09.06-00.19.25:236][819]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2062.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2062.suppressed.exp
+[2021.09.06-00.19.25:236][819]CompilerResultsLog:   [8/8] UnrealTestEditor.target
+[2021.09.06-00.19.25:236][819]CompilerResultsLog: Total time in Parallel executor: 3.16 seconds
+[2021.09.06-00.19.25:236][819]CompilerResultsLog: Total execution time: 9.85 seconds
+[2021.09.06-00.19.25:236][819]LogMainFrame: MainFrame: Module compiling took 10.069 seconds
+[2021.09.06-00.19.25:286][819]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.06-00.19.25:288][819]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.06-00.19.25:344][819]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0146 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-00.19.25:344][819]Display: HotReload took 10.2s.
+[2021.09.06-00.19.32:955][ 20]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2021.09.06-00.19.33:038][ 20]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMapDA52C2E44E6B9E8DE59AB59CFA385B57.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.06-00.19.33:755][ 20]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltData4A8285CF4C8FEAD1ECA5CBB5F97AAB9A.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.06-00.19.33:787][ 20]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.06-00.19.33:787][ 20]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.06-00.19.33:787][ 20]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.06-00.19.37:992][271]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -800.00,-330.00,100.00
+[2021.09.06-00.19.38:325][290]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -520.00,40.00,100.00
+[2021.09.06-00.19.39:948][380]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
+[2021.09.06-00.19.40:038][380]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap4FB4139E4952A2887C29F2A03A467CA8.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.06-00.19.40:767][380]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltData0CAA28954F82644AC4342FB2BFFE20D0.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.06-00.19.40:806][380]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.06-00.19.40:807][380]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.06-00.19.40:807][380]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.06-00.20.23:871][605]LogUObjectHash: Compacting FUObjectHashTables data took   0.35ms
+[2021.09.06-00.20.23:977][605]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMapE9E576F049769FC17A8FE7B9246753F9.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.06-00.20.24:806][605]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltData82A5C40843AC089202A3A38FBC2343F8.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.06-00.20.24:839][605]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.06-00.20.24:839][605]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.06-00.20.24:839][605]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.06-00.21.49:326][795]Candidate modules for hot reload:
+[2021.09.06-00.21.49:326][795]  UnrealTest
+[2021.09.06-00.21.49:327][795]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,367 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-00.21.49:335][795]Warning: Starting HotReload took  0.1s.
+[2021.09.06-00.22.00:618][311]CompilerResultsLog: New page: Compilation - 6 Sep 2021, 02:22:00
+[2021.09.06-00.22.00:622][311]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-00.22.00:622][311]CompilerResultsLog: Parsing headers for UnrealTestEditor
+[2021.09.06-00.22.00:622][311]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\UnrealTest.uproject" "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UnrealTestEditor\Development\UnrealTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\layco\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.09.06-00.22.00:622][311]CompilerResultsLog: Reflection code generated for UnrealTestEditor in 6.5341619 seconds
+[2021.09.06-00.22.00:622][311]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-00.22.00:622][311]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-00.22.00:622][311]CompilerResultsLog: Building 5 actions with 8 processes...
+[2021.09.06-00.22.00:622][311]CompilerResultsLog:   [1/5] FloatyCar.gen.cpp
+[2021.09.06-00.22.00:622][311]CompilerResultsLog:   [2/5] FloatyCar.cpp
+[2021.09.06-00.22.00:622][311]CompilerResultsLog:   [3/5] UE4Editor-UnrealTest-0367.lib
+[2021.09.06-00.22.00:622][311]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0367.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0367.exp
+[2021.09.06-00.22.00:622][311]CompilerResultsLog:   [4/5] UE4Editor-UnrealTest-0367.dll
+[2021.09.06-00.22.00:622][311]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0367.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0367.suppressed.exp
+[2021.09.06-00.22.00:622][311]CompilerResultsLog:   [5/5] UnrealTestEditor.target
+[2021.09.06-00.22.00:622][311]CompilerResultsLog: Total time in Parallel executor: 3.35 seconds
+[2021.09.06-00.22.00:622][311]CompilerResultsLog: Total execution time: 11.05 seconds
+[2021.09.06-00.22.00:622][311]LogMainFrame: MainFrame: Module compiling took 11.306 seconds
+[2021.09.06-00.22.00:642][311]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0146 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-00.22.00:642][311]Display: HotReload took 11.4s.

@@ -24,6 +24,7 @@ UThruster::UThruster()
 	ThrusterMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ThrusterMesh"));
 	ThrusterMesh->SetupAttachment(this);
 	ThrusterMesh->SetStaticMesh(ConstructorStatics.ThrusterMesh.Get());
+	ThrusterMesh->SetRelativeScale3D(FVector(0.25f, 0.25f, 0.25f));
 
 
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
