@@ -16,9 +16,17 @@ class UNREALTEST_API UThruster : public USceneComponent
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* ThrusterMesh;
 
+
+	/** Testing this out, can I attach a physics constraint to connect the Thruster mesh to the spring arm? (bcuz applying physics breaks the attachment currently) */
+	UPROPERTY(Category = Constraint, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UPhysicsConstraintComponent* PhysicsConstraint;
+
 public:	
 	// Sets default values for this component's properties
 	UThruster();
+
+	// 
+	void SetupPhysicsConstraint(AActor* ParentActor, FString ThrusterName, FString MeshName);
 
 protected:
 	// Called when the game starts
@@ -28,5 +36,4 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-		
 };

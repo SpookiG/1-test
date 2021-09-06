@@ -44,6 +44,7 @@ AFloatyCar::AFloatyCar()
 	BackThrusterSpringArm->SetupAttachment(RootComponent);
 	BackThruster = CreateDefaultSubobject<UThruster>(TEXT("BackThruster"));
 	BackThruster->SetupAttachment(BackThrusterSpringArm);
+	BackThruster->SetupPhysicsConstraint(this, "BackThruster", "BackThrusterMesh");
 
 	LeftThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("LeftThrusterSpringArm"));
 	LeftThrusterSpringArm->SetupAttachment(RootComponent);
@@ -53,6 +54,7 @@ AFloatyCar::AFloatyCar()
 	LeftThrusterSpringArm->ProbeSize = 3.f;
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
 	LeftThruster->SetupAttachment(LeftThrusterSpringArm);
+	LeftThruster->SetupPhysicsConstraint(this, "LeftThruster", "LeftThrusterMesh");
 
 	RightThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("RightThrusterSpringArm"));
 	RightThrusterSpringArm->SetupAttachment(RootComponent);
@@ -62,6 +64,7 @@ AFloatyCar::AFloatyCar()
 	RightThrusterSpringArm->ProbeSize = 3.f;
 	RightThruster = CreateDefaultSubobject<UThruster>(TEXT("RightThruster"));
 	RightThruster->SetupAttachment(RightThrusterSpringArm);
+	RightThruster->SetupPhysicsConstraint(this, "RightThruster", "RightThrusterMesh");
 
 	// set up camera
 	CamSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraSpringArm"));
