@@ -67,31 +67,21 @@ AFloatyCar::AFloatyCar()
 	
 
 	// set up thrusters
-	BackThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("BackThrusterSpringArm"));
-	BackThrusterSpringArm->SetupAttachment(RootComponent);
 	BackThruster = CreateDefaultSubobject<UThruster>(TEXT("BackThruster"));
-	BackThruster->SetupAttachment(BackThrusterSpringArm);
+	BackThruster->SetupAttachment(RootComponent);
 	BackThruster->SetupPhysicsConstraint(this);
 
-	LeftThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("LeftThrusterSpringArm"));
-	LeftThrusterSpringArm->SetupAttachment(RootComponent);
-	LeftThrusterSpringArm->SetRelativeLocation(FVector(260.f, 0.f, -12.5f));
-	LeftThrusterSpringArm->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
-	LeftThrusterSpringArm->TargetArmLength = 47.f;
-	LeftThrusterSpringArm->ProbeSize = 3.f;
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
-	LeftThruster->SetupAttachment(LeftThrusterSpringArm);
+	LeftThruster->SetupAttachment(RootComponent);
 	LeftThruster->SetupPhysicsConstraint(this);
+	LeftThruster->SetRelativeLocation(FVector(260.f, -30.f, -12.5f));
+	LeftThruster->SetRelativeRotation(FRotator(0.f, 90.f, 0.01f));
 
-	RightThrusterSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("RightThrusterSpringArm"));
-	RightThrusterSpringArm->SetupAttachment(RootComponent);
-	RightThrusterSpringArm->SetRelativeLocation(FVector(260.f, 0.f, -12.5f));
-	RightThrusterSpringArm->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
-	RightThrusterSpringArm->TargetArmLength = 47.f;
-	RightThrusterSpringArm->ProbeSize = 3.f;
 	RightThruster = CreateDefaultSubobject<UThruster>(TEXT("RightThruster"));
-	RightThruster->SetupAttachment(RightThrusterSpringArm);
+	RightThruster->SetupAttachment(RootComponent);
 	RightThruster->SetupPhysicsConstraint(this);
+	RightThruster->SetRelativeLocation(FVector(260.f, 30.f, -12.5f));
+	RightThruster->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
 
 	// set up camera
 	CamSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraSpringArm"));
@@ -105,8 +95,6 @@ AFloatyCar::AFloatyCar()
 
 
 
-	//AUnrealTestPawn* newBS = GetWorld()->SpawnActor<AUnrealTestPawn>(AUnrealTestPawn::StaticClass(), GetTransform());
-	//newBS->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
 
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;

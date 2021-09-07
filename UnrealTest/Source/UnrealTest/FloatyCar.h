@@ -23,14 +23,6 @@ class UNREALTEST_API AFloatyCar : public APawn
 	UPROPERTY(Category = Constraint, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UPhysicsConstraintComponent* PhysicsConstraint;
 
-	/** I think I need 3 springarms for the 3 thrusters */
-	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* BackThrusterSpringArm;
-	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* LeftThrusterSpringArm;
-	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* RightThrusterSpringArm;
-
 	/** The 3 thrusters, I want these to function independantly so they're gonna be a custom C++ pawn component */
 	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UThruster* BackThruster;
