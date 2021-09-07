@@ -13,24 +13,36 @@ UThruster::UThruster()
 	// Structure to hold one-time initialization
 	struct FConstructorStatics
 	{
+		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> ThrusterNonPhysicsMesh;
 		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> ThrusterPhysicsMesh;
-		FConstructorStatics()
-			: ThrusterPhysicsMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cube"))
+
+		FConstructorStatics() :
+			ThrusterNonPhysicsMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cube")),
+			ThrusterPhysicsMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cube"))
 		{
 		}
 	};
 	static FConstructorStatics ConstructorStatics;
 
-	// Create thruster mesh with custom name
-	ThrusterPhysicsMesh = CreateDefaultSubobject<UStaticMeshComponent>(*(GetName().Append("Mesh")));
-	ThrusterPhysicsMesh->SetupAttachment(this);
+	// Setup the non physics mesh w/ custom name
+	ThrusterNonPhysicsMesh = CreateDefaultSubobject<UStaticMeshComponent>(*(GetName().Append("NonPhysicsMesh")));
+	ThrusterNonPhysicsMesh->SetupAttachment(this);
+	ThrusterNonPhysicsMesh->SetStaticMesh(ConstructorStatics.ThrusterNonPhysicsMesh.Get());
+	ThrusterNonPhysicsMesh->SetVisibility(false);
+	//ThrusterNonPhysicsMesh->SetSimulatePhysics(false);
+	ThrusterNonPhysicsMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	ThrusterNonPhysicsMesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+	
+
+	// Create thruster physics mesh with custom name
+	ThrusterPhysicsMesh = CreateDefaultSubobject<UStaticMeshComponent>(*(GetName().Append("PhysicsMesh")));
+	ThrusterPhysicsMesh->SetupAttachment(ThrusterNonPhysicsMesh);
+	ThrusterPhysicsMesh->SetStaticMesh(ConstructorStatics.ThrusterPhysicsMesh.Get());
 	ThrusterPhysicsMesh->SetSimulatePhysics(true);
 	// ThrusterPhysicsMesh->SetEnableGravity(false);											keep??
 	ThrusterPhysicsMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	ThrusterPhysicsMesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-
-
-	ThrusterPhysicsMesh->SetStaticMesh(ConstructorStatics.ThrusterPhysicsMesh.Get());
+	
 	ThrusterPhysicsMesh->SetRelativeScale3D(FVector(0.25f, 0.25f, 0.25f));
 
 
@@ -62,11 +74,11 @@ UThruster::UThruster()
 void UThruster::SetupPhysicsConstraint(AActor* ParentActor)
 {
 	PhysicsConstraint->ConstraintActor1 = ParentActor;
-	PhysicsConstraint->ComponentName1.ComponentName = *GetName();
+	PhysicsConstraint->ComponentName1.ComponentName = *GetName().Append("NonPhysicsMesh");
 	PhysicsConstraint->ConstraintActor2 = ParentActor;
-	PhysicsConstraint->ComponentName2.ComponentName = *(GetName().Append("Mesh"));
+	PhysicsConstraint->ComponentName2.ComponentName = *GetName().Append("PhysicsMesh");
 
-	
+	debug = true;
 
 	
 }
@@ -76,6 +88,11 @@ void UThruster::SetupPhysicsConstraint(AActor* ParentActor)
 void UThruster::BeginPlay()
 {
 	Super::BeginPlay();
+
+	
+
+	//ThrusterPhysicsMesh->SetupAttachment(ThrusterNonPhysicsMesh);
+	//ThrusterPhysicsMesh->SetWorldLocation(ThrusterNonPhysicsMesh->GetComponentTransform().GetLocation());
 
 	// ...
 	
@@ -87,6 +104,13 @@ void UThruster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	if (debug) {
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *ThrusterNonPhysicsMesh->GetComponentTransform().GetLocation().ToString());
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("%s"), *ThrusterNonPhysicsMesh->GetComponentTransform().GetLocation().ToString()));
+		ThrusterPhysicsMesh->SetRelativeLocation(ThrusterNonPhysicsMesh->GetComponentTransform().GetLocation());
+
+		debug = false;
+	}
 	//ThrusterMesh->AddForce(FVector(50.f, 50.f, 50.f));
 
 	// ...

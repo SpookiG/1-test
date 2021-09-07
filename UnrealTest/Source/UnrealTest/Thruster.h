@@ -13,8 +13,8 @@ class UNREALTEST_API UThruster : public USceneComponent
 	GENERATED_BODY()
 
 	/** Thruster needs a non physics mesh to attach to itself w/ a physics constraint because I need physics to apply forces but physics makes it not attached to the main body */
-	//UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	//class UStaticMeshComponent* ThrusterNonPhysicsMesh;
+	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UStaticMeshComponent* ThrusterNonPhysicsMesh;
 
 	/** Thruster has a body */
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -38,5 +38,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+
+private:
+	bool debug;
 
 };

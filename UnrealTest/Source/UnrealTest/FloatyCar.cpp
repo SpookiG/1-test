@@ -2,6 +2,7 @@
 
 
 #include "FloatyCar.h"
+#include "UnrealTestPawn.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
@@ -98,6 +99,14 @@ AFloatyCar::AFloatyCar()
 
 	Cam = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Cam->SetupAttachment(CamSpringArm);
+
+
+
+
+
+
+	//AUnrealTestPawn* newBS = GetWorld()->SpawnActor<AUnrealTestPawn>(AUnrealTestPawn::StaticClass(), GetTransform());
+	//newBS->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
 
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
