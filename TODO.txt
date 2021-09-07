@@ -22,13 +22,6 @@ Essential tasks:
 		- create some roadways
 
 	- car
-		- didn't take into account actually building the car from components (this requires planning whilst I learn because it's all done programatically in C++)
-			- body (scene component container)
-				-spring connectors
-					-3 boxes also on the body (but not on the cone) these need control scripts (not on the body because of the way these work)
-			
-		- create/use a car shaped mesh thingy
-
 		- code up a hover mechanic (flying car)
 			- trigger a certain distance above the ground (from multiple points)
 			- apply force to those points depending on how close to the ground
@@ -71,3 +64,6 @@ Done!!!
 	- flattened cone main body
 	- spring connector for camera
 	- camera
+	- physics connectors for thrusters
+	- 3 thruster boxes
+	- created a car shaped mesh thingy!!

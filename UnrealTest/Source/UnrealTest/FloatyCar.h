@@ -11,9 +11,9 @@ class UNREALTEST_API AFloatyCar : public APawn
 {
 	GENERATED_BODY()
 
-	/** Wrapper to contain the car & stuff because the mesh used for the body is going to be distorted */
+	/** Wrapper to contain the car & stuff because the mesh used for the body is going to be distorted so using that could distort space for the thrusters */
 	UPROPERTY(Category = Wrapper, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class UStaticMeshComponent* CarWrapper;		// this is a static mesh because unreal only likes physics stuff on physics specific objects, the actual mesh is gonna be empty this is just a wrapper
+	class UStaticMeshComponent* CarWrapper;		// this is a static mesh because unreal only likes physics stuff on physics specific objects, the actual mesh is gonna be invisible this is just a wrapper
 
 	/** Body mesh */
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -44,11 +44,6 @@ public:
 	// Sets default values for this pawn's properties
 	AFloatyCar();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -57,4 +52,9 @@ public:
 
 
 	// 
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
 };

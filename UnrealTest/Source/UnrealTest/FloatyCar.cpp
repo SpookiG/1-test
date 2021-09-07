@@ -39,10 +39,8 @@ AFloatyCar::AFloatyCar()
 	CarWrapper->SetSimulatePhysics(true);
 	CarWrapper->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	CarWrapper->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);	// collision enabled to allow physics but we're ignoring all collisions lol, what a mess
-
 	RootComponent = CarWrapper;
 	
-
 	// set up car body
 	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarBody"));
 	CarMesh->SetupAttachment(RootComponent);
@@ -64,8 +62,6 @@ AFloatyCar::AFloatyCar()
 	PhysicsConstraint->SetAngularTwistLimit(EAngularConstraintMotion::ACM_Locked, 0.f);
 	PhysicsConstraint->SetDisableCollision(true);
 
-	
-
 	// set up thrusters
 	BackThruster = CreateDefaultSubobject<UThruster>(TEXT("BackThruster"));
 	BackThruster->SetupAttachment(RootComponent);
@@ -76,13 +72,13 @@ AFloatyCar::AFloatyCar()
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
 	LeftThruster->SetupAttachment(RootComponent);
 	LeftThruster->SetupPhysicsConstraint(this);
-	LeftThruster->SetRelativeLocation(FVector(260.f, -30.f, -12.5f));
+	LeftThruster->SetRelativeLocation(FVector(260.f, -100.f, -12.5f));
 	LeftThruster->SetRelativeRotation(FRotator(0.f, -90.f, 0.01f));
 
 	RightThruster = CreateDefaultSubobject<UThruster>(TEXT("RightThruster"));
 	RightThruster->SetupAttachment(RootComponent);
 	RightThruster->SetupPhysicsConstraint(this);
-	RightThruster->SetRelativeLocation(FVector(260.f, 30.f, -12.5f));
+	RightThruster->SetRelativeLocation(FVector(260.f, 100.f, -12.5f));
 	RightThruster->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
 
 	// set up camera

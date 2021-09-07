@@ -25,19 +25,23 @@ public:
 	// Sets default values for this component's properties
 	UThruster();
 
-	// 
-	void SetupPhysicsConstraint(AActor* ParentActor);
+	// have to use this to connect the thruster to the main body
+	void SetupPhysicsConstraint(AActor* Parent);
+
+	// Called every frame
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+public:
+	// On/Off switch for the thruster (Was going to be a function but all I'm doing is setting a bool)
+	bool SwitchedOn;
 
 private:
 	bool debug;
+	AActor* parentActor;
 
 };

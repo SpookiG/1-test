@@ -5,6 +5,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "PhysicsEngine/PhysicsConstraintComponent.h"
 #include "Engine/StaticMesh.h"
+#include "DrawDebugHelpers.h"
 
 // Sets default values for this component's properties
 UThruster::UThruster()
@@ -43,13 +44,6 @@ UThruster::UThruster()
 	PhysicsConstraint->SetLinearYLimit(ELinearConstraintMotion::LCM_Limited, 3.f);
 	PhysicsConstraint->SetLinearZLimit(ELinearConstraintMotion::LCM_Limited, 3.f);
 	PhysicsConstraint->SetDisableCollision(true);
-	
-
-	
-
-	
-	//PhysicsConstraint->ConstraintActor1 = this;
-	//PhysicsConstraint->ComponentName1
 
 
 
@@ -61,17 +55,18 @@ UThruster::UThruster()
 }
 
 
-void UThruster::SetupPhysicsConstraint(AActor* ParentActor)
+void UThruster::SetupPhysicsConstraint(AActor* Parent)
 {
-	PhysicsConstraint->ConstraintActor1 = ParentActor;
+	parentActor = Parent;
+
+	PhysicsConstraint->ConstraintActor1 = parentActor;
 	//PhysicsConstraint->ComponentName1.ComponentName = *GetName();					If I don't give a name I think it attatches to the root mesh, which is what I want
-	PhysicsConstraint->ConstraintActor2 = ParentActor;
+	PhysicsConstraint->ConstraintActor2 = parentActor;
 	PhysicsConstraint->ComponentName2.ComponentName = *GetName().Append("PhysicsMesh");
 
 	debug = true;
-
-	
 }
+
 
 
 // Called when the game starts
@@ -94,13 +89,53 @@ void UThruster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	if (debug) {
-		//UE_LOG(LogTemp, Warning, TEXT("%s"), *ThrusterNonPhysicsMesh->GetComponentTransform().GetLocation().ToString());
-		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("%s"), *ThrusterNonPhysicsMesh->GetComponentTransform().GetLocation().ToString()));
-		//ThrusterMesh->SetRelativeLocation(ThrusterNonPhysicsMesh->GetComponentTransform().GetLocation());
+	check(GetWorld());
+	check(parentActor);
 
-		debug = false;
+
+	float targetDistFromGround = .5f;
+
+	FHitResult hit(ForceInit);
+	FVector start = GetComponentLocation();
+	FVector end = start - (100.f * GetUpVector());
+	DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .5f);
+
+	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, parentActor);
+	RV_TraceParams.bTraceComplex = true;
+	RV_TraceParams.bReturnPhysicalMaterial = false;
+
+	GetWorld()->LineTraceSingleByChannel(hit, start, end, ECC_Visibility, RV_TraceParams);
+
+	if (hit.bBlockingHit) {
+		float distToGround = (hit.Distance / 100.f);
+		FVector normVel = ThrusterMesh->GetPhysicsLinearVelocity();
+		normVel.Normalize();
+
+		if (distToGround > targetDistFromGround) {
+			ThrusterMesh->SetPhysicsLinearVelocity(ThrusterMesh->GetPhysicsLinearVelocity() * 0.f);
+			//ThrusterMesh->AddForce(GetUpVector() * 50000 * powf(distToGround, 2.f) * -1.f);
+		}
+		else if (distToGround < targetDistFromGround) {
+			ThrusterMesh->AddForce(GetUpVector() * 120000 * powf(1.f - (distToGround), 2.f));
+		}
+
+		ThrusterMesh->SetPhysicsLinearVelocity(ThrusterMesh->GetPhysicsLinearVelocity() * 0.f);
+
+		//if ((normVel - GetUpVector()).IsNearlyZero()) {
+		//	
+		//}
+		//else {
+			//ThrusterMesh->AddForce(GetUpVector() * 100000);
+		//}
+
+		//ComponentVelocity = ComponentVelocity.GetClampedToSize(0,5);
 	}
+
+
+	// I want to raycast up and down to apply a hovering force (even when the car is flipped)
+	// I want to check if the car is flipped and reverse the left and right thrusters if so (This is something for the charactercontroller)
+	// If thrust is on I want to apply the thrust from the thruster (using forward vector if there is one)
+
 	//ThrusterMesh->AddForce(FVector(50.f, 50.f, 50.f));
 
 	// ...
