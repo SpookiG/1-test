@@ -20,9 +20,12 @@ AFloatyCar::AFloatyCar()
 	// Structure to hold one-time initialization
 	struct FConstructorStatics
 	{
+		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> WrapperMesh;
 		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> CarMesh;
-		FConstructorStatics()
-			: CarMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone"))
+
+		FConstructorStatics() :
+			WrapperMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone")),
+			CarMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone"))
 		{
 		}
 	};
@@ -30,12 +33,21 @@ AFloatyCar::AFloatyCar()
 
 	// Create car wrapper component
 	CarWrapper = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarWrapper"));
+	CarWrapper->SetStaticMesh(ConstructorStatics.WrapperMesh.Get());					// not using this mesh but physics can't be enabled without a mesh
+	CarWrapper->SetVisibility(false);
+	CarWrapper->SetSimulatePhysics(true);
+	CarWrapper->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	CarWrapper->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);	// collision enabled to allow physics but we're ignoring all collisions lol, what a mess
+
 	RootComponent = CarWrapper;
+	
 
 	// set up car body
 	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarBody"));
 	CarMesh->SetupAttachment(RootComponent);
 	CarMesh->SetStaticMesh(ConstructorStatics.CarMesh.Get());	// Set static mesh
+	CarMesh->SetSimulatePhysics(true);
+	CarMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f));
 	CarMesh->SetRelativeScale3D(FVector(0.25f, 1.f, 2.7f));
 
@@ -43,9 +55,13 @@ AFloatyCar::AFloatyCar()
 	PhysicsConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(TEXT("BodyConstraint"));
 	PhysicsConstraint->SetupAttachment(RootComponent);
 	PhysicsConstraint->ConstraintActor1 = this;
-	PhysicsConstraint->ComponentName1.ComponentName = TEXT("CarBody");
+	PhysicsConstraint->ComponentName1.ComponentName = TEXT("CarWrapper");
 	PhysicsConstraint->ConstraintActor2 = this;
-	PhysicsConstraint->ComponentName2.ComponentName = TEXT("CarWrapper");
+	PhysicsConstraint->ComponentName2.ComponentName = TEXT("CarBody");
+	PhysicsConstraint->SetAngularSwing1Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
+	PhysicsConstraint->SetAngularSwing2Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
+	PhysicsConstraint->SetAngularTwistLimit(EAngularConstraintMotion::ACM_Locked, 0.f);
+	PhysicsConstraint->SetDisableCollision(true);
 
 	
 

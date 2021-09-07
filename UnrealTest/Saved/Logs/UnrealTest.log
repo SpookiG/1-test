@@ -1879,3 +1879,1094 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.09.06-21.04.05:946][729]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2021.09.06-21.04.05:949][729]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
 [2021.09.06-21.04.05:998][730]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2021.09.06-22.44.41:481][769]LogUObjectHash: Compacting FUObjectHashTables data took   5.04ms
+[2021.09.06-22.44.41:592][769]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap2BA35E1742D2B171FE1A2F9832275817.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.06-22.44.42:404][769]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltData4920C4804EE3EAABBD0809881B26B37A.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.06-22.44.42:431][769]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.06-22.44.42:431][769]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.06-22.44.42:431][769]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.06-22.54.07:565][709]Candidate modules for hot reload:
+[2021.09.06-22.54.07:565][709]  UnrealTest
+[2021.09.06-22.54.07:566][709]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,4072 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-22.54.07:580][709]Warning: Starting HotReload took  0.0s.
+[2021.09.06-22.54.29:274][328]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 00:54:29
+[2021.09.06-22.54.29:274][328]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-22.54.29:274][328]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-22.54.29:274][328]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-22.54.29:274][328]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-22.54.29:274][328]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-22.54.29:274][328]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-4072.lib
+[2021.09.06-22.54.29:275][328]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4072.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4072.exp
+[2021.09.06-22.54.29:275][328]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-4072.dll
+[2021.09.06-22.54.29:275][328]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4072.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-4072.suppressed.exp
+[2021.09.06-22.54.29:275][328]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.06-22.54.29:275][328]CompilerResultsLog: Total time in Parallel executor: 20.02 seconds
+[2021.09.06-22.54.29:275][328]CompilerResultsLog: Total execution time: 21.27 seconds
+[2021.09.06-22.54.29:275][328]LogMainFrame: MainFrame: Module compiling took 21.719 seconds
+[2021.09.06-22.54.29:348][328]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.06-22.54.29:402][328]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2021.09.06-22.54.29:404][328]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.06-22.54.29:555][328]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0312 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-22.54.29:555][328]Display: HotReload took 22.0s.
+[2021.09.06-22.54.29:931][329]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_2.BodyConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-22.54.29:931][329]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_2.RightThruster.RightThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-22.54.29:932][329]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_2.LeftThruster.LeftThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-22.54.29:932][329]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_2.BackThruster.BackThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-22.54.42:298][888]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1390.00,-560.00,100.00
+[2021.09.06-22.54.44:976][ 39]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1070.00,-410.00,100.00
+[2021.09.06-22.54.52:583][454]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-22.54.52:598][454]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-22.54.52:598][454]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 00:54:52)
+[2021.09.06-22.54.52:598][454]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-22.54.52:634][454]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035123s)
+[2021.09.06-22.54.52:637][454]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-22.54.52:638][454]LogPlayLevel: PIE: World Init took: (0.003881s)
+[2021.09.06-22.54.52:638][454]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.040174s)
+[2021.09.06-22.54.52:655][454]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2021.09.06-22.54.52:665][454]LogAudio: Display: Creating Audio Device:                 Id: 18, Scope: Unique, Realtime: True
+[2021.09.06-22.54.52:665][454]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-22.54.52:666][454]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-22.54.52:666][454]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-22.54.52:666][454]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-22.54.52:666][454]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-22.54.52:666][454]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-22.54.52:666][454]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-22.54.52:666][454]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-22.54.52:666][454]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-22.54.52:666][454]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-22.54.52:672][454]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-22.54.52:672][454]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-22.54.52:672][454]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-22.54.52:672][454]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-22.54.52:673][454]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-22.54.52:673][454]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-22.54.52:673][454]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-22.54.52:673][454]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-22.54.52:744][454]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-22.54.52:745][454]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-22.54.52:745][454]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-22.54.52:745][454]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-22.54.52:747][454]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-22.54.52:747][454]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-22.54.52:747][454]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-22.54.52:781][454]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-22.54.52:781][454]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-22.54.52:781][454]LogInit: FAudioDevice initialized.
+[2021.09.06-22.54.52:781][454]LogAudio: Display: Audio Device (ID: 18) registered with world 'FlyingExampleMap'.
+[2021.09.06-22.54.52:803][454]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-22.54.52:816][454]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.06-23.54.52
+[2021.09.06-22.54.52:817][454]LogWorld: Bringing up level for play took: 0.012645
+[2021.09.06-22.54.52:817][454]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2021.09.06-22.54.52:822][454]PIE: Server logged in
+[2021.09.06-22.54.52:823][454]PIE: Play in editor total start time 0.232 seconds.
+[2021.09.06-22.54.58:013][754]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-22.54.58:013][754]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-22.54.58:013][754]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-22.54.58:015][754]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-22.54.58:026][754]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-22.54.58:039][754]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-22.54.58:045][754]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-22.54.58:046][754]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-22.54.58:047][754]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-22.54.58:081][754]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-22.54.58:085][754]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2021.09.06-22.54.58:148][755]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2021.09.06-22.55.15:604][761]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-22.55.15:616][761]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-22.55.15:616][761]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 00:55:15)
+[2021.09.06-22.55.15:616][761]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-22.55.15:646][761]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029636s)
+[2021.09.06-22.55.15:649][761]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-22.55.15:649][761]LogPlayLevel: PIE: World Init took: (0.002829s)
+[2021.09.06-22.55.15:650][761]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.033232s)
+[2021.09.06-22.55.15:656][761]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2021.09.06-22.55.15:666][761]LogAudio: Display: Creating Audio Device:                 Id: 19, Scope: Unique, Realtime: True
+[2021.09.06-22.55.15:666][761]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-22.55.15:666][761]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-22.55.15:666][761]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-22.55.15:666][761]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-22.55.15:666][761]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-22.55.15:666][761]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-22.55.15:666][761]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-22.55.15:666][761]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-22.55.15:667][761]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-22.55.15:667][761]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-22.55.15:671][761]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-22.55.15:671][761]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-22.55.15:671][761]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-22.55.15:671][761]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-22.55.15:671][761]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-22.55.15:671][761]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-22.55.15:671][761]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-22.55.15:671][761]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-22.55.15:722][761]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-22.55.15:722][761]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-22.55.15:722][761]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-22.55.15:722][761]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-22.55.15:723][761]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-22.55.15:723][761]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-22.55.15:724][761]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-22.55.15:750][761]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-22.55.15:750][761]LogInit: FAudioDevice initialized.
+[2021.09.06-22.55.15:750][761]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-22.55.15:750][761]LogAudio: Display: Audio Device (ID: 19) registered with world 'FlyingExampleMap'.
+[2021.09.06-22.55.15:761][761]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-22.55.15:769][761]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.06-23.55.15
+[2021.09.06-22.55.15:770][761]LogWorld: Bringing up level for play took: 0.007751
+[2021.09.06-22.55.15:770][761]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2021.09.06-22.55.15:773][761]PIE: Server logged in
+[2021.09.06-22.55.15:774][761]PIE: Play in editor total start time 0.162 seconds.
+[2021.09.06-22.55.21:281][ 86]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-22.55.21:282][ 86]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-22.55.21:282][ 86]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-22.55.21:283][ 86]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-22.55.21:296][ 86]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-22.55.21:309][ 86]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-22.55.21:315][ 86]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-22.55.21:315][ 86]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-22.55.21:316][ 86]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-22.55.21:358][ 86]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-22.55.21:361][ 86]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2021.09.06-22.55.21:424][ 87]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2021.09.06-22.56.31:571][911]Cmd: DELETE
+[2021.09.06-22.56.31:571][911]Cmd: ACTOR DELETE
+[2021.09.06-22.56.33:370][ 12]Cmd: DELETE
+[2021.09.06-22.56.33:370][ 12]Cmd: ACTOR DELETE
+[2021.09.06-22.56.35:531][135]Cmd: DELETE
+[2021.09.06-22.56.35:531][135]Cmd: ACTOR DELETE
+[2021.09.06-22.56.35:536][135]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-22.56.35:564][135]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.09.06-22.56.35:567][135]LogEditorActor: Deleted 1 Actors (0.036 secs)
+[2021.09.06-22.57.01:146][441]Candidate modules for hot reload:
+[2021.09.06-22.57.01:146][441]  UnrealTest
+[2021.09.06-22.57.01:146][441]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,826 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-22.57.01:154][441]Warning: Starting HotReload took  0.0s.
+[2021.09.06-22.57.04:874][631]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 00:57:04
+[2021.09.06-22.57.04:874][631]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-22.57.04:874][631]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-22.57.04:874][631]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-22.57.04:874][631]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-22.57.04:874][631]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-22.57.04:874][631]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-0826.lib
+[2021.09.06-22.57.04:874][631]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0826.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0826.exp
+[2021.09.06-22.57.04:874][631]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-0826.dll
+[2021.09.06-22.57.04:874][631]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0826.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0826.suppressed.exp
+[2021.09.06-22.57.04:874][631]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.06-22.57.04:874][631]CompilerResultsLog: Total time in Parallel executor: 2.49 seconds
+[2021.09.06-22.57.04:874][631]CompilerResultsLog: Total execution time: 3.57 seconds
+[2021.09.06-22.57.04:874][631]LogMainFrame: MainFrame: Module compiling took 3.738 seconds
+[2021.09.06-22.57.04:899][631]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0177 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-22.57.04:899][631]Display: HotReload took  3.8s.
+[2021.09.06-22.57.06:691][709]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1240.00,-450.00,100.00
+[2021.09.06-22.57.07:682][766]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1030.00,-400.00,100.00
+[2021.09.06-22.57.22:446][529]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-22.57.22:457][529]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-22.57.22:457][529]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 00:57:22)
+[2021.09.06-22.57.22:457][529]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-22.57.22:482][529]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025260s)
+[2021.09.06-22.57.22:484][529]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-22.57.22:484][529]LogPlayLevel: PIE: World Init took: (0.001931s)
+[2021.09.06-22.57.22:484][529]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.027477s)
+[2021.09.06-22.57.22:500][529]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2021.09.06-22.57.22:505][529]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2021.09.06-22.57.22:505][529]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-22.57.22:505][529]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-22.57.22:505][529]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-22.57.22:505][529]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-22.57.22:505][529]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-22.57.22:505][529]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-22.57.22:505][529]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-22.57.22:506][529]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-22.57.22:506][529]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-22.57.22:506][529]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-22.57.22:510][529]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-22.57.22:510][529]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-22.57.22:510][529]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-22.57.22:510][529]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-22.57.22:510][529]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-22.57.22:510][529]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-22.57.22:510][529]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-22.57.22:510][529]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-22.57.22:562][529]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-22.57.22:562][529]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-22.57.22:563][529]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-22.57.22:563][529]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-22.57.22:564][529]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-22.57.22:564][529]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-22.57.22:564][529]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-22.57.22:590][529]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-22.57.22:590][529]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-22.57.22:590][529]LogInit: FAudioDevice initialized.
+[2021.09.06-22.57.22:590][529]LogAudio: Display: Audio Device (ID: 20) registered with world 'FlyingExampleMap'.
+[2021.09.06-22.57.22:603][529]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-22.57.22:612][529]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.06-23.57.22
+[2021.09.06-22.57.22:613][529]LogWorld: Bringing up level for play took: 0.009429
+[2021.09.06-22.57.22:613][529]LogOnline: OSS: Creating online subsystem instance for: :Context_23
+[2021.09.06-22.57.22:616][529]PIE: Server logged in
+[2021.09.06-22.57.22:618][529]PIE: Play in editor total start time 0.164 seconds.
+[2021.09.06-22.57.36:741][366]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-22.57.36:741][366]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-22.57.36:741][366]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-22.57.36:743][366]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-22.57.36:753][366]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-22.57.36:766][366]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-22.57.36:771][366]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-22.57.36:771][366]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-22.57.36:772][366]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-22.57.36:829][366]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-22.57.36:832][366]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2021.09.06-22.57.36:895][367]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2021.09.06-22.58.10:766][506]Cmd: DELETE
+[2021.09.06-22.58.10:767][506]Cmd: ACTOR DELETE
+[2021.09.06-22.58.13:372][652]Cmd: DELETE
+[2021.09.06-22.58.13:372][652]Cmd: ACTOR DELETE
+[2021.09.06-22.58.13:379][652]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-22.58.13:402][652]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2021.09.06-22.58.13:405][652]LogEditorActor: Deleted 1 Actors (0.033 secs)
+[2021.09.06-22.58.14:811][734]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1140.00,-490.00,100.00
+[2021.09.06-22.58.15:961][802]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1030.00,-410.00,100.00
+[2021.09.06-22.58.46:560][407]Cmd: DELETE
+[2021.09.06-22.58.46:560][407]Cmd: ACTOR DELETE
+[2021.09.06-22.58.49:046][546]Cmd: DELETE
+[2021.09.06-22.58.49:046][546]Cmd: ACTOR DELETE
+[2021.09.06-22.58.49:051][546]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-22.58.49:069][546]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2021.09.06-22.58.49:072][546]LogEditorActor: Deleted 1 Actors (0.027 secs)
+[2021.09.06-22.59.37:350][970]Candidate modules for hot reload:
+[2021.09.06-22.59.37:350][970]  UnrealTest
+[2021.09.06-22.59.37:350][970]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,3000 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-22.59.37:357][970]Warning: Starting HotReload took  0.0s.
+[2021.09.06-22.59.39:323][ 63]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 00:59:39
+[2021.09.06-22.59.39:323][ 63]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog:    C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Source\UnrealTest\FloatyCar.cpp(30) : error C2535: 'AFloatyCar::{ctor}::FConstructorStatics::FConstructorStatics(void)': member function already defined or declared
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog:   C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Source\UnrealTest\FloatyCar.cpp(24): note: see declaration of 'AFloatyCar::{ctor}::FConstructorStatics::FConstructorStatics'
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog:    C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Source\UnrealTest\FloatyCar.cpp(26) : error C2512: 'ConstructorHelpers::FObjectFinderOptional<UStaticMesh>': no appropriate default constructor available
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog:   C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Source\UnrealTest\FloatyCar.cpp(23): note: see declaration of 'ConstructorHelpers::FObjectFinderOptional<UStaticMesh>'
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog:    C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Source\UnrealTest\FloatyCar.cpp(32) : error C2512: 'ConstructorHelpers::FObjectFinderOptional<UStaticMesh>': no appropriate default constructor available
+[2021.09.06-22.59.39:324][ 63]CompilerResultsLog:   C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Source\UnrealTest\FloatyCar.cpp(23): note: see declaration of 'ConstructorHelpers::FObjectFinderOptional<UStaticMesh>'
+[2021.09.06-22.59.39:324][ 63]LogMainFrame: MainFrame: Module compiling took 1.984 seconds
+[2021.09.06-22.59.39:368][ 63]Warning: HotReload failed, recompile failed
+[2021.09.06-23.06.15:121][838]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-23.06.15:133][838]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-23.06.19:421][ 43]Candidate modules for hot reload:
+[2021.09.06-23.06.19:422][ 43]  UnrealTest
+[2021.09.06-23.06.19:422][ 43]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,7509 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-23.06.19:430][ 43]Warning: Starting HotReload took  0.0s.
+[2021.09.06-23.06.23:256][196]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 01:06:23
+[2021.09.06-23.06.23:256][196]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-23.06.23:256][196]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-23.06.23:256][196]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-23.06.23:256][196]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-23.06.23:256][196]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-23.06.23:256][196]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-7509.lib
+[2021.09.06-23.06.23:256][196]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7509.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7509.exp
+[2021.09.06-23.06.23:256][196]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-7509.dll
+[2021.09.06-23.06.23:256][196]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7509.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7509.suppressed.exp
+[2021.09.06-23.06.23:256][196]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.06-23.06.23:256][196]CompilerResultsLog: Total time in Parallel executor: 2.47 seconds
+[2021.09.06-23.06.23:256][196]CompilerResultsLog: Total execution time: 3.62 seconds
+[2021.09.06-23.06.23:256][196]LogMainFrame: MainFrame: Module compiling took 3.843 seconds
+[2021.09.06-23.06.23:308][196]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.06-23.06.23:360][196]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.06-23.06.23:362][196]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.06-23.06.23:412][196]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0137 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-23.06.23:412][196]Display: HotReload took  4.0s.
+[2021.09.06-23.06.27:590][380]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_4.BodyConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.06.27:590][380]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_4.RightThruster.RightThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.06.27:590][380]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_4.LeftThruster.LeftThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.06.27:590][380]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_4.BackThruster.BackThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.06.28:862][432]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1130.00,-450.00,100.00
+[2021.09.06-23.06.30:957][556]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1010.00,-520.00,100.00
+[2021.09.06-23.07.09:848][732]Cmd: DELETE
+[2021.09.06-23.07.09:848][732]Cmd: ACTOR DELETE
+[2021.09.06-23.07.09:853][732]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-23.07.09:872][732]LogUObjectHash: Compacting FUObjectHashTables data took   0.79ms
+[2021.09.06-23.07.09:877][732]LogEditorActor: Deleted 1 Actors (0.028 secs)
+[2021.09.06-23.07.49:289][ 42]Candidate modules for hot reload:
+[2021.09.06-23.07.49:289][ 42]  UnrealTest
+[2021.09.06-23.07.49:289][ 42]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,1447 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-23.07.49:297][ 42]Warning: Starting HotReload took  0.0s.
+[2021.09.06-23.07.52:860][239]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 01:07:52
+[2021.09.06-23.07.52:860][239]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-23.07.52:860][239]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-23.07.52:860][239]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-23.07.52:860][239]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-23.07.52:860][239]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-23.07.52:860][239]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-1447.lib
+[2021.09.06-23.07.52:860][239]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1447.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1447.exp
+[2021.09.06-23.07.52:860][239]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-1447.dll
+[2021.09.06-23.07.52:860][239]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1447.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1447.suppressed.exp
+[2021.09.06-23.07.52:860][239]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.06-23.07.52:860][239]CompilerResultsLog: Total time in Parallel executor: 2.34 seconds
+[2021.09.06-23.07.52:860][239]CompilerResultsLog: Total execution time: 3.41 seconds
+[2021.09.06-23.07.52:860][239]LogMainFrame: MainFrame: Module compiling took 3.580 seconds
+[2021.09.06-23.07.52:900][239]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.06-23.07.52:921][239]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0005 seconds. Added 4 classes and 2 folders.
+[2021.09.06-23.07.52:924][239]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.06-23.07.52:973][239]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0143 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-23.07.52:973][239]Display: HotReload took  3.7s.
+[2021.09.06-23.07.53:008][241]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_6.BodyConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.07.53:008][241]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_6.RightThruster.RightThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.07.53:008][241]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_6.LeftThruster.LeftThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.07.53:008][241]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_6.BackThruster.BackThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.07.59:766][637]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1170.00,-520.00,100.00
+[2021.09.06-23.08.01:037][712]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -990.00,-420.00,100.00
+[2021.09.06-23.08.13:238][403]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.08.13:249][403]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.08.13:249][403]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:08:13)
+[2021.09.06-23.08.13:250][403]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.08.13:276][403]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026580s)
+[2021.09.06-23.08.13:278][403]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.08.13:279][403]LogPlayLevel: PIE: World Init took: (0.001942s)
+[2021.09.06-23.08.13:279][403]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.028853s)
+[2021.09.06-23.08.13:294][403]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2021.09.06-23.08.13:299][403]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2021.09.06-23.08.13:299][403]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.08.13:299][403]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.08.13:299][403]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.08.13:299][403]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.08.13:299][403]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.08.13:299][403]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.08.13:299][403]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.08.13:299][403]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.08.13:299][403]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.08.13:299][403]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.08.13:306][403]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.08.13:307][403]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.08.13:307][403]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.08.13:307][403]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.08.13:307][403]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.08.13:307][403]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.08.13:307][403]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.08.13:307][403]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.08.13:360][403]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.08.13:360][403]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.08.13:360][403]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.08.13:360][403]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.08.13:361][403]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.08.13:361][403]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.08.13:361][403]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.08.13:387][403]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.08.13:387][403]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.08.13:387][403]LogInit: FAudioDevice initialized.
+[2021.09.06-23.08.13:387][403]LogAudio: Display: Audio Device (ID: 21) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.08.13:399][403]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.08.13:406][403]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.08.13
+[2021.09.06-23.08.13:407][403]LogWorld: Bringing up level for play took: 0.007135
+[2021.09.06-23.08.13:407][403]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2021.09.06-23.08.13:410][403]PIE: Server logged in
+[2021.09.06-23.08.13:411][403]PIE: Play in editor total start time 0.166 seconds.
+[2021.09.06-23.08.16:821][595]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.08.16:821][595]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.08.16:822][595]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.08.16:823][595]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.08.16:834][595]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.08.16:847][595]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.08.16:853][595]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.08.16:853][595]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.08.16:854][595]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.08.16:908][595]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.08.16:912][595]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
+[2021.09.06-23.08.16:967][596]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2021.09.06-23.10.57:992][576]Candidate modules for hot reload:
+[2021.09.06-23.10.57:992][576]  UnrealTest
+[2021.09.06-23.10.57:993][576]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,377 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-23.10.58:001][576]Warning: Starting HotReload took  0.0s.
+[2021.09.06-23.11.02:071][722]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 01:11:02
+[2021.09.06-23.11.02:071][722]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-23.11.02:071][722]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-23.11.02:071][722]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-23.11.02:071][722]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-23.11.02:071][722]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-23.11.02:071][722]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-0377.lib
+[2021.09.06-23.11.02:071][722]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0377.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0377.exp
+[2021.09.06-23.11.02:071][722]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-0377.dll
+[2021.09.06-23.11.02:071][722]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0377.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0377.suppressed.exp
+[2021.09.06-23.11.02:071][722]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.06-23.11.02:071][722]CompilerResultsLog: Total time in Parallel executor: 2.91 seconds
+[2021.09.06-23.11.02:072][722]CompilerResultsLog: Total execution time: 3.92 seconds
+[2021.09.06-23.11.02:072][722]LogMainFrame: MainFrame: Module compiling took 4.089 seconds
+[2021.09.06-23.11.02:094][722]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0175 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-23.11.02:094][722]Display: HotReload took  4.1s.
+[2021.09.06-23.11.31:499][299]Cmd: DELETE
+[2021.09.06-23.11.31:499][299]Cmd: ACTOR DELETE
+[2021.09.06-23.11.34:887][487]Cmd: DELETE
+[2021.09.06-23.11.34:887][487]Cmd: ACTOR DELETE
+[2021.09.06-23.11.34:893][487]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-23.11.34:919][487]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2021.09.06-23.11.34:922][487]LogEditorActor: Deleted 1 Actors (0.035 secs)
+[2021.09.06-23.11.37:101][615]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1560.00,-470.00,100.00
+[2021.09.06-23.11.38:189][679]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -990.00,-410.00,100.00
+[2021.09.06-23.12.14:862][545]Cmd: DELETE
+[2021.09.06-23.12.14:862][545]Cmd: ACTOR DELETE
+[2021.09.06-23.12.21:821][930]Cmd: DELETE
+[2021.09.06-23.12.21:821][930]Cmd: ACTOR DELETE
+[2021.09.06-23.12.21:826][930]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-23.12.21:840][930]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2021.09.06-23.12.21:842][930]LogEditorActor: Deleted 1 Actors (0.020 secs)
+[2021.09.06-23.12.24:055][ 61]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1720.00,-350.00,100.00
+[2021.09.06-23.12.25:195][128]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1150.00,-650.00,100.00
+[2021.09.06-23.19.01:679][679]Candidate modules for hot reload:
+[2021.09.06-23.19.01:679][679]  UnrealTest
+[2021.09.06-23.19.01:680][679]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,5994 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-23.19.01:688][679]Warning: Starting HotReload took  0.0s.
+[2021.09.06-23.19.03:943][746]Cmd: DELETE
+[2021.09.06-23.19.03:943][746]Cmd: ACTOR DELETE
+[2021.09.06-23.19.05:599][823]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 01:19:05
+[2021.09.06-23.19.05:599][823]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-23.19.05:599][823]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-23.19.05:599][823]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-23.19.05:599][823]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-23.19.05:599][823]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-23.19.05:599][823]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-5994.lib
+[2021.09.06-23.19.05:599][823]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-5994.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-5994.exp
+[2021.09.06-23.19.05:600][823]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-5994.dll
+[2021.09.06-23.19.05:600][823]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-5994.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-5994.suppressed.exp
+[2021.09.06-23.19.05:600][823]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.06-23.19.05:600][823]CompilerResultsLog: Total time in Parallel executor: 2.74 seconds
+[2021.09.06-23.19.05:600][823]CompilerResultsLog: Total execution time: 3.76 seconds
+[2021.09.06-23.19.05:600][823]LogMainFrame: MainFrame: Module compiling took 3.931 seconds
+[2021.09.06-23.19.05:656][823]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.06-23.19.05:687][823]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2021.09.06-23.19.05:690][823]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.06-23.19.05:744][823]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0140 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-23.19.05:744][823]Display: HotReload took  4.1s.
+[2021.09.06-23.19.05:796][825]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_8.BodyConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.19.05:796][825]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_8.RightThruster.RightThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.19.05:796][825]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_8.LeftThruster.LeftThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.19.05:796][825]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_8.BackThruster.BackThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.19.08:188][941]Cmd: DELETE
+[2021.09.06-23.19.08:188][941]Cmd: ACTOR DELETE
+[2021.09.06-23.19.08:195][941]LogEditorActor: Deleted Actor: FloatyCar
+[2021.09.06-23.19.08:221][941]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2021.09.06-23.19.08:224][941]LogEditorActor: Deleted 1 Actors (0.036 secs)
+[2021.09.06-23.19.09:619][ 20]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1720.00,-350.00,100.00
+[2021.09.06-23.19.10:745][ 86]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -910.00,-680.00,100.00
+[2021.09.06-23.19.31:165][738]Candidate modules for hot reload:
+[2021.09.06-23.19.31:165][738]  UnrealTest
+[2021.09.06-23.19.31:165][738]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,7271 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.06-23.19.31:173][738]Warning: Starting HotReload took  0.0s.
+[2021.09.06-23.19.34:654][869]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 01:19:34
+[2021.09.06-23.19.34:654][869]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.06-23.19.34:654][869]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.06-23.19.34:654][869]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.06-23.19.34:654][869]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.06-23.19.34:655][869]CompilerResultsLog:   [1/4] FloatyCar.cpp
+[2021.09.06-23.19.34:655][869]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-7271.lib
+[2021.09.06-23.19.34:655][869]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7271.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7271.exp
+[2021.09.06-23.19.34:655][869]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-7271.dll
+[2021.09.06-23.19.34:655][869]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7271.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7271.suppressed.exp
+[2021.09.06-23.19.34:655][869]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.06-23.19.34:655][869]CompilerResultsLog: Total time in Parallel executor: 2.37 seconds
+[2021.09.06-23.19.34:655][869]CompilerResultsLog: Total execution time: 3.31 seconds
+[2021.09.06-23.19.34:655][869]LogMainFrame: MainFrame: Module compiling took 3.500 seconds
+[2021.09.06-23.19.34:701][869]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.06-23.19.34:755][869]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2021.09.06-23.19.34:757][869]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.06-23.19.34:805][869]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0131 seconds. Added 3605 classes and 861 folders.
+[2021.09.06-23.19.34:805][869]Display: HotReload took  3.7s.
+[2021.09.06-23.19.34:855][871]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_10.BodyConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.19.34:855][871]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_10.RightThruster.RightThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.19.34:855][871]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_10.LeftThruster.LeftThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.19.34:856][871]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_10.BackThruster.BackThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.19.42:892][349]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.19.42:904][349]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.19.42:904][349]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:19:42)
+[2021.09.06-23.19.42:904][349]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.19.42:930][349]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026248s)
+[2021.09.06-23.19.42:932][349]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.19.42:932][349]LogPlayLevel: PIE: World Init took: (0.001989s)
+[2021.09.06-23.19.42:933][349]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.028568s)
+[2021.09.06-23.19.42:954][349]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2021.09.06-23.19.42:956][349]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2021.09.06-23.19.42:957][349]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.19.42:957][349]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.19.42:957][349]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.19.42:957][349]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.19.42:957][349]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.19.42:957][349]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.19.42:957][349]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.19.42:957][349]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.19.42:957][349]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.19.42:958][349]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.19.42:961][349]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.19.42:962][349]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.19.42:962][349]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.19.42:962][349]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.19.42:962][349]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.19.42:962][349]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.19.42:962][349]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.19.42:962][349]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.19.43:016][349]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.19.43:016][349]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.19.43:017][349]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.19.43:017][349]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.19.43:018][349]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.19.43:018][349]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.19.43:018][349]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.19.43:044][349]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.19.43:044][349]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.19.43:044][349]LogInit: FAudioDevice initialized.
+[2021.09.06-23.19.43:044][349]LogAudio: Display: Audio Device (ID: 22) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.19.43:054][349]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.19.43:061][349]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.19.43
+[2021.09.06-23.19.43:061][349]LogWorld: Bringing up level for play took: 0.007231
+[2021.09.06-23.19.43:062][349]LogOnline: OSS: Creating online subsystem instance for: :Context_25
+[2021.09.06-23.19.43:065][349]PIE: Server logged in
+[2021.09.06-23.19.43:066][349]PIE: Play in editor total start time 0.166 seconds.
+[2021.09.06-23.20.32:642][195]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.20.32:642][195]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.20.32:642][195]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.20.32:644][195]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.20.32:654][195]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.20.32:668][195]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.20.32:674][195]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.20.32:674][195]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.20.32:676][195]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.20.32:736][195]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.20.32:740][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2021.09.06-23.20.32:794][196]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2021.09.06-23.20.38:182][494]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.20.38:193][494]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.20.38:193][494]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:20:38)
+[2021.09.06-23.20.38:193][494]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.20.38:221][494]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028046s)
+[2021.09.06-23.20.38:222][494]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.20.38:223][494]LogPlayLevel: PIE: World Init took: (0.001868s)
+[2021.09.06-23.20.38:223][494]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.030198s)
+[2021.09.06-23.20.38:240][494]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2021.09.06-23.20.38:242][494]LogAudio: Display: Creating Audio Device:                 Id: 23, Scope: Unique, Realtime: True
+[2021.09.06-23.20.38:242][494]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.20.38:242][494]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.20.38:242][494]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.20.38:242][494]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.20.38:242][494]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.20.38:243][494]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.20.38:243][494]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.20.38:243][494]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.20.38:243][494]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.20.38:243][494]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.20.38:247][494]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.20.38:247][494]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.20.38:247][494]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.20.38:247][494]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.20.38:247][494]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.20.38:247][494]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.20.38:247][494]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.20.38:247][494]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.20.38:296][494]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.20.38:296][494]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.20.38:297][494]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.20.38:297][494]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.20.38:297][494]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.20.38:297][494]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.20.38:297][494]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.20.38:324][494]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.20.38:324][494]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.20.38:324][494]LogInit: FAudioDevice initialized.
+[2021.09.06-23.20.38:324][494]LogAudio: Display: Audio Device (ID: 23) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.20.38:336][494]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.20.38:343][494]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.20.38
+[2021.09.06-23.20.38:344][494]LogWorld: Bringing up level for play took: 0.006720
+[2021.09.06-23.20.38:344][494]LogOnline: OSS: Creating online subsystem instance for: :Context_26
+[2021.09.06-23.20.38:347][494]PIE: Server logged in
+[2021.09.06-23.20.38:348][494]PIE: Play in editor total start time 0.158 seconds.
+[2021.09.06-23.21.36:352][812]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.21.36:353][812]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.21.36:353][812]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.21.36:354][812]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.21.36:362][812]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.21.36:376][812]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.21.36:381][812]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.21.36:381][812]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.21.36:383][812]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.21.36:434][812]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.21.36:436][812]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2021.09.06-23.21.36:483][813]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2021.09.06-23.21.38:115][898]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.21.38:125][898]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.21.38:125][898]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:21:38)
+[2021.09.06-23.21.38:126][898]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.21.38:150][898]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023800s)
+[2021.09.06-23.21.38:151][898]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.21.38:152][898]LogPlayLevel: PIE: World Init took: (0.001632s)
+[2021.09.06-23.21.38:152][898]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.025737s)
+[2021.09.06-23.21.38:170][898]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2021.09.06-23.21.38:172][898]LogAudio: Display: Creating Audio Device:                 Id: 24, Scope: Unique, Realtime: True
+[2021.09.06-23.21.38:172][898]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.21.38:172][898]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.21.38:172][898]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.21.38:172][898]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.21.38:172][898]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.21.38:172][898]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.21.38:172][898]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.21.38:172][898]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.21.38:173][898]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.21.38:173][898]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.21.38:176][898]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.21.38:176][898]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.21.38:176][898]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.21.38:176][898]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.21.38:176][898]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.21.38:176][898]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.21.38:176][898]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.21.38:176][898]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.21.38:223][898]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.21.38:224][898]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.21.38:224][898]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.21.38:224][898]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.21.38:224][898]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.21.38:225][898]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.21.38:225][898]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.21.38:251][898]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.21.38:251][898]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.21.38:251][898]LogInit: FAudioDevice initialized.
+[2021.09.06-23.21.38:251][898]LogAudio: Display: Audio Device (ID: 24) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.21.38:261][898]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.21.38:267][898]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.21.38
+[2021.09.06-23.21.38:268][898]LogWorld: Bringing up level for play took: 0.006827
+[2021.09.06-23.21.38:268][898]LogOnline: OSS: Creating online subsystem instance for: :Context_27
+[2021.09.06-23.21.38:271][898]PIE: Server logged in
+[2021.09.06-23.21.38:272][898]PIE: Play in editor total start time 0.15 seconds.
+[2021.09.06-23.24.11:941][636]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.24.11:941][636]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.24.11:942][636]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.24.11:943][636]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.24.11:953][636]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.24.11:965][636]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.24.11:971][636]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.24.11:971][636]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.24.11:972][636]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.24.12:043][636]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.24.12:046][636]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2021.09.06-23.24.12:096][637]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2021.09.06-23.24.59:121][717]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2021.09.06-23.24.59:218][717]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMapEF7D21DB4E6E1308A6CE0B915A6FF825.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.06-23.25.00:050][717]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltData065D0F044DCCC5AEE04D51BF2316B040.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.06-23.25.00:087][717]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.06-23.25.00:088][717]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.06-23.25.00:088][717]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.06-23.25.51:780][550]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.25.51:791][550]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.25.51:791][550]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:25:51)
+[2021.09.06-23.25.51:792][550]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.25.51:820][550]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027923s)
+[2021.09.06-23.25.51:821][550]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.25.51:822][550]LogPlayLevel: PIE: World Init took: (0.001929s)
+[2021.09.06-23.25.51:822][550]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.030208s)
+[2021.09.06-23.25.51:841][550]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2021.09.06-23.25.51:846][550]LogAudio: Display: Creating Audio Device:                 Id: 25, Scope: Unique, Realtime: True
+[2021.09.06-23.25.51:846][550]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.25.51:846][550]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.25.51:846][550]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.25.51:846][550]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.25.51:846][550]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.25.51:846][550]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.25.51:846][550]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.25.51:846][550]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.25.51:847][550]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.25.51:847][550]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.25.51:851][550]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.25.51:851][550]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.25.51:851][550]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.25.51:851][550]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.25.51:851][550]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.25.51:851][550]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.25.51:851][550]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.25.51:851][550]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.25.51:903][550]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.25.51:903][550]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.25.51:903][550]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.25.51:904][550]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.25.51:904][550]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.25.51:905][550]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.25.51:905][550]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.25.51:936][550]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.25.51:936][550]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.25.51:936][550]LogInit: FAudioDevice initialized.
+[2021.09.06-23.25.51:936][550]LogAudio: Display: Audio Device (ID: 25) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.25.51:944][550]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.25.51:951][550]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.25.51
+[2021.09.06-23.25.51:952][550]LogWorld: Bringing up level for play took: 0.007951
+[2021.09.06-23.25.51:953][550]LogOnline: OSS: Creating online subsystem instance for: :Context_28
+[2021.09.06-23.25.51:956][550]PIE: Server logged in
+[2021.09.06-23.25.51:957][550]PIE: Play in editor total start time 0.17 seconds.
+[2021.09.06-23.27.22:841][773]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.27.22:842][773]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.27.22:842][773]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.27.22:843][773]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.27.22:855][773]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.27.22:868][773]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.27.22:873][773]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.27.22:873][773]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.27.22:874][773]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.27.22:941][773]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.27.22:945][773]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2021.09.06-23.27.22:995][774]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2021.09.06-23.28.20:503][681]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.28.20:515][681]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.28.20:515][681]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:28:20)
+[2021.09.06-23.28.20:515][681]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.28.20:541][681]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026499s)
+[2021.09.06-23.28.20:543][681]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.28.20:543][681]LogPlayLevel: PIE: World Init took: (0.001735s)
+[2021.09.06-23.28.20:543][681]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.028517s)
+[2021.09.06-23.28.20:557][681]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2021.09.06-23.28.20:559][681]LogAudio: Display: Creating Audio Device:                 Id: 26, Scope: Unique, Realtime: True
+[2021.09.06-23.28.20:559][681]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.28.20:559][681]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.28.20:560][681]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.28.20:560][681]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.28.20:560][681]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.28.20:560][681]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.28.20:560][681]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.28.20:560][681]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.28.20:560][681]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.28.20:560][681]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.28.20:563][681]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.28.20:563][681]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.28.20:563][681]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.28.20:563][681]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.28.20:564][681]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.28.20:564][681]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.28.20:564][681]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.28.20:564][681]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.28.20:612][681]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.28.20:612][681]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.28.20:612][681]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.28.20:613][681]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.28.20:613][681]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.28.20:613][681]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.28.20:613][681]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.28.20:641][681]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.28.20:641][681]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.28.20:641][681]LogInit: FAudioDevice initialized.
+[2021.09.06-23.28.20:641][681]LogAudio: Display: Audio Device (ID: 26) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.28.20:655][681]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.28.20:662][681]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.28.20
+[2021.09.06-23.28.20:663][681]LogWorld: Bringing up level for play took: 0.007548
+[2021.09.06-23.28.20:663][681]LogOnline: OSS: Creating online subsystem instance for: :Context_29
+[2021.09.06-23.28.20:666][681]PIE: Server logged in
+[2021.09.06-23.28.20:667][681]PIE: Play in editor total start time 0.156 seconds.
+[2021.09.06-23.29.19:162][934]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.29.19:162][934]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.29.19:163][934]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.29.19:164][934]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.29.19:175][934]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.29.19:188][934]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.29.19:193][934]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.29.19:193][934]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.29.19:194][934]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.29.19:249][934]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.29.19:253][934]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2021.09.06-23.29.19:307][935]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2021.09.06-23.30.08:661][575]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.30.08:673][575]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.30.08:673][575]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:30:08)
+[2021.09.06-23.30.08:673][575]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.30.08:700][575]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026935s)
+[2021.09.06-23.30.08:701][575]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.30.08:702][575]LogPlayLevel: PIE: World Init took: (0.001721s)
+[2021.09.06-23.30.08:702][575]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.028931s)
+[2021.09.06-23.30.08:721][575]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2021.09.06-23.30.08:724][575]LogAudio: Display: Creating Audio Device:                 Id: 27, Scope: Unique, Realtime: True
+[2021.09.06-23.30.08:724][575]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.30.08:724][575]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.30.08:724][575]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.30.08:724][575]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.30.08:724][575]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.30.08:724][575]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.30.08:724][575]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.30.08:724][575]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.30.08:725][575]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.30.08:725][575]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.30.08:729][575]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.30.08:729][575]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.30.08:729][575]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.30.08:729][575]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.30.08:729][575]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.30.08:729][575]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.30.08:729][575]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.30.08:729][575]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.30.08:776][575]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.30.08:777][575]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.30.08:777][575]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.30.08:777][575]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.30.08:777][575]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.30.08:778][575]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.30.08:778][575]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.30.08:804][575]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.30.08:804][575]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.30.08:804][575]LogInit: FAudioDevice initialized.
+[2021.09.06-23.30.08:804][575]LogAudio: Display: Audio Device (ID: 27) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.30.08:816][575]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.30.08:824][575]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.30.08
+[2021.09.06-23.30.08:824][575]LogWorld: Bringing up level for play took: 0.007316
+[2021.09.06-23.30.08:824][575]LogOnline: OSS: Creating online subsystem instance for: :Context_30
+[2021.09.06-23.30.08:827][575]PIE: Server logged in
+[2021.09.06-23.30.08:829][575]PIE: Play in editor total start time 0.16 seconds.
+[2021.09.06-23.42.24:618][343]PIE: Warning: Invalid Simulate Options: Body (FloatyCar_22.BackThrusterMesh Shape_Cube) is set to simulate physics but Collision Enabled is incompatible
+[2021.09.06-23.42.24:618][343]PIE: Warning: Invalid Simulate Options: Body (FloatyCar_22.BackThrusterMesh Shape_Cube) is set to simulate physics but Collision Enabled is incompatible
+[2021.09.06-23.43.09:843][913]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.43.09:843][913]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.43.09:843][913]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.43.09:844][913]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.43.09:854][913]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.43.09:868][913]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.43.09:874][913]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.43.09:874][913]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.43.09:875][913]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.43.09:938][913]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.43.09:941][913]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2021.09.06-23.43.10:109][914]LogPlayLevel: Display: Destroying online subsystem :Context_30
+[2021.09.06-23.43.20:741][486]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-23.43.20:750][486]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-23.45.10:833][484]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.45.10:844][484]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.45.10:844][484]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:45:10)
+[2021.09.06-23.45.10:844][484]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.45.10:874][484]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029535s)
+[2021.09.06-23.45.10:875][484]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.45.10:876][484]LogPlayLevel: PIE: World Init took: (0.002159s)
+[2021.09.06-23.45.10:876][484]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.031968s)
+[2021.09.06-23.45.10:893][484]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2021.09.06-23.45.10:896][484]LogAudio: Display: Creating Audio Device:                 Id: 28, Scope: Unique, Realtime: True
+[2021.09.06-23.45.10:896][484]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.45.10:896][484]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.45.10:896][484]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.45.10:896][484]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.45.10:896][484]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.45.10:896][484]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.45.10:896][484]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.45.10:896][484]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.45.10:897][484]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.45.10:897][484]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.45.10:901][484]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.45.10:901][484]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.45.10:901][484]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.45.10:901][484]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.45.10:901][484]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.45.10:901][484]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.45.10:901][484]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.45.10:901][484]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.45.10:950][484]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.45.10:951][484]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.45.10:951][484]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.45.10:951][484]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.45.10:952][484]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.45.10:952][484]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.45.10:952][484]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.45.10:977][484]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.45.10:977][484]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.45.10:977][484]LogInit: FAudioDevice initialized.
+[2021.09.06-23.45.10:977][484]LogAudio: Display: Audio Device (ID: 28) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.45.10:989][484]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.45.10:996][484]PIE: Warning: Invalid Simulate Options: Body (FloatyCar_22.LeftThrusterMesh Shape_Cube) is set to simulate physics but Collision Enabled is incompatible
+[2021.09.06-23.45.10:996][484]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.45.10
+[2021.09.06-23.45.10:997][484]PIE: Warning: Constraint in '/Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap:PersistentLevel.FloatyCar_22.LeftThruster.LeftThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.06-23.45.10:997][484]LogWorld: Bringing up level for play took: 0.007493
+[2021.09.06-23.45.10:997][484]LogOnline: OSS: Creating online subsystem instance for: :Context_31
+[2021.09.06-23.45.11:001][484]PIE: Server logged in
+[2021.09.06-23.45.11:002][484]PIE: Play in editor total start time 0.162 seconds.
+[2021.09.06-23.46.04:613][464]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.46.04:613][464]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.46.04:613][464]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.46.04:614][464]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.46.04:627][464]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.46.04:642][464]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.46.04:647][464]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.46.04:647][464]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.46.04:649][464]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.46.04:687][464]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.46.04:690][464]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2021.09.06-23.46.04:831][465]LogPlayLevel: Display: Destroying online subsystem :Context_31
+[2021.09.06-23.46.20:415][320]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-23.46.20:421][320]LogSlate: Window 'Message Log' being destroyed
+[2021.09.06-23.46.33:577][ 14]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.06-23.46.33:589][ 14]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.06-23.46.33:589][ 14]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 01:46:33)
+[2021.09.06-23.46.33:589][ 14]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.46.33:617][ 14]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027849s)
+[2021.09.06-23.46.33:619][ 14]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.06-23.46.33:619][ 14]LogPlayLevel: PIE: World Init took: (0.002104s)
+[2021.09.06-23.46.33:619][ 14]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.030276s)
+[2021.09.06-23.46.33:636][ 14]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2021.09.06-23.46.33:639][ 14]LogAudio: Display: Creating Audio Device:                 Id: 29, Scope: Unique, Realtime: True
+[2021.09.06-23.46.33:639][ 14]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.06-23.46.33:639][ 14]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.06-23.46.33:639][ 14]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.06-23.46.33:639][ 14]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.06-23.46.33:639][ 14]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.06-23.46.33:639][ 14]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.06-23.46.33:639][ 14]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.06-23.46.33:639][ 14]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.06-23.46.33:640][ 14]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.06-23.46.33:640][ 14]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.06-23.46.33:645][ 14]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.06-23.46.33:645][ 14]LogAudioMixer: Display: 1: FrontRight
+[2021.09.06-23.46.33:645][ 14]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.06-23.46.33:645][ 14]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.06-23.46.33:645][ 14]LogAudioMixer: Display: 4: BackLeft
+[2021.09.06-23.46.33:645][ 14]LogAudioMixer: Display: 5: BackRight
+[2021.09.06-23.46.33:645][ 14]LogAudioMixer: Display: 6: SideLeft
+[2021.09.06-23.46.33:645][ 14]LogAudioMixer: Display: 7: SideRight
+[2021.09.06-23.46.33:692][ 14]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.06-23.46.33:692][ 14]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.06-23.46.33:692][ 14]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.06-23.46.33:692][ 14]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.06-23.46.33:693][ 14]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.06-23.46.33:693][ 14]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.06-23.46.33:693][ 14]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.06-23.46.33:720][ 14]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.06-23.46.33:720][ 14]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.06-23.46.33:720][ 14]LogInit: FAudioDevice initialized.
+[2021.09.06-23.46.33:720][ 14]LogAudio: Display: Audio Device (ID: 29) registered with world 'FlyingExampleMap'.
+[2021.09.06-23.46.33:733][ 14]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.06-23.46.33:741][ 14]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-00.46.33
+[2021.09.06-23.46.33:742][ 14]LogWorld: Bringing up level for play took: 0.007837
+[2021.09.06-23.46.33:742][ 14]LogOnline: OSS: Creating online subsystem instance for: :Context_32
+[2021.09.06-23.46.33:745][ 14]PIE: Server logged in
+[2021.09.06-23.46.33:746][ 14]PIE: Play in editor total start time 0.161 seconds.
+[2021.09.06-23.46.37:102][203]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.46.37:102][203]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.06-23.46.37:102][203]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.06-23.46.37:103][203]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.46.37:114][203]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.06-23.46.37:129][203]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.06-23.46.37:135][203]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.06-23.46.37:135][203]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.46.37:136][203]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.06-23.46.37:190][203]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.06-23.46.37:194][203]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2021.09.06-23.46.37:244][204]LogPlayLevel: Display: Destroying online subsystem :Context_32
+[2021.09.07-00.11.08:973][169]Candidate modules for hot reload:
+[2021.09.07-00.11.08:973][169]  UnrealTest
+[2021.09.07-00.11.08:974][169]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,8612 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.07-00.11.08:985][169]Warning: Starting HotReload took  0.0s.
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog: New page: Compilation - 7 Sep 2021, 02:11:31
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog: Parsing headers for UnrealTestEditor
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\UnrealTest.uproject" "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UnrealTestEditor\Development\UnrealTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\layco\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog: Reflection code generated for UnrealTestEditor in 8.0761633 seconds
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog: Building 7 actions with 8 processes...
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:   [1/7] UnrealTest.init.gen.cpp
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:   [2/7] Thruster.cpp
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:   [3/7] Thruster.gen.cpp
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:   [4/7] FloatyCar.cpp
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:   [5/7] UE4Editor-UnrealTest-8612.lib
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8612.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8612.exp
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:   [6/7] UE4Editor-UnrealTest-8612.dll
+[2021.09.07-00.11.31:669][ 46]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8612.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-8612.suppressed.exp
+[2021.09.07-00.11.31:672][ 46]CompilerResultsLog:   [7/7] UnrealTestEditor.target
+[2021.09.07-00.11.31:672][ 46]CompilerResultsLog: Total time in Parallel executor: 12.77 seconds
+[2021.09.07-00.11.31:672][ 46]CompilerResultsLog: Total execution time: 22.43 seconds
+[2021.09.07-00.11.31:672][ 46]LogMainFrame: MainFrame: Module compiling took 22.708 seconds
+[2021.09.07-00.11.31:689][ 46]LogClass: Could not find existing class Thruster in package /Script/UnrealTest for HotReload, assuming new class
+[2021.09.07-00.11.31:705][ 46]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.07-00.11.31:708][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:BackThruster
+    Item = Thruster /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FloatyCar_1.BackThruster
+[2021.09.07-00.11.31:708][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:LeftThruster
+    Item = Thruster /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FloatyCar_1.LeftThruster
+[2021.09.07-00.11.31:708][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:RightThruster
+    Item = Thruster /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FloatyCar_1.RightThruster
+[2021.09.07-00.11.31:711][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:BackThruster
+    Item = Thruster /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FloatyCar_22.BackThruster
+[2021.09.07-00.11.31:711][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:LeftThruster
+    Item = Thruster /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FloatyCar_22.LeftThruster
+[2021.09.07-00.11.31:711][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:RightThruster
+    Item = Thruster /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FloatyCar_22.RightThruster
+[2021.09.07-00.11.31:732][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:BackThruster
+    Item = Thruster /Engine/Transient.World_1:PersistentLevel.FloatyCar_10.BackThruster
+[2021.09.07-00.11.31:733][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:LeftThruster
+    Item = Thruster /Engine/Transient.World_1:PersistentLevel.FloatyCar_10.LeftThruster
+[2021.09.07-00.11.31:733][ 46]LogProperty: Warning: Serialized Class /Script/UnrealTest.Thruster for a property of Class /Engine/Transient.HOTRELOADED_Thruster_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/UnrealTest.FloatyCar:RightThruster
+    Item = Thruster /Engine/Transient.World_1:PersistentLevel.FloatyCar_10.RightThruster
+[2021.09.07-00.11.31:765][ 46]LogHotReload: Re-instancing Thruster after hot-reload.
+[2021.09.07-00.11.31:776][ 46]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0012 seconds. Added 4 classes and 2 folders.
+[2021.09.07-00.11.31:777][ 46]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.09.07-00.11.31:865][ 46]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0200 seconds. Added 3605 classes and 861 folders.
+[2021.09.07-00.11.31:865][ 46]Display: HotReload took 22.9s.
+[2021.09.07-00.11.31:936][ 48]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_12.BodyConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.07-00.11.31:936][ 48]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_12.RightThruster.RightThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.07-00.11.31:936][ 48]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_12.LeftThruster.LeftThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.07-00.11.31:936][ 48]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_12.BackThruster.BackThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.07-00.11.35:280][239]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -1370.00,-510.00,100.00
+[2021.09.07-00.11.36:866][333]LogEditor: Attempting to add actor of class 'FloatyCar' to level at -370.00,-460.00,100.00
+[2021.09.07-00.11.42:208][625]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.07-00.11.42:220][625]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.07-00.11.42:220][625]PIE: New page: PIE session: FlyingExampleMap (7 Sep 2021, 02:11:42)
+[2021.09.07-00.11.42:220][625]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.07-00.11.42:250][625]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029154s)
+[2021.09.07-00.11.42:251][625]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.07-00.11.42:252][625]LogPlayLevel: PIE: World Init took: (0.002227s)
+[2021.09.07-00.11.42:252][625]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.031736s)
+[2021.09.07-00.11.42:271][625]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2021.09.07-00.11.42:276][625]LogAudio: Display: Creating Audio Device:                 Id: 30, Scope: Unique, Realtime: True
+[2021.09.07-00.11.42:277][625]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.07-00.11.42:277][625]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.07-00.11.42:277][625]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.07-00.11.42:277][625]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.07-00.11.42:277][625]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.07-00.11.42:277][625]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.07-00.11.42:277][625]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.07-00.11.42:277][625]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.07-00.11.42:277][625]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.07-00.11.42:277][625]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.07-00.11.42:284][625]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.07-00.11.42:284][625]LogAudioMixer: Display: 1: FrontRight
+[2021.09.07-00.11.42:284][625]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.07-00.11.42:284][625]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.07-00.11.42:284][625]LogAudioMixer: Display: 4: BackLeft
+[2021.09.07-00.11.42:284][625]LogAudioMixer: Display: 5: BackRight
+[2021.09.07-00.11.42:284][625]LogAudioMixer: Display: 6: SideLeft
+[2021.09.07-00.11.42:284][625]LogAudioMixer: Display: 7: SideRight
+[2021.09.07-00.11.42:333][625]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.07-00.11.42:334][625]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.07-00.11.42:334][625]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.07-00.11.42:334][625]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.07-00.11.42:335][625]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.07-00.11.42:335][625]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.07-00.11.42:335][625]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.07-00.11.42:360][625]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.07-00.11.42:360][625]LogInit: FAudioDevice initialized.
+[2021.09.07-00.11.42:360][625]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.07-00.11.42:360][625]LogAudio: Display: Audio Device (ID: 30) registered with world 'FlyingExampleMap'.
+[2021.09.07-00.11.42:369][625]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.07-00.11.42:376][625]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.07-01.11.42
+[2021.09.07-00.11.42:377][625]LogWorld: Bringing up level for play took: 0.007415
+[2021.09.07-00.11.42:377][625]LogOnline: OSS: Creating online subsystem instance for: :Context_33
+[2021.09.07-00.11.42:381][625]PIE: Server logged in
+[2021.09.07-00.11.42:382][625]PIE: Play in editor total start time 0.166 seconds.
+[2021.09.07-00.13.10:712][599]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.07-00.13.10:712][599]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.07-00.13.10:713][599]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.07-00.13.10:714][599]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.07-00.13.10:726][599]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.07-00.13.10:739][599]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.07-00.13.10:745][599]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.07-00.13.10:745][599]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.07-00.13.10:746][599]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.07-00.13.10:790][599]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.07-00.13.10:795][599]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2021.09.07-00.13.10:856][600]LogPlayLevel: Display: Destroying online subsystem :Context_33
+[2021.09.07-00.14.40:330][ 44]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2021.09.07-00.14.40:435][ 44]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMapD49703134E8205062B4A9A89D2F55DB0.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.07-00.14.41:342][ 44]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltDataBF12268342E2D126C0F1D19618D79BB3.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.07-00.14.41:375][ 44]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.07-00.14.41:375][ 44]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.07-00.14.41:375][ 44]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap

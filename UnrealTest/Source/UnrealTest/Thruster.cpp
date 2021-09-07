@@ -13,24 +13,34 @@ UThruster::UThruster()
 	// Structure to hold one-time initialization
 	struct FConstructorStatics
 	{
-		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> ThrusterMesh;
+		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> ThrusterPhysicsMesh;
 		FConstructorStatics()
-			: ThrusterMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cube"))
+			: ThrusterPhysicsMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cube"))
 		{
 		}
 	};
 	static FConstructorStatics ConstructorStatics;
 
 	// Create thruster mesh with custom name
-	ThrusterMesh = CreateDefaultSubobject<UStaticMeshComponent>(*(GetName().Append("Mesh")));
-	ThrusterMesh->SetupAttachment(this);
-	ThrusterMesh->SetStaticMesh(ConstructorStatics.ThrusterMesh.Get());
-	ThrusterMesh->SetRelativeScale3D(FVector(0.25f, 0.25f, 0.25f));
+	ThrusterPhysicsMesh = CreateDefaultSubobject<UStaticMeshComponent>(*(GetName().Append("Mesh")));
+	ThrusterPhysicsMesh->SetupAttachment(this);
+	ThrusterPhysicsMesh->SetSimulatePhysics(true);
+	// ThrusterPhysicsMesh->SetEnableGravity(false);											keep??
+	ThrusterPhysicsMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	ThrusterPhysicsMesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+
+
+	ThrusterPhysicsMesh->SetStaticMesh(ConstructorStatics.ThrusterPhysicsMesh.Get());
+	ThrusterPhysicsMesh->SetRelativeScale3D(FVector(0.25f, 0.25f, 0.25f));
 
 
 	// create and attach the physics constraint using the names
 	PhysicsConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(*(GetName().Append("PhysicsConstraint")));
 	PhysicsConstraint->SetupAttachment(this);
+	PhysicsConstraint->SetAngularSwing1Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
+	PhysicsConstraint->SetAngularSwing2Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
+	PhysicsConstraint->SetAngularTwistLimit(EAngularConstraintMotion::ACM_Locked, 0.f);
+	PhysicsConstraint->SetDisableCollision(true);
 	
 
 	
