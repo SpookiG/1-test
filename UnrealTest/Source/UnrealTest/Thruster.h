@@ -41,6 +41,22 @@ public:
 	bool SwitchedOn;
 
 private:
+	UPROPERTY(Category = Hover, EditAnywhere)
+	float HoverHeight;
+
+	UPROPERTY(Category = Hover, EditAnywhere)
+	float HoverForce;
+
+	/* Damper used to prevent hover force causing car to bounce all over the place. It's applied when the thruster reaches a certain distance from the ground */
+	UPROPERTY(Category = Hover, EditAnywhere)
+	float DampingMultiplier;
+
+	/* Exponent used to apply more hover force when thruster is closer to ground */
+	UPROPERTY(Category = Hover, EditAnywhere)
+	float HoverExponent;
+
+
+
 	bool debug;
 	AActor* parentActor;
 
