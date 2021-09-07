@@ -70,18 +70,20 @@ AFloatyCar::AFloatyCar()
 	BackThruster = CreateDefaultSubobject<UThruster>(TEXT("BackThruster"));
 	BackThruster->SetupAttachment(RootComponent);
 	BackThruster->SetupPhysicsConstraint(this);
+	BackThruster->SetRelativeLocation(FVector(-10.f, 0.f, -12.5f));
+	BackThruster->SetRelativeRotation(FRotator(0.f, 180.f, 0.f));
 
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
 	LeftThruster->SetupAttachment(RootComponent);
 	LeftThruster->SetupPhysicsConstraint(this);
 	LeftThruster->SetRelativeLocation(FVector(260.f, -30.f, -12.5f));
-	LeftThruster->SetRelativeRotation(FRotator(0.f, 90.f, 0.01f));
+	LeftThruster->SetRelativeRotation(FRotator(0.f, -90.f, 0.01f));
 
 	RightThruster = CreateDefaultSubobject<UThruster>(TEXT("RightThruster"));
 	RightThruster->SetupAttachment(RootComponent);
 	RightThruster->SetupPhysicsConstraint(this);
 	RightThruster->SetRelativeLocation(FVector(260.f, 30.f, -12.5f));
-	RightThruster->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
+	RightThruster->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
 
 	// set up camera
 	CamSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraSpringArm"));
