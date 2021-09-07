@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UnrealTest.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{645F4C0A-107A-4606-942F-171B5191B312}</UniqueIdentifier>
+      <UniqueIdentifier>{E766AD3C-EEC4-494B-A72A-497A0B7CDA63}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealTest.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{8C11DE18-81B5-48A6-9132-21E1A018A173}</UniqueIdentifier>
+      <UniqueIdentifier>{1563D2E4-E9C6-45C1-A033-D4070802A273}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UnrealTest">
-      <UniqueIdentifier>{A4EF882A-1E4A-4B01-A6E4-730052D5B5E9}</UniqueIdentifier>
+      <UniqueIdentifier>{330BD2DC-ACAC-4C6D-A12A-5C45F51B03BB}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\UnrealTest\CarPilot.cpp">
+      <Filter>Source\UnrealTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealTest\CarPilot.h">
+      <Filter>Source\UnrealTest</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UnrealTest\FloatyCar.cpp">
       <Filter>Source\UnrealTest</Filter>
     </ClCompile>

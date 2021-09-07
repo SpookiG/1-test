@@ -84,6 +84,9 @@ AFloatyCar::AFloatyCar()
 	// set up camera
 	CamSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraSpringArm"));
 	CamSpringArm->SetupAttachment(RootComponent);
+	CamSpringArm->SocketOffset = FVector(-150.f, 0.f, 150.f);
+	CamSpringArm->bInheritPitch = false;
+	CamSpringArm->bInheritRoll = false;
 
 	Cam = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Cam->SetupAttachment(CamSpringArm);

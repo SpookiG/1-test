@@ -22,12 +22,10 @@ Essential tasks:
 		- create some roadways
 
 	- car
-		- code up a hover mechanic (flying car)
-			- trigger a certain distance above the ground (from multiple points)
-			- apply force to those points depending on how close to the ground
-			- this way u get the over but also landing jumps and stuff feels impactful cuz u crash into the ground before floating back up
 		- code up a car control mechanic
 			- I want to apply force to the car specifically from the back of it, so that it's slippery/drifty
+			- need some extra considerations for controls, when the car flips I want the left thruster to switch so that the player isn't playing backwards
+
 			- Car may be harder to turn at higher speeds so maybe modify force based on both speed and turn angle?
 			- not sure if car will flip over / get stuck in stuff with these mechanics alone so will need to check that
 
@@ -67,3 +65,4 @@ Done!!!
 	- physics connectors for thrusters
 	- 3 thruster boxes
 	- created a car shaped mesh thingy!!
+	- car hovers above the ground!
