@@ -47,9 +47,9 @@ UThruster::UThruster()
 
 
 	HoverHeight = 100.f;
-	HoverForce = 120000.f;						// front thrusters lift at 20000.0, back thrusters at 130000.0
+	HoverForce = 20000.f;						// front thrusters lift at 20000.0, back thrusters at 130000.0
 	DampingMultiplier = 0.5f;
-	HoverExponent = .1f;
+	HoverExponent = .3f;
 
 
 	SwitchedOn = false;

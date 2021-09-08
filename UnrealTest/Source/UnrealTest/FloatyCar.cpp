@@ -68,6 +68,7 @@ AFloatyCar::AFloatyCar()
 	BackThruster->SetupPhysicsConstraint(this);
 	BackThruster->SetRelativeLocation(FVector(-10.f, 0.f, -12.5f));
 	BackThruster->SetRelativeRotation(FRotator(0.f, 180.f, 0.f));
+	BackThruster->SetHoverForce(130000.f);
 
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
 	LeftThruster->SetupAttachment(RootComponent);
@@ -87,6 +88,13 @@ AFloatyCar::AFloatyCar()
 	CamSpringArm->SocketOffset = FVector(-150.f, 0.f, 150.f);
 	CamSpringArm->bInheritPitch = false;
 	CamSpringArm->bInheritRoll = false;
+	CamSpringArm->bEnableCameraLag = true;
+	CamSpringArm->CameraLagSpeed = 1.f;
+	CamSpringArm->bEnableCameraRotationLag = true;
+	CamSpringArm->CameraRotationLagSpeed = 1.f;
+	CamSpringArm->CameraLagMaxDistance = 70.f;
+
+
 
 	Cam = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Cam->SetupAttachment(CamSpringArm);
