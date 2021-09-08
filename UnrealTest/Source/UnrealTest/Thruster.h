@@ -58,6 +58,10 @@ private:
 	float HoverExponent;
 
 
+	/* The force of the actual thrust */
+	UPROPERTY(Category = Thrust, EditAnywhere)
+	float ThrustForce;
+
 
 	bool debug;
 	AActor* parentActor;

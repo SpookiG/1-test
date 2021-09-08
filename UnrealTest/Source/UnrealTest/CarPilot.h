@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FloatyCar.h"
 #include "GameFramework/PlayerController.h"
 #include "CarPilot.generated.h"
 
@@ -24,19 +25,28 @@ public:
 protected:
 
 	// Begin overrides
+	virtual void BeginPlay() override;
 	virtual void SetupInputComponent() override;
 	// End overrides
 
 	/** Bound to the thrust axis */
-	void ForwardThrust(float Val);
+	void CallForwardThrust(float Val);
 
 	/** Bound to the vertical axis */
-	void LeftThrust(float Val);
+	void CallLeftThrust(float Val);
 
 	/** Bound to the horizontal axis */
-	void RightThrust(float Val);
+	void CallRightThrust(float Val);
+
+
+
+public:
+	UPROPERTY(Transient, EditAnywhere, BlueprintReadWrite)
+	AFloatyCar* Car1;
 
 private:
+	
+
 	//UPROPERTY(Category = Thrusters, EditAnywhere)
 	//UThruster* BackThruster;
 

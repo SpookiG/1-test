@@ -2,7 +2,10 @@
 
 
 #include "CarPilot.h"
-#include "Thruster.h"
+#include "Kismet/GameplayStatics.h"
+#include "Components/InputComponent.h"
+
+#include "FloatyCar.h"
 
 
 // hmm, ok this is kinda complex, Basically I need to:
@@ -18,12 +21,22 @@ ACarPilot::ACarPilot()
 {
 	flipped = false;
 
-	
+	//check(GetWorld());
+
 
 	// not sure I need to do anything here, keeping the code below copied from other objects in case tick doesn't work
 
 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	//PrimaryActorTick.bCanEverTick = true;
+}
+
+void ACarPilot::BeginPlay()
+{
+	Super::BeginPlay();
+
+	check(GetWorld());
+
+	Car1 = Cast<AFloatyCar>(UGameplayStatics::GetPlayerPawn(this, 0));
 }
 
 
@@ -35,31 +48,30 @@ void ACarPilot::Tick(float DeltaSeconds)
 
 void ACarPilot::SetupInputComponent()
 {
+	Super::SetupInputComponent();
+
 	check(InputComponent);
-	InputComponent->BindAxis("Thrust", this, &ACarPilot::ForwardThrust);
+	InputComponent->BindAxis("Thrust", this, &ACarPilot::CallForwardThrust);
+	InputComponent->BindAxis("MoveRight", this, &ACarPilot::CallLeftThrust);
 }
 
 
 
-void ACarPilot::ForwardThrust(float Val)
+void ACarPilot::CallForwardThrust(float Val)
 {
-	//check(BackThruster);
+	check(Car1);
 
-	//if (Val > .5f) {
-	//	BackThruster->SwitchedOn = true;
-	//}
-	//else {
-	//	BackThruster->SwitchedOn = false;
-	//}
+	Car1->ForwardThrust(Val);
 }
 
-void ACarPilot::LeftThrust(float Val)
+void ACarPilot::CallLeftThrust(float Val)
 {
-	//check(LeftThruster);
-	//check(RightThruster);
+	check(Car1);
+
+	Car1->LeftThrust(Val);
 }
 
-void ACarPilot::RightThrust(float Val)
+void ACarPilot::CallRightThrust(float Val)
 {
 	//check(LeftThruster);
 	//check(RightThruster);

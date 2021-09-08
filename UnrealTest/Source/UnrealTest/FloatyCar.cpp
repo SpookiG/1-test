@@ -104,10 +104,60 @@ AFloatyCar::AFloatyCar()
 
 
 
+	lastTickDelta = 0.f;
 
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
+
+
+void AFloatyCar::ForwardThrust(float Val)
+{
+	check(BackThruster);
+
+	if (Val > .5f) {
+		BackThruster->SwitchedOn = true;
+	}
+	else {
+		BackThruster->SwitchedOn = false;
+	}
+}
+
+void AFloatyCar::LeftThrust(float Val)
+{
+	check(LeftThruster);
+	check(RightThruster);
+
+	UThruster* lefty;
+	UThruster* righty;
+
+	if ((GetActorUpVector() + Cam->GetUpVector()).Size() > 1.f) {
+		lefty = LeftThruster;
+		righty = RightThruster;
+	}
+	else {
+		lefty = RightThruster;
+		righty = LeftThruster;
+	}
+
+	check(lefty);
+	check(righty);
+
+	if (Val < -.5f) {
+		lefty->SwitchedOn = false;
+		righty->SwitchedOn = true;
+	}
+	else if (Val > .5f) {
+		lefty->SwitchedOn = true;
+		righty->SwitchedOn = false;
+	}
+	else {
+		lefty->SwitchedOn = false;
+		righty->SwitchedOn = false;
+	}
+}
+
+
 
 // Called when the game starts or when spawned
 void AFloatyCar::BeginPlay()
@@ -121,7 +171,38 @@ void AFloatyCar::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	lastTickDelta = DeltaTime;
 }
+
+
+void AFloatyCar::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	// First check underneath the thruster
+	FHitResult hitCollision(ForceInit);
+	FVector start = OverlappedComp->GetComponentLocation();
+	FVector end = start - (OverlappedComp->GetComponentVelocity() * lastTickDelta * 2.f);
+	//DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .1f);
+	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
+	RV_TraceParams.bTraceComplex = true;
+	RV_TraceParams.bReturnPhysicalMaterial = false;
+
+	GetWorld()->LineTraceSingleByChannel(hitCollision, start, end, ECC_Visibility, RV_TraceParams);
+
+
+
+	// If hit, apply force underneath the thruster
+	if (hitCollision.bBlockingHit) {
+		SetActorLocation(hitCollision.Location);
+		OverlappedComp->ComponentVelocity = -OverlappedComp->GetComponentVelocity();
+	}
+
+
+	
+}
+
+
+
+
 
 // Called to bind functionality to input
 void AFloatyCar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

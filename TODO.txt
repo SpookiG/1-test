@@ -66,3 +66,6 @@ Done!!!
 	- 3 thruster boxes
 	- created a car shaped mesh thingy!!
 	- car hovers above the ground!
+	- car thrusts forward
+	- car thrusts side to side
+	- car swaps between the left and right thrusters depending on orientation

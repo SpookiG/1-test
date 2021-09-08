@@ -51,6 +51,8 @@ UThruster::UThruster()
 	DampingMultiplier = 0.5f;
 	HoverExponent = .3f;
 
+	ThrustForce = 300000.f;
+
 
 	SwitchedOn = false;
 
@@ -176,7 +178,7 @@ void UThruster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 
 
 	if (SwitchedOn) {
-		ThrusterMesh->AddForce(-GetForwardVector() * 300000.f);
+		ThrusterMesh->AddForce(-GetForwardVector() * ThrustForce);
 	}
 
 	// I want to raycast up and down to apply a hovering force (even when the car is flipped)
@@ -186,5 +188,20 @@ void UThruster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	//ThrusterMesh->AddForce(FVector(50.f, 50.f, 50.f));
 
 	// ...
+
+
+
+	/*
+	FHitResult hitCollision(ForceInit);
+	end = start + (ThrusterMesh->GetPhysicsLinearVelocity() * DeltaTime);
+	DrawDebugLine(GetWorld(), start, end, FColor::Blue, false, .1f);
+
+	GetWorld()->LineTraceSingleByChannel(hitCollision, start, end, ECC_Visibility, RV_TraceParams);
+
+	if (hitCollision.bBlockingHit)
+	{
+		//ThrusterMesh->SetPhysicsLinearVelocity(FVector::ZeroVector);
+		ThrusterMesh->SetPhysicsLinearVelocity(-ThrusterMesh->GetPhysicsLinearVelocity());
+	}*/
 }
 

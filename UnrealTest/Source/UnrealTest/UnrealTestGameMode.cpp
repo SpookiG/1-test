@@ -2,9 +2,12 @@
 
 #include "UnrealTestGameMode.h"
 #include "UnrealTestPawn.h"
+#include "CarPilot.h"
 
 AUnrealTestGameMode::AUnrealTestGameMode()
 {
 	// set default pawn class to our flying pawn
 	DefaultPawnClass = AUnrealTestPawn::StaticClass();
+
+	PlayerControllerClass = ACarPilot::StaticClass();
 }
