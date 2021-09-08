@@ -25,11 +25,13 @@ public:
 	// Sets default values for this component's properties
 	UThruster();
 
+	// Called every frame
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
 	// have to use this to connect the thruster to the main body
 	void SetupPhysicsConstraint(AActor* Parent);
 
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	void SetHoverForce(float val);
 
 protected:
 	// Called when the game starts

@@ -47,10 +47,12 @@ UThruster::UThruster()
 
 
 	HoverHeight = 100.f;
-	HoverForce = 120000.f;
+	HoverForce = 120000.f;						// front thrusters lift at 20000.0, back thrusters at 130000.0
 	DampingMultiplier = 0.5f;
-	HoverExponent = 2.f;
+	HoverExponent = .1f;
 
+
+	SwitchedOn = false;
 
 
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
@@ -74,13 +76,19 @@ void UThruster::SetupPhysicsConstraint(AActor* Parent)
 }
 
 
+void UThruster::SetHoverForce(float val)
+{
+	HoverForce = val;
+}
+
+
 
 // Called when the game starts
 void UThruster::BeginPlay()
 {
 	Super::BeginPlay();
 
-	
+	SwitchedOn = false;
 
 	//ThrusterMesh->SetupAttachment(ThrusterNonPhysicsMesh);
 	//ThrusterMesh->SetWorldLocation(ThrusterNonPhysicsMesh->GetComponentTransform().GetLocation());
@@ -104,12 +112,17 @@ void UThruster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	FHitResult hitBelow(ForceInit);
 	FVector start = GetComponentLocation();
 	FVector end = start - (HoverHeight * GetUpVector());
-	DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .5f);
+	DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .1f);
 	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, parentActor);
 	RV_TraceParams.bTraceComplex = true;
 	RV_TraceParams.bReturnPhysicalMaterial = false;
 
 	GetWorld()->LineTraceSingleByChannel(hitBelow, start, end, ECC_Visibility, RV_TraceParams);
+
+	// might want to do something like:
+	// travelling into ground? Add big velocity multiplier away
+	// else no velocity multiplier, want just enough force to barely move up the thruster
+
 
 	// If hit, apply force underneath the thruster
 	if (hitBelow.bBlockingHit) {
@@ -117,18 +130,26 @@ void UThruster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 		FVector normVel = ThrusterMesh->GetPhysicsLinearVelocity();
 		normVel.Normalize();
 
-		if (distToGround > relativeTargetHeightFromGround) {
-			ThrusterMesh->SetPhysicsLinearVelocity(ThrusterMesh->GetPhysicsLinearVelocity() * DampingMultiplier);		// Dampen velocity if too high
+		// when travelling towards ground limit downward velocity
+		if ((normVel + GetUpVector()).Size() < 1.f) {
+			FVector upVelocity = ThrusterMesh->GetPhysicsLinearVelocity() * GetUpVector();
+
+			// only damp upwards movement
+			ThrusterMesh->SetPhysicsLinearVelocity((ThrusterMesh->GetPhysicsLinearVelocity() * GetForwardVector()) + (ThrusterMesh->GetPhysicsLinearVelocity() * GetRightVector()) + (upVelocity * DampingMultiplier));
+			//ThrusterMesh->SetPhysicsLinearVelocity(ThrusterMesh->GetPhysicsLinearVelocity() * DampingMultiplier);
 		}
-		else if (distToGround < relativeTargetHeightFromGround) {
-			ThrusterMesh->AddForce(GetUpVector() * HoverForce * powf(1.f - (distToGround), HoverExponent));
-		}
+
+
+		ThrusterMesh->AddForce(GetUpVector() * HoverForce * powf(1.f - (distToGround), HoverExponent));
+
+		
+
 	}
 
 	// Now check above the thruster
 	FHitResult hitAbove(ForceInit);
 	end = start + (HoverHeight * GetUpVector());
-	DrawDebugLine(GetWorld(), start, end, FColor::Red, false, .5f);
+	DrawDebugLine(GetWorld(), start, end, FColor::Red, false, .1f);
 
 	GetWorld()->LineTraceSingleByChannel(hitAbove, start, end, ECC_Visibility, RV_TraceParams);
 
@@ -138,15 +159,25 @@ void UThruster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 		FVector normVel = ThrusterMesh->GetPhysicsLinearVelocity();
 		normVel.Normalize();
 
-		if (distToGround > relativeTargetHeightFromGround) {
-			ThrusterMesh->SetPhysicsLinearVelocity(ThrusterMesh->GetPhysicsLinearVelocity() * DampingMultiplier);		// Dampen velocity if too high
+		// when travelling towards ground limit downward velocity
+		if ((normVel - GetUpVector()).Size() < 1.f) {
+			FVector upVelocity = ThrusterMesh->GetPhysicsLinearVelocity() * GetUpVector();
+
+			// only damp upwards movement
+			ThrusterMesh->SetPhysicsLinearVelocity((ThrusterMesh->GetPhysicsLinearVelocity() * GetForwardVector()) + (ThrusterMesh->GetPhysicsLinearVelocity() * GetRightVector()) + (upVelocity * DampingMultiplier));
+			//ThrusterMesh->SetPhysicsLinearVelocity(ThrusterMesh->GetPhysicsLinearVelocity() * DampingMultiplier);
 		}
-		else if (distToGround < relativeTargetHeightFromGround) {
-			ThrusterMesh->AddForce(-GetUpVector() * HoverForce * powf(1.f - (distToGround), HoverExponent));
-		}
+
+
+		ThrusterMesh->AddForce(-GetUpVector() * HoverForce * powf(1.f - (distToGround), HoverExponent));
+
+		
 	}
 
 
+	if (SwitchedOn) {
+		ThrusterMesh->AddForce(-GetForwardVector() * 300000.f);
+	}
 
 	// I want to raycast up and down to apply a hovering force (even when the car is flipped)
 	// I want to check if the car is flipped and reverse the left and right thrusters if so (This is something for the charactercontroller)
