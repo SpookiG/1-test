@@ -6,6 +6,7 @@
 #include "PhysicsEngine/PhysicsConstraintComponent.h"
 #include "Engine/StaticMesh.h"
 #include "DrawDebugHelpers.h"
+#include "PhysicalMaterials/PhysicalMaterial.h"
 
 // Sets default values for this component's properties
 UThruster::UThruster()
@@ -15,9 +16,11 @@ UThruster::UThruster()
 	struct FConstructorStatics
 	{
 		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> ThrusterMesh;
+		ConstructorHelpers::FObjectFinderOptional<UObject> SlippyPhysicsMaterial;
 
 		FConstructorStatics() :
-			ThrusterMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cube"))
+			ThrusterMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cube")),
+			SlippyPhysicsMaterial(TEXT("/Game/car/Slippery"))
 		{
 		}
 	};
@@ -32,6 +35,9 @@ UThruster::UThruster()
 	ThrusterMesh->SetSimulatePhysics(true);
 	ThrusterMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	ThrusterMesh->SetRelativeScale3D(FVector(0.25f, 0.25f, 0.25f));
+	ThrusterMesh->SetCenterOfMass(FVector(0, 0, 12.5));
+	ThrusterMesh->SetUseCCD(true);
+	ThrusterMesh->SetPhysMaterialOverride((UPhysicalMaterial*) ConstructorStatics.SlippyPhysicsMaterial.Get());
 
 
 	// create and attach the physics constraint using the names
@@ -40,18 +46,19 @@ UThruster::UThruster()
 	PhysicsConstraint->SetAngularSwing1Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
 	PhysicsConstraint->SetAngularSwing2Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
 	PhysicsConstraint->SetAngularTwistLimit(EAngularConstraintMotion::ACM_Locked, 0.f);
-	PhysicsConstraint->SetLinearXLimit(ELinearConstraintMotion::LCM_Limited, 3.f);
-	PhysicsConstraint->SetLinearYLimit(ELinearConstraintMotion::LCM_Limited, 3.f);
-	PhysicsConstraint->SetLinearZLimit(ELinearConstraintMotion::LCM_Limited, 3.f);
+	PhysicsConstraint->SetLinearXLimit(ELinearConstraintMotion::LCM_Locked, 0.f);
+	PhysicsConstraint->SetLinearYLimit(ELinearConstraintMotion::LCM_Locked, 0.f);
+	PhysicsConstraint->SetLinearZLimit(ELinearConstraintMotion::LCM_Locked, 0.f);
 	PhysicsConstraint->SetDisableCollision(true);
+	PhysicsConstraint->ConstraintInstance.DisableProjection();
 
 
 	HoverHeight = 100.f;
-	HoverForce = 20000.f;						// front thrusters lift at 20000.0, back thrusters at 130000.0
+	HoverForce = 40000.f;						// front thrusters lift at 20000.0, back thrusters at 130000.0
 	DampingMultiplier = 0.5f;
-	HoverExponent = .3f;
+	HoverExponent = .1f;
 
-	ThrustForce = 300000.f;
+	ThrustForce = 100000.f;
 
 
 	SwitchedOn = false;

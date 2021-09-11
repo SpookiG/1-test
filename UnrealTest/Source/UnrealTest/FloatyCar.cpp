@@ -12,6 +12,7 @@
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
 #include "Engine/StaticMesh.h"
+#include "PhysicalMaterials/PhysicalMaterial.h"
 #include "Math/Vector.h"
 
 #include "Thruster.h"
@@ -24,14 +25,19 @@ AFloatyCar::AFloatyCar()
 	{
 		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> WrapperMesh;
 		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> CarMesh;
+		ConstructorHelpers::FObjectFinderOptional<UObject> SlippyPhysicsMaterial;
 
 		FConstructorStatics() :
 			WrapperMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone")),
-			CarMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone"))
+			CarMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone")),
+			SlippyPhysicsMaterial(TEXT("/Game/car/Slippery"))
 		{
 		}
 	};
 	static FConstructorStatics ConstructorStatics;
+
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
+
 
 	// Create car wrapper component
 	CarWrapper = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarWrapper"));
@@ -40,6 +46,10 @@ AFloatyCar::AFloatyCar()
 	CarWrapper->SetSimulatePhysics(true);
 	CarWrapper->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	CarWrapper->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);	// collision enabled to allow physics but we're ignoring all collisions lol, what a mess
+	CarWrapper->SetCenterOfMass(FVector(0, 0, 12.5));
+	CarWrapper->SetUseCCD(true);
+	CarWrapper->BodyInstance.bLockYRotation = true;
+	CarWrapper->SetPhysMaterialOverride((UPhysicalMaterial*) ConstructorStatics.SlippyPhysicsMaterial.Get());
 	RootComponent = CarWrapper;
 	
 	// set up car body
@@ -50,6 +60,9 @@ AFloatyCar::AFloatyCar()
 	CarMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f));
 	CarMesh->SetRelativeScale3D(FVector(0.25f, 1.f, 2.7f));
+	CarMesh->SetCenterOfMass(FVector(0, 0, 12.5));
+	CarMesh->SetPhysMaterialOverride((UPhysicalMaterial*) ConstructorStatics.SlippyPhysicsMaterial.Get());
+	CarMesh->SetUseCCD(true);
 
 	// Attach car body to wrapper
 	PhysicsConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(TEXT("BodyConstraint"));
@@ -69,7 +82,8 @@ AFloatyCar::AFloatyCar()
 	BackThruster->SetupPhysicsConstraint(this);
 	BackThruster->SetRelativeLocation(FVector(-10.f, 0.f, -12.5f));
 	BackThruster->SetRelativeRotation(FRotator(0.f, 180.f, 0.f));
-	BackThruster->SetHoverForce(130000.f);
+	BackThruster->SetHoverForce(50000.f);
+	// set back thruster forward force to 300000.0 ---------------------------------------------------------------------------------------------------!!!
 
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
 	LeftThruster->SetupAttachment(RootComponent);
