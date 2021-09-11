@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "Components/SceneComponent.h"
+#include "Math/Vector.h"
 #include "Thruster.generated.h"
+
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -65,5 +67,9 @@ private:
 
 	bool debug;
 	AActor* parentActor;
+
+	FVector lastRelPos;
+	FVector lastVelocity;
+	int frame;
 
 };

@@ -12,6 +12,7 @@
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
 #include "Engine/StaticMesh.h"
+#include "Math/Vector.h"
 
 #include "Thruster.h"
 
@@ -101,7 +102,7 @@ AFloatyCar::AFloatyCar()
 
 
 
-
+	collisions = 0;
 
 
 	lastTickDelta = 0.f;
@@ -132,12 +133,35 @@ void AFloatyCar::LeftThrust(float Val)
 	UThruster* righty;
 
 	if ((GetActorUpVector() + Cam->GetUpVector()).Size() > 1.f) {
+		//UE_LOG(LogTemp, Warning, TEXT("Left"));
 		lefty = LeftThruster;
 		righty = RightThruster;
 	}
-	else {
+	else /*if ((GetActorUpVector() + Cam->GetUpVector()).Size() < .5f)*/ {
+		//UE_LOG(LogTemp, Warning, TEXT("Right"));
 		lefty = RightThruster;
 		righty = LeftThruster;
+	}
+	//else {
+	//	return;
+	//}
+
+	if ((GetActorUpVector() + Cam->GetUpVector()).Size() > 0.5f && (GetActorUpVector() + Cam->GetUpVector()).Size() < 1.5f) {
+		FVector frontOfShip = (LeftThruster->GetComponentLocation() + RightThruster->GetComponentLocation()) * 0.5f;
+
+		FVector leftDir = FVector::CrossProduct(GetActorForwardVector(), FVector(0, 0, 1));
+
+		if (Val < -.5f) {
+			CarWrapper->AddForceAtLocation(leftDir * 40000.0f, frontOfShip);
+		}
+		else if (Val > .5f) {
+			CarWrapper->AddForceAtLocation(-leftDir * 40000.0f, frontOfShip);
+		}
+
+		//lefty->SwitchedOn = false;
+		//righty->SwitchedOn = false;
+
+		//return;
 	}
 
 	check(lefty);
@@ -163,7 +187,9 @@ void AFloatyCar::LeftThrust(float Val)
 void AFloatyCar::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	collisions = 0;
+	lastVelocity = FVector::ZeroVector;
 }
 
 // Called every frame
@@ -171,32 +197,114 @@ void AFloatyCar::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	//if ((GetVelocity() * GetActorUpVector()).Size() > 900.f) {
+	//	UE_LOG(LogTemp, Warning, TEXT("full body upwards velocity %f"), (GetVelocity() * GetActorUpVector()).Size());
+	//}
+
+	//UE_LOG(LogTemp, Warning, TEXT("space between front thrusters: %f"), (LeftThruster->GetComponentLocation() - RightThruster->GetComponentLocation()).Size());
+
+	FVector frontOfShip = (LeftThruster->GetComponentLocation() + RightThruster->GetComponentLocation()) * 0.5f;
+
+	FHitResult hitFloor(ForceInit);
+	FVector start = frontOfShip;
+	FVector end = start - FVector(0, 0, 200.f/*RightThruster->GetRelativeLocation().Y*/);
+	//DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .1f);
+	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
+	RV_TraceParams.bTraceComplex = true;
+	RV_TraceParams.bReturnPhysicalMaterial = false;
+
+	GetWorld()->LineTraceSingleByChannel(hitFloor, start, end, ECC_Visibility, RV_TraceParams);
+
+
+
+	// If hit, apply force underneath the thruster
+	if (hitFloor.bBlockingHit) {
+		//UE_LOG(LogTemp, Warning, TEXT("hit!!"));
+		//SetActorLocation(hitCollision.Location);
+		//OverlappedComp->ComponentVelocity = -OverlappedComp->GetComponentVelocity();
+		CarWrapper->SetAngularDamping(100.f);
+	}
+	else {
+		//UE_LOG(LogTemp, Warning, TEXT("No hit!!"));
+		CarWrapper->SetAngularDamping(0.f);
+	}
+
+	//UE_LOG(LogTemp, Warning, TEXT("Angular damping: %f"), CarWrapper->GetAngularDamping());
+
+	if (LeftThruster->SwitchedOn) {
+		UE_LOG(LogTemp, Warning, TEXT("Left thruster on"));
+	}
+	else {
+		UE_LOG(LogTemp, Warning, TEXT("Left thruster off"));
+	}
+
+	if (RightThruster->SwitchedOn) {
+		UE_LOG(LogTemp, Warning, TEXT("Right thruster on\n"));
+	}
+	else {
+		UE_LOG(LogTemp, Warning, TEXT("Right thruster off\n"));
+	}
+
+
+
+	//UE_LOG(LogTemp, Warning, TEXT("Going down! Down speed: %f"), BackThruster->GetComponentLocation().Z - CarWrapper->GetComponentLocation().Z);
+
+	if (BackThruster->GetComponentLocation().Z < LeftThruster->GetComponentLocation().Z + 10.f) {
+		
+	}
+
+
+
+
 	lastTickDelta = DeltaTime;
+	lastVelocity = CarWrapper->GetPhysicsLinearVelocity();
 }
 
 
 void AFloatyCar::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	// First check underneath the thruster
-	FHitResult hitCollision(ForceInit);
-	FVector start = OverlappedComp->GetComponentLocation();
-	FVector end = start - (OverlappedComp->GetComponentVelocity() * lastTickDelta * 2.f);
+	//FHitResult hitCollision(ForceInit);
+	//FVector start = OverlappedComp->GetComponentLocation();
+	//FVector end = start - (OverlappedComp->GetComponentVelocity() * lastTickDelta * 2.f);
 	//DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .1f);
-	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
-	RV_TraceParams.bTraceComplex = true;
-	RV_TraceParams.bReturnPhysicalMaterial = false;
+	//FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
+	//RV_TraceParams.bTraceComplex = true;
+	//RV_TraceParams.bReturnPhysicalMaterial = false;
 
-	GetWorld()->LineTraceSingleByChannel(hitCollision, start, end, ECC_Visibility, RV_TraceParams);
+	//GetWorld()->LineTraceSingleByChannel(hitCollision, start, end, ECC_Visibility, RV_TraceParams);
 
 
 
 	// If hit, apply force underneath the thruster
-	if (hitCollision.bBlockingHit) {
-		SetActorLocation(hitCollision.Location);
-		OverlappedComp->ComponentVelocity = -OverlappedComp->GetComponentVelocity();
+	//if (hitCollision.bBlockingHit) {
+		//SetActorLocation(hitCollision.Location);
+		//OverlappedComp->ComponentVelocity = -OverlappedComp->GetComponentVelocity();
+	//}
+
+
+	
+}
+
+void AFloatyCar::NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
+{
+	if (Other != this && NormalImpulse.Size() > 10000.f)
+	{
+		//collisions++;
+		//UE_LOG(LogTemp, Warning, TEXT("collision %i!! Impluse = %f   problem check = %f"), collisions, NormalImpulse.Size(), (MyComp->ComponentVelocity - GetVelocity()).Size());
+
+		// linecast around car to see if we're colliding with anything in front or behind
+
+		if ((HitNormal * GetActorForwardVector()).Size() > 0.8f)
+		{
+			
+			//UE_LOG(LogTemp, Warning, TEXT("problem collision %i"), collisions, NormalImpulse.Size(), (HitNormal * GetVelocity()).Size());
+			//CarWrapper->SetPhysicsLinearVelocity(lastVelocity);
+			//CarMesh->SetPhysicsLinearVelocity(lastVelocity);
+			//CarWrapper->SetPhysicsAngularVelocity(FVector::ZeroVector);
+			//CarMesh->SetPhysicsLinearVelocity(FVector::ZeroVector);
+		}
 	}
-
-
 	
 }
 
@@ -205,9 +313,9 @@ void AFloatyCar::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class
 
 
 // Called to bind functionality to input
-void AFloatyCar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+//void AFloatyCar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+//{
+//	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-}
+//}
 

@@ -1,0 +1,1704 @@
+﻿Log file open, 09/09/21 21:30:38
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: UnrealTest
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 1.381262
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogXGEController: Cleaning working directory: C:/Users/layco/AppData/Local/Temp/UnrealXGEWorkingDir/
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.26-CL-15973114
+LogInit: Engine Version: 4.26.2-15973114+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: AMD Ryzen 7 3750H with Radeon Vega Mobile Gfx  , GPU: AMD Radeon(TM) RX Vega 10 Graphics
+LogInit: Compiled (64-bit): Apr 12 2021 06:14:10
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.09.09-20.30.39:307][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.09.09-20.30.39:307][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.09.09-20.30.39:308][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Engine.ini]
+[2021.09.09-20.30.39:308][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.09.09-20.30.39:308][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Engine.ini]
+[2021.09.09-20.30.39:308][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Engine.ini]
+[2021.09.09-20.30.39:308][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.09.09-20.30.39:308][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.09.09-20.30.39:308][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.09.09-20.30.39:308][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.09.09-20.30.39:308][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.09.09-20.30.39:308][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Engine.ini]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2021.09.09-20.30.39:309][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Engine.ini]
+[2021.09.09-20.30.39:309][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Engine.ini]
+[2021.09.09-20.30.39:320][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.09.09-20.30.39:320][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.09.09-20.30.39:321][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2021.09.09-20.30.39:322][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2021.09.09-20.30.39:323][  0]LogInit: Selected Device Profile: [Windows]
+[2021.09.09-20.30.39:323][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.09.09-20.30.39:324][  0]LogHAL: Display: Platform has ~ 16 GB [16978083840 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.09.09-20.30.39:324][  0]LogInit: Going up to parent DeviceProfile []
+[2021.09.09-20.30.39:324][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:324][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.09.09-20.30.39:324][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.09.09-20.30.39:324][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:324][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.09.09-20.30.39:324][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:324][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.09.09-20.30.39:325][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Scalability.ini]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2021.09.09-20.30.39:326][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.09.09-20.30.39:327][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.09.09-20.30.39:327][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.09.09-20.30.39:328][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.09.09-20.30.39:328][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Engine.ini]
+[2021.09.09-20.30.39:328][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Config/Windows/Editor.ini]
+[2021.09.09-20.30.39:328][  0]LogInit: Computer: LAPTOP-QFGFLK4N
+[2021.09.09-20.30.39:328][  0]LogInit: User: layco
+[2021.09.09-20.30.39:328][  0]LogInit: CPU Page size=4096, Cores=4
+[2021.09.09-20.30.39:328][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.09.09-20.30.39:328][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2021.09.09-20.30.39:328][  0]LogMemory: Platform Memory Stats for Windows
+[2021.09.09-20.30.39:328][  0]LogMemory: Process Physical Memory: 134.21 MB used, 134.22 MB peak
+[2021.09.09-20.30.39:328][  0]LogMemory: Process Virtual Memory: 109.19 MB used, 109.19 MB peak
+[2021.09.09-20.30.39:328][  0]LogMemory: Physical Memory: 12340.56 MB used,  3851.00 MB free, 16191.56 MB total
+[2021.09.09-20.30.39:328][  0]LogMemory: Virtual Memory: 134207800.00 MB used,  9929.79 MB free, 134217728.00 MB total
+[2021.09.09-20.30.39:417][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.09.09-20.30.39:623][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.09.09-20.30.39:627][  0]LogInit: Using OS detected language (en-GB).
+[2021.09.09-20.30.39:627][  0]LogInit: Using OS detected locale (en-GB).
+[2021.09.09-20.30.39:653][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.09.09-20.30.40:116][  0]LogInit: Setting process to per monitor DPI aware
+[2021.09.09-20.30.40:145][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2021.09.09-20.30.40:202][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.09.09-20.30.40:202][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.09.09-20.30.40:853][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.09.09-20.30.40:853][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.09.09-20.30.40:853][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.09.09-20.30.40:853][  0]LogD3D11RHI: D3D11 adapters:
+[2021.09.09-20.30.41:150][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1660 Ti with Max-Q Design' (Feature Level 11_0)
+[2021.09.09-20.30.41:150][  0]LogD3D11RHI:       5991/0/8095 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.09.09-20.30.41:220][  0]LogD3D11RHI:    1. 'AMD Radeon(TM) RX Vega 10 Graphics' (Feature Level 11_0)
+[2021.09.09-20.30.41:220][  0]LogD3D11RHI:       113/0/8095 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1002
+[2021.09.09-20.30.41:228][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.09.09-20.30.41:228][  0]LogD3D11RHI:       0/0/8095 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.09.09-20.30.41:228][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.09.09-20.30.41:244][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.09.09-20.30.41:245][  0]LogD3D11RHI:     GPU DeviceId: 0x2191 (for the marketing name, search the web for "GPU Device Id")
+[2021.09.09-20.30.41:245][  0]LogWindows: EnumDisplayDevices:
+[2021.09.09-20.30.41:245][  0]LogWindows:    0. 'AMD Radeon(TM) RX Vega 10 Graphics' (P:1 D:1)
+[2021.09.09-20.30.41:246][  0]LogWindows:    1. 'AMD Radeon(TM) RX Vega 10 Graphics' (P:0 D:0)
+[2021.09.09-20.30.41:246][  0]LogWindows:    2. 'AMD Radeon(TM) RX Vega 10 Graphics' (P:0 D:0)
+[2021.09.09-20.30.41:247][  0]LogWindows:    3. 'AMD Radeon(TM) RX Vega 10 Graphics' (P:0 D:0)
+[2021.09.09-20.30.41:247][  0]LogWindows:    4. 'NVIDIA GeForce GTX 1660 Ti with Max-Q Design' (P:0 D:0)
+[2021.09.09-20.30.41:248][  0]LogWindows:    5. 'NVIDIA GeForce GTX 1660 Ti with Max-Q Design' (P:0 D:0)
+[2021.09.09-20.30.41:248][  0]LogWindows:    6. 'NVIDIA GeForce GTX 1660 Ti with Max-Q Design' (P:0 D:0)
+[2021.09.09-20.30.41:248][  0]LogWindows:    7. 'NVIDIA GeForce GTX 1660 Ti with Max-Q Design' (P:0 D:0)
+[2021.09.09-20.30.41:248][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2021.09.09-20.30.41:249][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1660 Ti with Max-Q Design
+[2021.09.09-20.30.41:249][  0]LogD3D11RHI:   Driver Version: 457.63 (internal:27.21.14.5763, unified:457.63)
+[2021.09.09-20.30.41:249][  0]LogD3D11RHI:      Driver Date: 12-8-2020
+[2021.09.09-20.30.41:249][  0]LogRHI: Texture pool is 4193 MB (70% of 5991 MB)
+[2021.09.09-20.30.41:325][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.09.09-20.30.41:326][  0]LogD3D11RHI: Async texture creation enabled
+[2021.09.09-20.30.41:326][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.09.09-20.30.41:373][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.09.09-20.30.41:380][  0]LogRHI: GeForceNow SDK initialized: 1
+[2021.09.09-20.30.41:872][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.09.09-20.30.41:905][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.09.09-20.30.41:905][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.09.09-20.30.41:905][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.09.09-20.30.41:905][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.09.09-20.30.41:905][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.09.09-20.30.41:905][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.09.09-20.30.41:906][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.09.09-20.30.41:906][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.09.09-20.30.41:906][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.09.09-20.30.41:906][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.09.09-20.30.41:946][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.09.09-20.30.41:946][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.09.09-20.30.41:963][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.09.09-20.30.41:977][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.09.09-20.30.41:996][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.09.09-20.30.42:012][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.09.09-20.30.42:026][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.09.09-20.30.42:040][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.09.09-20.30.42:053][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.09.09-20.30.42:088][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.09.09-20.30.42:088][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.09.09-20.30.42:108][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2021.09.09-20.30.42:125][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2021.09.09-20.30.42:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2021.09.09-20.30.42:153][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2021.09.09-20.30.42:173][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.09.09-20.30.42:174][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.09.09-20.30.42:188][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.09.09-20.30.42:208][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.09.09-20.30.42:223][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.09.09-20.30.42:237][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.09.09-20.30.42:238][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.09.09-20.30.42:256][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.09.09-20.30.42:496][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2021.09.09-20.30.42:497][  0]LogShaderCompilers: Guid format shader working directory is -25 characters bigger than the processId version (../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Intermediate/Shaders/WorkingDirectory/35720/).
+[2021.09.09-20.30.42:498][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/layco/AppData/Local/Temp/UnrealShaderWorkingDir/BF70E0C747FE5CC62D9551A28D6A2E1B/'.
+[2021.09.09-20.30.42:498][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.09.09-20.30.42:498][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.09.09-20.30.43:757][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.09.09-20.30.43:887][  0]LogDerivedDataCache: Loaded boot cache 0.13s 77MB C:/Users/layco/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2021.09.09-20.30.43:887][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/layco/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2021.09.09-20.30.43:887][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.09.09-20.30.43:887][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.09.09-20.30.43:888][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.09.09-20.30.43:888][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.09.09-20.30.43:912][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.09.09-20.30.43:912][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.09.09-20.30.43:912][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.09.09-20.30.43:934][  0]LogDerivedDataCache: Speed tests for C:/Users/layco/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.02 seconds
+[2021.09.09-20.30.43:934][  0]LogDerivedDataCache: Display: Performance to C:/Users/layco/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.37ms. RandomReadSpeed=111.94MBs, RandomWriteSpeed=104.46MBs. Assigned SpeedClass 'Local'
+[2021.09.09-20.30.43:935][  0]LogDerivedDataCache: Using Local data cache path C:/Users/layco/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.09.09-20.30.43:935][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.09.09-20.30.43:935][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.09.09-20.30.44:003][  0]LogSlate: Using FreeType 2.10.0
+[2021.09.09-20.30.44:007][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.09.09-20.30.44:076][  0]LogAssetRegistry: FAssetRegistry took 0.0112 seconds to start up
+[2021.09.09-20.30.44:578][  0]LogInit: Selected Device Profile: [Windows]
+[2021.09.09-20.30.44:579][  0]LogInit: Active device profile: [0000024970909D00][000002496E07C900 49] Windows
+[2021.09.09-20.30.44:579][  0]LogInit: Profiles: [0000024970909D00][000002496E07C900 49] Windows, [0000024970912400][000002496EAD6A80 49] WindowsNoEditor, [0000024970908D00][000002496EADAC00 49] WindowsServer, [0000024970913000][000002496EADED80 49] WindowsClient, [000002497090AA00][000002496EAE2F00 49] IOS, [0000024970913E00][000002496EAE7080 49] iPadAir, [000002497090AD00][000002496EAEB200 49] iPadAir2, [00000249708BB000][000002496EAF34C0 49] IPadPro, [00000249708BB100][000002496EAEF500 49] iPadAir3, [0000024970909500][000002496EAD3640 49] iPadAir4, [00000249708BA800][000002496EAF7780 49] iPadMini2, [000002497090B200][000002496EAFB8C0 49] iPadMini3, [00000249708B9600][000002496EAFFA00 49] iPadMini4, [0000024970909200][000002496EB07B80 49] iPadMini5, [00000249708EE900][000002496EB0E180 49] iPhone6, [00000249708EEA00][000002496EB0A1C0 49] iPodTouch6, [00000249708BB600][000002496EB16480 49] iPhone7, [00000249708BB700][000002496EB124C0 49] iPodTouch7, [00000249708EE700][000002496EB1A640 49] iPhone5S, [00000249708B8100][000002496EB1E7C0 49] iPhone6Plus, [00000249708ED400][000002496EB22940 49] iPhone6S, [00000249708B8700][000002496EB26AC0 49] iPhone6SPlus, [00000249708EC200][000002496EB2AC40 49] iPhone7Plus, [00000249708BA600][000002496EB2EDC0 49] iPhoneSE, [00000249708EF000][000002496EB32F40 49] iPhone8, [00000249708BBF00][000002496EB370C0 49] iPhone8Plus, [00000249708EDC00][000002496EB3B240 49] iPhoneX, [00000249708BA200][000002496EB3F3C0 49] iPhoneXS, [00000249708EC300][000002496EB43540 49] iPhoneXSMax, [00000249708BBC00][000002496EB03680 49] iPhoneXR, [00000249708EFE00][000002496EB477C0 49] iPhone11, [00000249708BA000][000002496EB4B900 49] iPhone11Pro, [00000249708EF500][000002496EB4FA40 49] iPhone11ProMax, [00000249708BAC00][000002496EB57BC0 49] iPhoneSE2, [00000249708EEC00][000002496EB5BD40 49] iPhone12Mini, [00000249708B8B00][000002496EB5E200 49] iPhone12, [00000249708EE200][000002496EB62380 49] iPhone12Pro, [00000249708BB400][000002496EB66500 49] iPhone12ProMax, [00000249708EF100][000002496EB6A680 49] iPadPro105, [00000249708BBD00][000002496EB6E800 49] iPadPro129, [0000024970911700][000002496EB72980 49] iPadPro97, [00000249708EF400][000002496EB76B00 49] iPadPro2_129, [0000024970911F00][000002496EB7AC80 49] iPad5, [00000249708EE100][000002496EB7EE00 49] iPad6, [0000024970911800][000002496EB82F80 49] iPad7, [00000249708EE600][000002496EB87100 49] iPad8, [0000024970910100][000002496EB8B280 49] iPadPro11, [00000249708EDD00][000002496EB8F400 49] iPadPro2_11, [0000024970912000][000002496EB93580 49] iPadPro3_129, [00000249708EED00][000002496EB97700 49] iPadPro4_129, [0000024970912200][000002496EB53840 49] AppleTV, [00000249708B9700][000002496EB9B980 49] AppleTV4K, [0000024970913900][000002496EB9FAC0 49] TVOS, [00000249708B9900][000002496EBA7C40 49] Mac, [0000024970912C00][000002496EBAA100 49] MacClient, [00000249708B9A00][000002496EBAE280 49] MacNoEditor, [0000024970910200][000002496EBB2400 49] MacServer, [00000249708BA700][000002496EBB6580 49] Linux, [0000024970910800][000002496EBBA700 49] LinuxAArch64, [00000249708B8C00][000002496EBBE880 49] LinuxNoEditor, [0000024970911D00][000002496EBC2A00 49] LinuxAArch64NoEditor, [00000249708B8800][000002496EBC6B80 49] LinuxClient, [0000024970912E00][000002496EBCAD00 49] LinuxAArch64Client, [00000249708B8F00][000002496EBCEE80 49] LinuxServer, [0000024970910F00][000002496EBD3000 49] LinuxAArch64Server, [00000249708BAA00][000002496EBD7180 49] Android, [0000024970911900][000002496EBDB300 49] Android_Low, [00000249708BBA00][000002496EBDF480 49] Android_Mid, [0000024970913800][000002496EBE3600 49] Android_High, [00000249708BA400][000002496EBE7780 49] Android_Default, [0000024970910A00][000002496EBA38C0 49] Android_Adreno4xx, [00000249708B8A00][000002496EBEBA00 49] Android_Adreno5xx_Low, [0000024970913B00][000002496EBEFB40 49] Android_Adreno5xx, [00000249708B9D00][000002496EBF7CC0 49] Android_Adreno6xx, [0000024970912700][000002496EBFA180 49] Android_Adreno6xx_Vulkan, [00000249708B8D00][000002496EBFE300 49] Android_Mali_T6xx, [0000024970910700][000002496EC02480 49] Android_Mali_T7xx, [00000249708B9000][000002496EC06600 49] Android_Mali_T8xx, [0000024970911100][000002496EC0A780 49] Android_Mali_G71, [00000249708B9E00][000002496EC0E900 49] Android_Mali_G72, [0000024970913D00][000002496EC12A80 49] Android_Mali_G72_Vulkan, [00000249708B9200][000002496EC16C00 49] Android_Mali_G76, [0000024970912D00][000002496EC1AD80 49] Android_Mali_G76_Vulkan, [00000249708B9800][000002496EC1EF00 49] Android_Mali_G77, [0000024970911400][000002496EC23080 49] Android_Mali_G77_Vulkan, [00000249708BBB00][000002496EC27200 49] Android_Vulkan_SM5, [0000024970912A00][000002496EC2B380 49] Android_PowerVR_G6xxx, [00000249708BB900][000002496EC2F500 49] Android_PowerVR_GT7xxx, [0000024970912500][000002496EC33680 49] Android_PowerVR_GE8xxx, [00000249708B9100][000002496EC37800 49] Android_PowerVR_GM9xxx, [0000024970913500][000002496EBF3940 49] Android_PowerVR_GM9xxx_Vulkan, [00000249708BA300][000002496EC3BA80 49] Android_TegraK1, [0000024970912800][000002496EC3FBC0 49] Android_Unknown_Vulkan, [00000249708BB800][000002496EC43D00 49] Lumin, [000002497090B000][000002496EC4A1C0 49] Lumin_Desktop, [00000249708EC800][000002496EC4E340 49] HoloLens, 
+[2021.09.09-20.30.44:862][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.09.09-20.30.44:862][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.09.09-20.30.44:862][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.09.09-20.30.44:862][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.09.09-20.30.44:864][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.09.09-20.30.44:921][  0]LogNetVersion: UnrealTest 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 3521842971)
+[2021.09.09-20.30.46:085][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2021.09.09-20.30.46:184][  0]LogPackageLocalizationCache: Processed 22 localized package path(s) for 1 prioritized culture(s) in 0.096281 seconds
+[2021.09.09-20.30.46:194][  0]LogUObjectArray: 16831 objects as part of root set at end of initial load.
+[2021.09.09-20.30.46:195][  0]LogUObjectAllocator: 4209728 out of 0 bytes used by permanent object pool.
+[2021.09.09-20.30.46:195][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.09.09-20.30.47:457][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.09.09-20.30.47:471][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.09.09-20.30.47:585][  0]LogTemp: Warning: 牥
+[2021.09.09-20.30.47:585][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.47:585][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.47:585][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.47:585][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.47:585][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.47:585][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.47:585][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.47:742][  0]SourceControl: Source control is disabled
+[2021.09.09-20.30.47:742][  0]SourceControl: Source control is disabled
+[2021.09.09-20.30.47:752][  0]SourceControl: Source control is disabled
+[2021.09.09-20.30.47:770][  0]SourceControl: Source control is disabled
+[2021.09.09-20.30.47:798][  0]SourceControl: Source control is disabled
+[2021.09.09-20.30.47:810][  0]LogUProjectInfo: Found projects:
+[2021.09.09-20.30.48:425][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.09.09-20.30.48:461][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.09.09-20.30.48:461][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.09.09-20.30.48:612][  0]LogCollectionManager: Loaded 0 collections in 0.003888 seconds
+[2021.09.09-20.30.48:681][  0]LogFileCache: Scanning file cache for directory 'C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/Collections/' took 0.00s
+[2021.09.09-20.30.48:681][  0]LogFileCache: Scanning file cache for directory 'C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/Developers/layco/Collections/' took 0.00s
+[2021.09.09-20.30.48:681][  0]LogFileCache: Scanning file cache for directory 'C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/Collections/' took 0.00s
+[2021.09.09-20.30.48:682][  0]LogOcInput: OculusInput pre-init called
+[2021.09.09-20.30.48:709][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.09.09-20.30.48:710][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.09.09-20.30.48:923][  0]LogEngine: Initializing Engine...
+[2021.09.09-20.30.48:932][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.09.09-20.30.48:933][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.09.09-20.30.48:942][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.002 s
+[2021.09.09-20.30.49:120][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.09.09-20.30.49:203][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.09.09-20.30.49:220][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2021.09.09-20.30.49:231][  0]LogAudio: Display: Audio Device Manager Initialized
+[2021.09.09-20.30.49:231][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2021.09.09-20.30.49:232][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.09-20.30.49:232][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.09-20.30.49:232][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.09-20.30.49:232][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.09-20.30.49:232][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.09-20.30.49:232][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.09-20.30.49:232][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.09-20.30.49:232][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.09-20.30.49:237][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.09-20.30.49:238][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.09-20.30.49:837][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.09-20.30.49:837][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.09.09-20.30.49:838][  0]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.09-20.30.49:838][  0]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.09-20.30.49:838][  0]LogAudioMixer: Display: 4: BackLeft
+[2021.09.09-20.30.49:838][  0]LogAudioMixer: Display: 5: BackRight
+[2021.09.09-20.30.49:838][  0]LogAudioMixer: Display: 6: SideLeft
+[2021.09.09-20.30.49:838][  0]LogAudioMixer: Display: 7: SideRight
+[2021.09.09-20.30.50:211][  0]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.09-20.30.50:219][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.09-20.30.50:224][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.09-20.30.50:225][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.09-20.30.50:229][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.09-20.30.50:230][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.09-20.30.50:230][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.09-20.30.50:231][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.09-20.30.50:231][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.09-20.30.50:231][  0]LogInit: FAudioDevice initialized.
+[2021.09.09-20.30.50:234][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2021.09.09-20.30.50:235][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.09.09-20.30.50:325][  0]LogDerivedDataCache: Saved boot cache 0.09s 77MB C:/Users/layco/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2021.09.09-20.30.50:327][  0]LogInit: Texture streaming: Enabled
+[2021.09.09-20.30.50:364][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.26.2-15973114+++UE4+Release-4.26
+[2021.09.09-20.30.50:382][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.09.09-20.30.50:383][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={61C84B30-490A-4E06-5945-1D9DA0C176CE}
+[2021.09.09-20.30.50:386][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.09.09-20.30.50:412][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.09.09-20.30.50:480][  0]LogInit: Transaction tracking system initialized
+[2021.09.09-20.30.50:565][  0]BlueprintLog: New page: Editor Load
+[2021.09.09-20.30.50:868][  0]LocalizationService: Localization service is disabled
+[2021.09.09-20.30.50:967][  0]TimingProfiler: Initialize
+[2021.09.09-20.30.50:970][  0]TimingProfiler: OnSessionChanged
+[2021.09.09-20.30.50:971][  0]LoadingProfiler: Initialize
+[2021.09.09-20.30.50:972][  0]LoadingProfiler: OnSessionChanged
+[2021.09.09-20.30.50:972][  0]NetworkingProfiler: Initialize
+[2021.09.09-20.30.50:973][  0]NetworkingProfiler: OnSessionChanged
+[2021.09.09-20.30.50:973][  0]MemoryProfiler: Initialize
+[2021.09.09-20.30.50:973][  0]MemoryProfiler: OnSessionChanged
+[2021.09.09-20.30.51:351][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2021.09.09-20.30.51:351][  0]LogCook: Display: Mobile HDR setting 1
+[2021.09.09-20.30.51:906][  0]LogFileCache: Scanning file cache for directory 'C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/' took 0.01s
+[2021.09.09-20.30.52:148][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2021.09.09-20.30.52:167][  0]SourceControl: Source control is disabled
+[2021.09.09-20.30.52:169][  0]LogUnrealEdMisc: Loading editor; pre map load, took 16.324
+[2021.09.09-20.30.52:172][  0]Cmd: MAP LOAD FILE="../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.09.09-20.30.52:175][  0]LightingResults: New page: Lighting Build
+[2021.09.09-20.30.52:192][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.09.09-20.30.52:195][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.09-20.30.52:201][  0]MapCheck: New page: Map Check
+[2021.09.09-20.30.52:201][  0]LightingResults: New page: Lighting Build
+[2021.09.09-20.30.52:245][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2021.09.09-20.30.52:351][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.52:351][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.52:352][  0]LogTemp: Warning: Hello
+[2021.09.09-20.30.52:470][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'FlyingExampleMap'.
+[2021.09.09-20.30.52:472][  0]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.09-20.30.52:542][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.09.09-20.30.52:564][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
+[2021.09.09-20.30.52:566][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.09.09-20.30.52:568][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.646ms to complete.
+[2021.09.09-20.30.52:568][  0]LogFileHelpers: Loading map 'FlyingExampleMap' took 0.398
+[2021.09.09-20.30.52:627][  0]LogUnrealEdMisc: Total Editor Startup Time, took 16.782
+[2021.09.09-20.30.52:850][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.09-20.30.52:860][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.09-20.30.52:867][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.09-20.30.52:876][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.09-20.30.52:969][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0128 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-20.30.53:003][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.09.09-20.30.53:018][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2021.09.09-20.30.53:019][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:019][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2021.09.09-20.30.53:019][  0]LogPakFile: OnPakFileMounted2Time == 0.000011
+[2021.09.09-20.30.53:030][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2021.09.09-20.30.53:031][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:031][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2021.09.09-20.30.53:031][  0]LogPakFile: OnPakFileMounted2Time == 0.000016
+[2021.09.09-20.30.53:033][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2021.09.09-20.30.53:033][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:033][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2021.09.09-20.30.53:033][  0]LogPakFile: OnPakFileMounted2Time == 0.000022
+[2021.09.09-20.30.53:036][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.09.09-20.30.53:036][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:036][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2021.09.09-20.30.53:036][  0]LogPakFile: OnPakFileMounted2Time == 0.000027
+[2021.09.09-20.30.53:039][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2021.09.09-20.30.53:039][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:039][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2021.09.09-20.30.53:039][  0]LogPakFile: OnPakFileMounted2Time == 0.000033
+[2021.09.09-20.30.53:041][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2021.09.09-20.30.53:042][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:042][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2021.09.09-20.30.53:042][  0]LogPakFile: OnPakFileMounted2Time == 0.000038
+[2021.09.09-20.30.53:044][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2021.09.09-20.30.53:044][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:044][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2021.09.09-20.30.53:044][  0]LogPakFile: OnPakFileMounted2Time == 0.000043
+[2021.09.09-20.30.53:046][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2021.09.09-20.30.53:046][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:046][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2021.09.09-20.30.53:047][  0]LogPakFile: OnPakFileMounted2Time == 0.000048
+[2021.09.09-20.30.53:049][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2021.09.09-20.30.53:049][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:049][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2021.09.09-20.30.53:049][  0]LogPakFile: OnPakFileMounted2Time == 0.000053
+[2021.09.09-20.30.53:051][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2021.09.09-20.30.53:051][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:051][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2021.09.09-20.30.53:051][  0]LogPakFile: OnPakFileMounted2Time == 0.000058
+[2021.09.09-20.30.53:054][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2021.09.09-20.30.53:054][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:054][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2021.09.09-20.30.53:054][  0]LogPakFile: OnPakFileMounted2Time == 0.000063
+[2021.09.09-20.30.53:056][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2021.09.09-20.30.53:056][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:056][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2021.09.09-20.30.53:056][  0]LogPakFile: OnPakFileMounted2Time == 0.000067
+[2021.09.09-20.30.53:059][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.09.09-20.30.53:059][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:059][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2021.09.09-20.30.53:059][  0]LogPakFile: OnPakFileMounted2Time == 0.000072
+[2021.09.09-20.30.53:061][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2021.09.09-20.30.53:061][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:061][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2021.09.09-20.30.53:061][  0]LogPakFile: OnPakFileMounted2Time == 0.000077
+[2021.09.09-20.30.53:063][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2021.09.09-20.30.53:063][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:063][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2021.09.09-20.30.53:063][  0]LogPakFile: OnPakFileMounted2Time == 0.000081
+[2021.09.09-20.30.53:065][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2021.09.09-20.30.53:065][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:065][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2021.09.09-20.30.53:065][  0]LogPakFile: OnPakFileMounted2Time == 0.000085
+[2021.09.09-20.30.53:068][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2021.09.09-20.30.53:069][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:069][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2021.09.09-20.30.53:069][  0]LogPakFile: OnPakFileMounted2Time == 0.000090
+[2021.09.09-20.30.53:071][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2021.09.09-20.30.53:071][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:072][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2021.09.09-20.30.53:072][  0]LogPakFile: OnPakFileMounted2Time == 0.000094
+[2021.09.09-20.30.53:074][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.09.09-20.30.53:074][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:074][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2021.09.09-20.30.53:074][  0]LogPakFile: OnPakFileMounted2Time == 0.000097
+[2021.09.09-20.30.53:076][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.09.09-20.30.53:076][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:076][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2021.09.09-20.30.53:076][  0]LogPakFile: OnPakFileMounted2Time == 0.000102
+[2021.09.09-20.30.53:078][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2021.09.09-20.30.53:078][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:078][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2021.09.09-20.30.53:078][  0]LogPakFile: OnPakFileMounted2Time == 0.000106
+[2021.09.09-20.30.53:082][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2021.09.09-20.30.53:082][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:082][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2021.09.09-20.30.53:082][  0]LogPakFile: OnPakFileMounted2Time == 0.000110
+[2021.09.09-20.30.53:084][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2021.09.09-20.30.53:084][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:084][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2021.09.09-20.30.53:084][  0]LogPakFile: OnPakFileMounted2Time == 0.000114
+[2021.09.09-20.30.53:087][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2021.09.09-20.30.53:087][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:087][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2021.09.09-20.30.53:087][  0]LogPakFile: OnPakFileMounted2Time == 0.000119
+[2021.09.09-20.30.53:089][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.09.09-20.30.53:089][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:089][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2021.09.09-20.30.53:089][  0]LogPakFile: OnPakFileMounted2Time == 0.000124
+[2021.09.09-20.30.53:092][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2021.09.09-20.30.53:092][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.09.09-20.30.53:092][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2021.09.09-20.30.53:092][  0]LogPakFile: OnPakFileMounted2Time == 0.000129
+[2021.09.09-20.30.53:290][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.09.09-20.30.53:308][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 2 classes and 0 folders.
+[2021.09.09-20.30.53:681][  0]LogSlate: Took 0.002000 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.09.09-20.30.53:704][  0]LogSlate: Took 0.001848 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.09.09-20.30.53:711][  0]LogSlate: Took 0.001770 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.09.09-20.30.53:863][  0]LogRenderer: Reallocating scene render targets to support 784x432 Format 10 NumSamples 1 (Frame:1).
+[2021.09.09-20.30.54:085][  0]LogSlate: Took 0.001279 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.09.09-20.30.54:234][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.09.09-20.30.54:235][  0]LogLoad: (Engine Initialization) Total time: 18.39 seconds
+[2021.09.09-20.30.54:235][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.09.09-20.30.54:235][  0]LogInit: First time updating LLM stats...
+[2021.09.09-20.30.54:368][  0]LogAssetRegistry: Asset discovery search completed in 10.2946 seconds
+[2021.09.09-20.30.54:372][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000305 seconds (updated 0 objects)
+[2021.09.09-20.30.54:441][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.09.09-20.30.54:596][  1]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.54:596][  1]LogTemp: Warning: Hello
+[2021.09.09-20.30.54:596][  1]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.54:596][  1]LogTemp: Warning: Hello
+[2021.09.09-20.30.54:596][  1]LogTemp: Warning: ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.30.54:596][  1]LogTemp: Warning: Hello
+[2021.09.09-20.30.54:599][  1]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_0.BodyConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.09-20.30.54:599][  1]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_0.RightThruster.RightThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.09-20.30.54:599][  1]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_0.LeftThruster.LeftThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.09-20.30.54:599][  1]PIE: Warning: Constraint in '/Engine/Transient.World_1:PersistentLevel.FloatyCar_0.BackThruster.BackThrusterPhysicsConstraint' attempting to create a joint between objects that are both static.  No joint created.
+[2021.09.09-20.30.57:497][ 97]LogSlate: Took 0.001929 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.09.09-20.30.57:553][ 97]LogSlate: Took 0.005795 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2021.09.09-20.30.57:556][ 97]LogSlate: Last resort fallback font was requested. Font: '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf', Character: 'ￋ (U+ffcb)'
+[2021.09.09-20.30.57:566][ 97]LogSlate: Took 0.006938 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2021.09.09-20.30.57:576][ 97]LogSlate: Took 0.010457 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NotoColorEmoji.ttf' (7610K)
+[2021.09.09-20.31.42:868][185]Candidate modules for hot reload:
+[2021.09.09-20.31.42:868][185]  UnrealTest
+[2021.09.09-20.31.42:869][185]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,9717 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.09-20.31.42:880][185]Warning: Starting HotReload took  0.1s.
+[2021.09.09-20.31.47:027][363]CompilerResultsLog: New page: Compilation - 9 Sep 2021, 22:31:47
+[2021.09.09-20.31.47:027][363]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.09-20.31.47:028][363]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.09-20.31.47:028][363]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.09-20.31.47:028][363]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.09-20.31.47:028][363]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.09-20.31.47:028][363]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-9717.lib
+[2021.09.09-20.31.47:028][363]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-9717.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-9717.exp
+[2021.09.09-20.31.47:028][363]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-9717.dll
+[2021.09.09-20.31.47:028][363]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-9717.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-9717.suppressed.exp
+[2021.09.09-20.31.47:028][363]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.09-20.31.47:028][363]CompilerResultsLog: Total time in Parallel executor: 2.63 seconds
+[2021.09.09-20.31.47:028][363]CompilerResultsLog: Total execution time: 3.90 seconds
+[2021.09.09-20.31.47:028][363]LogMainFrame: MainFrame: Module compiling took 4.185 seconds
+[2021.09.09-20.31.47:083][363]LogTemp: Warning: 瑳牥
+[2021.09.09-20.31.47:083][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:083][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:083][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:083][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:083][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:085][363]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.09-20.31.47:088][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:088][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:088][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:088][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:088][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:088][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:112][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:112][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:112][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:112][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:113][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:113][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:116][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:116][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:116][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:116][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:116][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:116][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:158][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:158][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:159][363]LogHotReload: Re-instancing Thruster after hot-reload.
+[2021.09.09-20.31.47:159][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:159][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:159][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:159][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:159][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:159][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:160][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:160][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:160][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:160][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:160][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.47:160][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.47:161][363]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.09.09-20.31.48:201][363]LogStats: FPlatformStackWalk::StackWalkAndDump -  1.040 s
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: === Handled ensure: ===
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: 
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: Ensure condition failed: bArchetypeReinstanced [File:D:/Build/++UE4/Sync/Engine/Source/Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp] [Line: 1746]
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: Reinstancing non-actor (/Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap:PersistentLevel.FloatyCar_1.BackThruster); failed to resolve archetype object - property values may be lost.
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: Stack: 
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffd9e602ee UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffd966c10f UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffd9669b00 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffd9668ca6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffd9665c2c UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffd966617e UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffcde463b7 UE4Editor-HotReload.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffcde469f9 UE4Editor-HotReload.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffcde3ec86 UE4Editor-HotReload.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff85685dcd6 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff856842886 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff856772305 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffe0bf99ea UE4Editor-Core.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffe0c212a8 UE4Editor-Core.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffe0c20328 UE4Editor-Core.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffcde3afc7 UE4Editor-HotReload.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffcde38f27 UE4Editor-HotReload.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffcde39aed UE4Editor-HotReload.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffcde4c644 UE4Editor-HotReload.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007fffe097e708 UE4Editor-Core.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e6d07d UE4Editor.exe!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e8117c UE4Editor.exe!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e8125a UE4Editor.exe!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e952bd UE4Editor.exe!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e97fea UE4Editor.exe!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff899d17034 KERNEL32.DLL!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: [Callstack] 0x00007ff89ba62651 ntdll.dll!UnknownFunction []
+[2021.09.09-20.31.48:202][363]LogOutputDevice: Error: 
+[2021.09.09-20.31.48:210][363]LogStats:                SubmitErrorReport -  0.000 s
+[2021.09.09-20.31.50:698][363]LogStats:                    SendNewReport -  2.489 s
+[2021.09.09-20.31.50:699][363]LogStats:             FDebug::EnsureFailed -  3.538 s
+[2021.09.09-20.31.50:699][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:699][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:700][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:700][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:701][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:701][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:701][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:701][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:702][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:702][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:702][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:702][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:703][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:703][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:703][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:703][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:703][363]LogTemp: Warning: 謈ￋ㼕穲謀／✕穲䠀?蕈痀䠥캋Ῠ＃䣿事（䠖?譈卞譈诓／̕穲退赈包窰䠀䚉䠐쎋譈⑜䠸璋䀤荈⃄썟쳌쳌쳌쳌쳌쳌쳌쳌쳌쳌區荈⃬譈ࡉ譈䣚Ƌ郿°
+[2021.09.09-20.31.50:703][363]LogTemp: Warning: Hello
+[2021.09.09-20.31.50:712][363]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2021.09.09-20.31.50:714][363]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.09.09-20.31.50:783][363]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0135 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-20.31.50:784][363]Display: HotReload took  8.0s.
+[2021.09.09-20.37.54:263][249]Candidate modules for hot reload:
+[2021.09.09-20.37.54:263][249]  UnrealTest
+[2021.09.09-20.37.54:264][249]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,2390 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.09-20.37.54:290][249]Warning: Starting HotReload took  0.1s.
+[2021.09.09-20.38.16:682][362]CompilerResultsLog: New page: Compilation - 9 Sep 2021, 22:38:16
+[2021.09.09-20.38.16:683][362]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.09-20.38.16:683][362]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.09-20.38.16:683][362]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.09-20.38.16:683][362]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.09-20.38.16:683][362]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.09-20.38.16:683][362]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-2390.lib
+[2021.09.09-20.38.16:683][362]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2390.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2390.exp
+[2021.09.09-20.38.16:683][362]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-2390.dll
+[2021.09.09-20.38.16:683][362]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2390.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2390.suppressed.exp
+[2021.09.09-20.38.16:683][362]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.09-20.38.16:683][362]CompilerResultsLog: Total time in Parallel executor: 20.75 seconds
+[2021.09.09-20.38.16:683][362]CompilerResultsLog: Total execution time: 22.13 seconds
+[2021.09.09-20.38.16:683][362]LogMainFrame: MainFrame: Module compiling took 22.430 seconds
+[2021.09.09-20.38.16:745][362]LogTemp: Warning: 1922580480
+[2021.09.09-20.38.16:745][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:745][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:747][362]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.09-20.38.16:747][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:747][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:747][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:763][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:763][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:763][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:766][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:766][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:766][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:806][362]LogTemp: Warning: -526061824
+[2021.09.09-20.38.16:809][362]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 5 classes and 2 folders.
+[2021.09.09-20.38.16:811][362]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.09.09-20.38.16:863][362]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0115 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-20.38.16:864][362]Display: HotReload took 22.6s.
+[2021.09.09-20.38.58:978][996]Candidate modules for hot reload:
+[2021.09.09-20.38.58:978][996]  UnrealTest
+[2021.09.09-20.38.58:979][996]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,2825 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.09-20.38.58:991][996]Warning: Starting HotReload took  0.0s.
+[2021.09.09-20.39.03:017][ 63]CompilerResultsLog: New page: Compilation - 9 Sep 2021, 22:39:03
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-2825.lib
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2825.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2825.exp
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-2825.dll
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2825.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2825.suppressed.exp
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog: Total time in Parallel executor: 2.64 seconds
+[2021.09.09-20.39.03:018][ 63]CompilerResultsLog: Total execution time: 3.62 seconds
+[2021.09.09-20.39.03:018][ 63]LogMainFrame: MainFrame: Module compiling took 4.049 seconds
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: 1503477762
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: Hello
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: 1503477760
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: Bello
+
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: -526061822
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: Hello
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: -526061824
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: Bello
+
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: -526061822
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: Hello
+[2021.09.09-20.39.03:094][ 63]LogTemp: Warning: -526061824
+[2021.09.09-20.39.03:095][ 63]LogTemp: Warning: Bello
+
+[2021.09.09-20.39.03:097][ 63]LogTemp: Warning: -526061822
+[2021.09.09-20.39.03:097][ 63]LogTemp: Warning: Hello
+[2021.09.09-20.39.03:097][ 63]LogTemp: Warning: -526061824
+[2021.09.09-20.39.03:097][ 63]LogTemp: Warning: Bello
+
+[2021.09.09-20.39.03:101][ 63]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 5 classes and 2 folders.
+[2021.09.09-20.39.03:102][ 63]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.09.09-20.39.03:153][ 63]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0119 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-20.39.03:153][ 63]Display: HotReload took  4.2s.
+[2021.09.09-20.42.13:210][ 90]Candidate modules for hot reload:
+[2021.09.09-20.42.13:210][ 90]  UnrealTest
+[2021.09.09-20.42.13:211][ 90]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,1765 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.09-20.42.13:220][ 90]Warning: Starting HotReload took  0.0s.
+[2021.09.09-20.42.17:017][214]CompilerResultsLog: New page: Compilation - 9 Sep 2021, 22:42:17
+[2021.09.09-20.42.17:017][214]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.09-20.42.17:017][214]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.09-20.42.17:017][214]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.09-20.42.17:017][214]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.09-20.42.17:017][214]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.09-20.42.17:017][214]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-1765.lib
+[2021.09.09-20.42.17:017][214]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1765.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1765.exp
+[2021.09.09-20.42.17:017][214]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-1765.dll
+[2021.09.09-20.42.17:017][214]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1765.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-1765.suppressed.exp
+[2021.09.09-20.42.17:017][214]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.09-20.42.17:017][214]CompilerResultsLog: Total time in Parallel executor: 2.66 seconds
+[2021.09.09-20.42.17:017][214]CompilerResultsLog: Total execution time: 3.60 seconds
+[2021.09.09-20.42.17:017][214]LogMainFrame: MainFrame: Module compiling took 3.817 seconds
+[2021.09.09-20.42.17:075][214]LogTemp: Warning: 1481457666
+[2021.09.09-20.42.17:075][214]LogTemp: Warning: Hello
+[2021.09.09-20.42.17:075][214]LogTemp: Warning: 0
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: Bello
+
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: -526061822
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: Hello
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: 0
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: Bello
+
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: -526061822
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: Hello
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: 0
+[2021.09.09-20.42.17:076][214]LogTemp: Warning: Bello
+
+[2021.09.09-20.42.17:079][214]LogTemp: Warning: -526061822
+[2021.09.09-20.42.17:079][214]LogTemp: Warning: Hello
+[2021.09.09-20.42.17:079][214]LogTemp: Warning: 0
+[2021.09.09-20.42.17:079][214]LogTemp: Warning: Bello
+
+[2021.09.09-20.42.17:082][214]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 5 classes and 2 folders.
+[2021.09.09-20.42.17:085][214]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.09.09-20.42.17:139][214]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0141 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-20.42.17:140][214]Display: HotReload took  3.9s.
+[2021.09.09-20.42.35:138][578]Candidate modules for hot reload:
+[2021.09.09-20.42.35:138][578]  UnrealTest
+[2021.09.09-20.42.35:138][578]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,7217 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.09-20.42.35:150][578]Warning: Starting HotReload took  0.0s.
+[2021.09.09-20.42.39:217][699]CompilerResultsLog: New page: Compilation - 9 Sep 2021, 22:42:39
+[2021.09.09-20.42.39:218][699]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.09-20.42.39:218][699]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.09-20.42.39:218][699]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.09-20.42.39:218][699]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.09-20.42.39:218][699]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.09-20.42.39:218][699]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-7217.lib
+[2021.09.09-20.42.39:218][699]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7217.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7217.exp
+[2021.09.09-20.42.39:218][699]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-7217.dll
+[2021.09.09-20.42.39:218][699]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7217.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-7217.suppressed.exp
+[2021.09.09-20.42.39:218][699]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.09-20.42.39:218][699]CompilerResultsLog: Total time in Parallel executor: 2.60 seconds
+[2021.09.09-20.42.39:218][699]CompilerResultsLog: Total execution time: 3.64 seconds
+[2021.09.09-20.42.39:218][699]LogMainFrame: MainFrame: Module compiling took 4.091 seconds
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: 2
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: Hello
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: 0
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: Bello
+
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: 2
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: Hello
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: 0
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: Bello
+
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: 2
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: Hello
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: 0
+[2021.09.09-20.42.39:257][699]LogTemp: Warning: Bello
+
+[2021.09.09-20.42.39:260][699]LogTemp: Warning: 2
+[2021.09.09-20.42.39:260][699]LogTemp: Warning: Hello
+[2021.09.09-20.42.39:260][699]LogTemp: Warning: 0
+[2021.09.09-20.42.39:260][699]LogTemp: Warning: Bello
+
+[2021.09.09-20.42.39:264][699]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0005 seconds. Added 5 classes and 2 folders.
+[2021.09.09-20.42.39:266][699]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.09.09-20.42.39:323][699]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0151 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-20.42.39:323][699]Display: HotReload took  4.2s.
+[2021.09.09-20.43.19:806][331]Candidate modules for hot reload:
+[2021.09.09-20.43.19:806][331]  UnrealTest
+[2021.09.09-20.43.19:806][331]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,6603 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.09-20.43.19:817][331]Warning: Starting HotReload took  0.0s.
+[2021.09.09-20.43.23:441][483]CompilerResultsLog: New page: Compilation - 9 Sep 2021, 22:43:23
+[2021.09.09-20.43.23:442][483]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.09-20.43.23:442][483]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.09-20.43.23:442][483]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.09-20.43.23:442][483]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.09-20.43.23:442][483]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.09-20.43.23:442][483]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-6603.lib
+[2021.09.09-20.43.23:442][483]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-6603.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-6603.exp
+[2021.09.09-20.43.23:442][483]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-6603.dll
+[2021.09.09-20.43.23:442][483]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-6603.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-6603.suppressed.exp
+[2021.09.09-20.43.23:442][483]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.09-20.43.23:442][483]CompilerResultsLog: Total time in Parallel executor: 2.32 seconds
+[2021.09.09-20.43.23:442][483]CompilerResultsLog: Total execution time: 3.44 seconds
+[2021.09.09-20.43.23:442][483]LogMainFrame: MainFrame: Module compiling took 3.644 seconds
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:493][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:496][483]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:496][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:497][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:497][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:497][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:514][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:517][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:557][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:557][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:557][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:557][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:558][483]LogHotReload: Re-instancing Thruster after hot-reload.
+[2021.09.09-20.43.23:558][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:558][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:558][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:558][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:558][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:558][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:558][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:558][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:559][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:560][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:560][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:560][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:560][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:560][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:560][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:561][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:562][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:562][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:562][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:562][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:562][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:562][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:562][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:562][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:563][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:563][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:563][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:563][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:563][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:563][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:563][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:563][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:564][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:564][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:564][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:564][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:564][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:564][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:564][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:564][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:565][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:566][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:566][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:566][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:566][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:566][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:566][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:566][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:567][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:567][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:567][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:567][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:567][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:567][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:568][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:568][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:568][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:568][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:568][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:568][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:568][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:568][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:569][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:569][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:569][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:569][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:569][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:570][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:570][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:570][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:570][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:571][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:571][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:571][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:571][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:571][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:571][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:571][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:572][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:572][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:572][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:572][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:572][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:572][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:572][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:572][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:573][483]LogTemp: Warning: 2
+[2021.09.09-20.43.23:573][483]LogTemp: Warning: Hello
+[2021.09.09-20.43.23:573][483]LogTemp: Warning: 4
+[2021.09.09-20.43.23:573][483]LogTemp: Warning: Bello
+
+[2021.09.09-20.43.23:584][483]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0005 seconds. Added 5 classes and 2 folders.
+[2021.09.09-20.43.23:587][483]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.09.09-20.43.23:640][483]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0133 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-20.43.23:640][483]Display: HotReload took  3.8s.
+[2021.09.09-20.43.56:758][470]Candidate modules for hot reload:
+[2021.09.09-20.43.56:758][470]  UnrealTest
+[2021.09.09-20.43.56:758][470]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,6130 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.09-20.43.56:768][470]Warning: Starting HotReload took  0.0s.
+[2021.09.09-20.44.00:361][517]CompilerResultsLog: New page: Compilation - 9 Sep 2021, 22:44:00
+[2021.09.09-20.44.00:361][517]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.09-20.44.00:361][517]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.09-20.44.00:361][517]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.09-20.44.00:361][517]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.09-20.44.00:361][517]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.09-20.44.00:361][517]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-6130.lib
+[2021.09.09-20.44.00:361][517]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-6130.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-6130.exp
+[2021.09.09-20.44.00:361][517]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-6130.dll
+[2021.09.09-20.44.00:361][517]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-6130.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-6130.suppressed.exp
+[2021.09.09-20.44.00:361][517]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.09-20.44.00:361][517]CompilerResultsLog: Total time in Parallel executor: 2.20 seconds
+[2021.09.09-20.44.00:361][517]CompilerResultsLog: Total execution time: 3.16 seconds
+[2021.09.09-20.44.00:361][517]LogMainFrame: MainFrame: Module compiling took 3.613 seconds
+[2021.09.09-20.44.00:405][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:406][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:409][517]LogHotReload: Re-instancing FloatyCar after hot-reload.
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:409][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:410][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:410][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:410][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:426][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:426][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:426][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:426][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:426][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:426][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:427][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:427][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:427][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:427][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:427][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:427][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:432][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:478][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:478][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:478][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:479][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:479][517]LogHotReload: Re-instancing Thruster after hot-reload.
+[2021.09.09-20.44.00:480][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:480][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:480][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:480][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:480][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:481][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:481][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:481][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:481][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:481][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:481][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:481][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:482][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:483][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:484][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:485][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:486][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:487][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:488][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:488][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:488][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:488][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:489][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:489][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:489][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:489][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:489][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:489][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:489][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:489][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:490][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:490][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:490][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:490][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:490][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:490][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:490][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:490][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:491][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:492][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:492][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:492][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:492][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:492][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:492][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:492][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:492][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:493][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:494][517]LogTemp: Warning: Hello
+[2021.09.09-20.44.00:494][517]LogTemp: Warning: 2
+[2021.09.09-20.44.00:494][517]LogTemp: Warning: Bello
+
+[2021.09.09-20.44.00:506][517]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 5 classes and 2 folders.
+[2021.09.09-20.44.00:516][517]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.09.09-20.44.00:573][517]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0135 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-20.44.00:573][517]Display: HotReload took  3.8s.
+[2021.09.09-21.03.55:905][343]Candidate modules for hot reload:
+[2021.09.09-21.03.55:905][343]  UnrealTest
+[2021.09.09-21.03.55:905][343]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,449 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.09-21.03.55:916][343]Warning: Starting HotReload took  0.0s.
+[2021.09.09-21.03.59:629][495]CompilerResultsLog: New page: Compilation - 9 Sep 2021, 23:03:59
+[2021.09.09-21.03.59:630][495]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.09-21.03.59:630][495]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.09-21.03.59:630][495]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.09-21.03.59:630][495]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.09-21.03.59:630][495]CompilerResultsLog:   [1/4] Thruster.cpp
+[2021.09.09-21.03.59:630][495]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-0449.lib
+[2021.09.09-21.03.59:630][495]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0449.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0449.exp
+[2021.09.09-21.03.59:630][495]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-0449.dll
+[2021.09.09-21.03.59:630][495]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0449.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-0449.suppressed.exp
+[2021.09.09-21.03.59:630][495]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.09-21.03.59:630][495]CompilerResultsLog: Total time in Parallel executor: 2.50 seconds
+[2021.09.09-21.03.59:630][495]CompilerResultsLog: Total execution time: 3.54 seconds
+[2021.09.09-21.03.59:630][495]LogMainFrame: MainFrame: Module compiling took 3.735 seconds
+[2021.09.09-21.03.59:655][495]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0191 seconds. Added 3606 classes and 861 folders.
+[2021.09.09-21.03.59:655][495]Display: HotReload took  3.8s.
+[2021.09.09-21.04.01:783][613]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.09-21.04.01:810][613]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.09-21.04.01:812][613]PIE: New page: PIE session: FlyingExampleMap (9 Sep 2021, 23:04:01)
+[2021.09.09-21.04.01:819][613]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.09.09-21.04.01:821][613]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.09.09-21.04.01:823][613]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: Hello
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: Bello
+
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: Hello
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: Bello
+
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: Hello
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: Bello
+
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: Hello
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:827][613]LogTemp: Warning: Bello
+
+[2021.09.09-21.04.01:828][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:828][613]LogTemp: Warning: Hello
+[2021.09.09-21.04.01:828][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:828][613]LogTemp: Warning: Bello
+
+[2021.09.09-21.04.01:828][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:828][613]LogTemp: Warning: Hello
+[2021.09.09-21.04.01:828][613]LogTemp: Warning: 2
+[2021.09.09-21.04.01:828][613]LogTemp: Warning: Bello
+
+[2021.09.09-21.04.01:869][613]LogPlayLevel: PIE: StaticDuplicateObject took: (0.044488s)
+[2021.09.09-21.04.01:872][613]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.09-21.04.01:873][613]LogPlayLevel: PIE: World Init took: (0.003776s)
+[2021.09.09-21.04.01:873][613]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.049389s)
+[2021.09.09-21.04.01:883][613]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.09.09-21.04.02:329][613]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.446 s
+[2021.09.09-21.04.02:329][613]LogOutputDevice: Error: === Handled ensure: ===
+[2021.09.09-21.04.02:329][613]LogOutputDevice: Error: 
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: Ensure condition failed: GIsTransacting [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp] [Line: 1147]
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: 
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: Stack: 
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffdd87e049 UE4Editor-Engine.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffdc32c260 UE4Editor-Engine.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffdc212c70 UE4Editor-Engine.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff856769bc8 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff8567488d8 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff8566c9ec1 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff8566c8e8c UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffdc5ae392 UE4Editor-Engine.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffd97692ce UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffd978cd6f UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffd976aedd UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffd97a8c42 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffd97ac1d1 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffd97aba98 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffd9208c38 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007fffd9b250e6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e69bc2 UE4Editor.exe!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e8117c UE4Editor.exe!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e8125a UE4Editor.exe!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e952bd UE4Editor.exe!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff6d0e97fea UE4Editor.exe!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff899d17034 KERNEL32.DLL!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: [Callstack] 0x00007ff89ba62651 ntdll.dll!UnknownFunction []
+[2021.09.09-21.04.02:330][613]LogOutputDevice: Error: 
