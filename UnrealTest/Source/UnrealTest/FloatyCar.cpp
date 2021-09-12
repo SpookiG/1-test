@@ -255,7 +255,7 @@ void AFloatyCar::Tick(float DeltaTime)
 
 	//UE_LOG(LogTemp, Warning, TEXT("Angular damping: %f"), CarWrapper->GetAngularDamping());
 
-	if (LeftThruster->SwitchedOn) {
+	/*if (LeftThruster->SwitchedOn) {
 		UE_LOG(LogTemp, Warning, TEXT("Left thruster on"));
 	}
 	else {
@@ -267,7 +267,7 @@ void AFloatyCar::Tick(float DeltaTime)
 	}
 	else {
 		UE_LOG(LogTemp, Warning, TEXT("Right thruster off\n"));
-	}
+	}*/
 
 
 

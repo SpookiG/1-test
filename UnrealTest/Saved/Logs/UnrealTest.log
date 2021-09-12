@@ -71483,3 +71483,701 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.09.12-23.05.57:022][960]AssetCheck: New page: Asset Save: multiple assets
 [2021.09.12-23.05.57:023][960]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
 [2021.09.12-23.05.57:024][960]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap
+[2021.09.12-23.18.08:995][942]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2021.09.12-23.26.21:283][232]LogSlate: Window 'Project Settings' being destroyed
+[2021.09.12-23.26.23:663][360]Candidate modules for hot reload:
+[2021.09.12-23.26.23:663][360]  UnrealTest
+[2021.09.12-23.26.23:664][360]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,3527 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.12-23.26.23:692][360]Warning: Starting HotReload took  0.1s.
+[2021.09.12-23.26.28:513][537]LogSlate: Took 0.001927 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.09.12-23.26.56:190][790]CompilerResultsLog: New page: Compilation - 13 Sep 2021, 01:26:56
+[2021.09.12-23.26.56:190][790]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.12-23.26.56:190][790]CompilerResultsLog: Parsing headers for UnrealTestEditor
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\UnrealTest.uproject" "C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UnrealTestEditor\Development\UnrealTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\layco\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.09.12-23.26.56:190][790]CompilerResultsLog: Reflection code generated for UnrealTestEditor in 9.6737782 seconds
+[2021.09.12-23.26.56:190][790]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.12-23.26.56:190][790]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.12-23.26.56:190][790]CompilerResultsLog: Building 6 actions with 8 processes...
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:   [1/6] UnrealTestGameMode.cpp
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:   [2/6] CarPilot.gen.cpp
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:   [3/6] CarPilot.cpp
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:   [4/6] UE4Editor-UnrealTest-3527.lib
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-3527.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-3527.exp
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:   [5/6] UE4Editor-UnrealTest-3527.dll
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-3527.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-3527.suppressed.exp
+[2021.09.12-23.26.56:190][790]CompilerResultsLog:   [6/6] UnrealTestEditor.target
+[2021.09.12-23.26.56:191][790]CompilerResultsLog: Total time in Parallel executor: 20.48 seconds
+[2021.09.12-23.26.56:191][790]CompilerResultsLog: Total execution time: 32.15 seconds
+[2021.09.12-23.26.56:191][790]LogMainFrame: MainFrame: Module compiling took 32.538 seconds
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: 2
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: Hello
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: 2
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: Bello
+
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: 2
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: Hello
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: 2
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: Bello
+
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: 2
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: Hello
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: 2
+[2021.09.12-23.26.56:215][790]LogTemp: Warning: Bello
+
+[2021.09.12-23.26.56:219][790]LogTemp: Warning: 2
+[2021.09.12-23.26.56:219][790]LogTemp: Warning: Hello
+[2021.09.12-23.26.56:219][790]LogTemp: Warning: 2
+[2021.09.12-23.26.56:219][790]LogTemp: Warning: Bello
+
+[2021.09.12-23.26.56:222][790]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0005 seconds. Added 5 classes and 2 folders.
+[2021.09.12-23.26.56:226][790]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2021.09.12-23.26.56:282][790]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0145 seconds. Added 3606 classes and 861 folders.
+[2021.09.12-23.26.56:282][790]Display: HotReload took 32.7s.
+[2021.09.12-23.27.00:050][984]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.12-23.27.00:215][984]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.12-23.27.00:215][984]PIE: New page: PIE session: FlyingExampleMap (13 Sep 2021, 01:27:00)
+[2021.09.12-23.27.00:215][984]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: 2
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: Hello
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: 2
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: Bello
+
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: 2
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: Hello
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: 2
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: Bello
+
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: 2
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: Hello
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: 2
+[2021.09.12-23.27.00:217][984]LogTemp: Warning: Bello
+
+[2021.09.12-23.27.00:241][984]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026354s)
+[2021.09.12-23.27.00:243][984]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.12-23.27.00:244][984]LogPlayLevel: PIE: World Init took: (0.002548s)
+[2021.09.12-23.27.00:244][984]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.029179s)
+[2021.09.12-23.27.00:259][984]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2021.09.12-23.27.00:263][984]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2021.09.12-23.27.00:263][984]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.12-23.27.00:263][984]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.12-23.27.00:263][984]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.12-23.27.00:263][984]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.12-23.27.00:263][984]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.12-23.27.00:263][984]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.12-23.27.00:263][984]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.12-23.27.00:263][984]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.12-23.27.00:264][984]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.12-23.27.00:264][984]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.12-23.27.00:268][984]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.12-23.27.00:268][984]LogAudioMixer: Display: 1: FrontRight
+[2021.09.12-23.27.00:268][984]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.12-23.27.00:268][984]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.12-23.27.00:268][984]LogAudioMixer: Display: 4: BackLeft
+[2021.09.12-23.27.00:268][984]LogAudioMixer: Display: 5: BackRight
+[2021.09.12-23.27.00:268][984]LogAudioMixer: Display: 6: SideLeft
+[2021.09.12-23.27.00:268][984]LogAudioMixer: Display: 7: SideRight
+[2021.09.12-23.27.00:324][984]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.12-23.27.00:325][984]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.12-23.27.00:325][984]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.12-23.27.00:325][984]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.12-23.27.00:326][984]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.12-23.27.00:326][984]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.12-23.27.00:326][984]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.12-23.27.00:349][984]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.12-23.27.00:349][984]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.12-23.27.00:349][984]LogInit: FAudioDevice initialized.
+[2021.09.12-23.27.00:349][984]LogAudio: Display: Audio Device (ID: 9) registered with world 'FlyingExampleMap'.
+[2021.09.12-23.27.00:360][984]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.12-23.27.00:366][984]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.13-00.27.00
+[2021.09.12-23.27.00:367][984]LogWorld: Bringing up level for play took: 0.006966
+[2021.09.12-23.27.00:367][984]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2021.09.12-23.27.00:371][984]PIE: Server logged in
+[2021.09.12-23.27.00:372][984]PIE: Play in editor total start time 0.299 seconds.
+[2021.09.12-23.27.00:374][984]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:374][984]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:439][985]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:439][985]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:463][986]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:463][986]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:481][987]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:481][987]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:500][988]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:500][988]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:521][989]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:521][989]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:540][990]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:541][990]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:561][991]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:561][991]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:581][992]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:581][992]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:600][993]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:601][993]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:621][994]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:621][994]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:641][995]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:641][995]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:661][996]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:661][996]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:687][997]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:687][997]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:702][998]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:702][998]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:718][999]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:718][999]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:735][  0]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:735][  0]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:752][  1]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:752][  1]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:768][  2]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:769][  2]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:785][  3]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:785][  3]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:802][  4]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:802][  4]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:818][  5]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:818][  5]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:835][  6]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:835][  6]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:851][  7]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:851][  7]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:869][  8]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:869][  8]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:885][  9]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:885][  9]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:901][ 10]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:901][ 10]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:918][ 11]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:918][ 11]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:935][ 12]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:935][ 12]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:952][ 13]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:952][ 13]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:968][ 14]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:968][ 14]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.00:985][ 15]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.00:985][ 15]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:001][ 16]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:002][ 16]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:018][ 17]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:018][ 17]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:035][ 18]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:035][ 18]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:052][ 19]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:052][ 19]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:068][ 20]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:068][ 20]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:085][ 21]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:085][ 21]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:102][ 22]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:102][ 22]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:118][ 23]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:119][ 23]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:135][ 24]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:135][ 24]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:152][ 25]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:152][ 25]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:168][ 26]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:169][ 26]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:185][ 27]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:185][ 27]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:202][ 28]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:202][ 28]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:218][ 29]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:219][ 29]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:235][ 30]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:235][ 30]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:252][ 31]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:252][ 31]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:268][ 32]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:269][ 32]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:285][ 33]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:285][ 33]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:302][ 34]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:302][ 34]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:318][ 35]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:319][ 35]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:335][ 36]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:335][ 36]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:352][ 37]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:352][ 37]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:368][ 38]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:368][ 38]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:385][ 39]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:385][ 39]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:402][ 40]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:402][ 40]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:418][ 41]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:418][ 41]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:435][ 42]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:435][ 42]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:451][ 43]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:451][ 43]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:468][ 44]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:468][ 44]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:485][ 45]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:485][ 45]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:502][ 46]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:502][ 46]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:518][ 47]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:518][ 47]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:535][ 48]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:535][ 48]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:552][ 49]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:552][ 49]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:568][ 50]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:569][ 50]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:585][ 51]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:585][ 51]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:602][ 52]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:602][ 52]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:618][ 53]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:619][ 53]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:635][ 54]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:635][ 54]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:652][ 55]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:652][ 55]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:668][ 56]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:669][ 56]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:685][ 57]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:685][ 57]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:702][ 58]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:702][ 58]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:718][ 59]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:718][ 59]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:735][ 60]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:735][ 60]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:752][ 61]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:752][ 61]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:768][ 62]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:768][ 62]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:785][ 63]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:785][ 63]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:802][ 64]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:802][ 64]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:818][ 65]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:818][ 65]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:835][ 66]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:835][ 66]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:852][ 67]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:852][ 67]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:868][ 68]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:868][ 68]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:885][ 69]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:885][ 69]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:902][ 70]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:902][ 70]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:918][ 71]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:918][ 71]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:935][ 72]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:935][ 72]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:952][ 73]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:952][ 73]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:968][ 74]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:968][ 74]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.01:984][ 75]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.01:985][ 75]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:003][ 76]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:003][ 76]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:018][ 77]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:018][ 77]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:035][ 78]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:035][ 78]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:052][ 79]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:052][ 79]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:068][ 80]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:068][ 80]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:085][ 81]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:085][ 81]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:102][ 82]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:102][ 82]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:118][ 83]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:118][ 83]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:135][ 84]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:135][ 84]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:152][ 85]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:152][ 85]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:168][ 86]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:168][ 86]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:185][ 87]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:185][ 87]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:202][ 88]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:202][ 88]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:218][ 89]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:218][ 89]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:235][ 90]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:235][ 90]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:252][ 91]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:252][ 91]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:268][ 92]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:268][ 92]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:285][ 93]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:285][ 93]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:302][ 94]LogTemp: Warning: Left thruster off
+[2021.09.12-23.27.02:302][ 94]LogTemp: Warning: Right thruster off
+
+[2021.09.12-23.27.02:335][ 94]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.12-23.27.02:335][ 94]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.12-23.27.02:336][ 94]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.12-23.27.02:336][ 94]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.12-23.27.02:349][ 94]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.12-23.27.02:362][ 94]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.12-23.27.02:367][ 94]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.12-23.27.02:367][ 94]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.12-23.27.02:369][ 94]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.12-23.27.02:414][ 94]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.12-23.27.02:418][ 94]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2021.09.12-23.27.02:471][ 95]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2021.09.12-23.27.55:870][340]Candidate modules for hot reload:
+[2021.09.12-23.27.55:870][340]  UnrealTest
+[2021.09.12-23.27.55:871][340]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,2790 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.12-23.27.55:880][340]Warning: Starting HotReload took  0.0s.
+[2021.09.12-23.28.24:179][666]CompilerResultsLog: New page: Compilation - 13 Sep 2021, 01:28:24
+[2021.09.12-23.28.24:179][666]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.12-23.28.24:179][666]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.12-23.28.24:179][666]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.12-23.28.24:179][666]CompilerResultsLog: Building 5 actions with 8 processes...
+[2021.09.12-23.28.24:179][666]CompilerResultsLog:   [1/5] CarPilot.cpp
+[2021.09.12-23.28.24:179][666]CompilerResultsLog:   [2/5] FloatyCar.cpp
+[2021.09.12-23.28.24:179][666]CompilerResultsLog:   [3/5] UE4Editor-UnrealTest-2790.lib
+[2021.09.12-23.28.24:179][666]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2790.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2790.exp
+[2021.09.12-23.28.24:179][666]CompilerResultsLog:   [4/5] UE4Editor-UnrealTest-2790.dll
+[2021.09.12-23.28.24:179][666]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2790.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2790.suppressed.exp
+[2021.09.12-23.28.24:179][666]CompilerResultsLog:   [5/5] UnrealTestEditor.target
+[2021.09.12-23.28.24:179][666]CompilerResultsLog: Total time in Parallel executor: 26.76 seconds
+[2021.09.12-23.28.24:179][666]CompilerResultsLog: Total execution time: 28.13 seconds
+[2021.09.12-23.28.24:179][666]LogMainFrame: MainFrame: Module compiling took 28.319 seconds
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: 2
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: Hello
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: 2
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: Bello
+
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: 2
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: Hello
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: 2
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: Bello
+
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: 2
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: Hello
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: 2
+[2021.09.12-23.28.24:232][666]LogTemp: Warning: Bello
+
+[2021.09.12-23.28.24:236][666]LogTemp: Warning: 2
+[2021.09.12-23.28.24:236][666]LogTemp: Warning: Hello
+[2021.09.12-23.28.24:236][666]LogTemp: Warning: 2
+[2021.09.12-23.28.24:237][666]LogTemp: Warning: Bello
+
+[2021.09.12-23.28.24:240][666]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0004 seconds. Added 5 classes and 2 folders.
+[2021.09.12-23.28.24:243][666]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2021.09.12-23.28.24:298][666]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0137 seconds. Added 3606 classes and 861 folders.
+[2021.09.12-23.28.24:298][666]Display: HotReload took 28.5s.
+[2021.09.12-23.28.26:048][764]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.12-23.28.26:060][764]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.12-23.28.26:060][764]PIE: New page: PIE session: FlyingExampleMap (13 Sep 2021, 01:28:26)
+[2021.09.12-23.28.26:060][764]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.12-23.28.26:062][764]LogTemp: Warning: 2
+[2021.09.12-23.28.26:062][764]LogTemp: Warning: Hello
+[2021.09.12-23.28.26:062][764]LogTemp: Warning: 2
+[2021.09.12-23.28.26:062][764]LogTemp: Warning: Bello
+
+[2021.09.12-23.28.26:063][764]LogTemp: Warning: 2
+[2021.09.12-23.28.26:063][764]LogTemp: Warning: Hello
+[2021.09.12-23.28.26:063][764]LogTemp: Warning: 2
+[2021.09.12-23.28.26:063][764]LogTemp: Warning: Bello
+
+[2021.09.12-23.28.26:063][764]LogTemp: Warning: 2
+[2021.09.12-23.28.26:063][764]LogTemp: Warning: Hello
+[2021.09.12-23.28.26:063][764]LogTemp: Warning: 2
+[2021.09.12-23.28.26:063][764]LogTemp: Warning: Bello
+
+[2021.09.12-23.28.26:082][764]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021358s)
+[2021.09.12-23.28.26:084][764]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.12-23.28.26:084][764]LogPlayLevel: PIE: World Init took: (0.002340s)
+[2021.09.12-23.28.26:084][764]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.023982s)
+[2021.09.12-23.28.26:103][764]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2021.09.12-23.28.26:111][764]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2021.09.12-23.28.26:111][764]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.12-23.28.26:111][764]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.12-23.28.26:111][764]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.12-23.28.26:111][764]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.12-23.28.26:111][764]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.12-23.28.26:111][764]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.12-23.28.26:111][764]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.12-23.28.26:111][764]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.12-23.28.26:112][764]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.12-23.28.26:112][764]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.12-23.28.26:116][764]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.12-23.28.26:116][764]LogAudioMixer: Display: 1: FrontRight
+[2021.09.12-23.28.26:116][764]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.12-23.28.26:116][764]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.12-23.28.26:116][764]LogAudioMixer: Display: 4: BackLeft
+[2021.09.12-23.28.26:116][764]LogAudioMixer: Display: 5: BackRight
+[2021.09.12-23.28.26:116][764]LogAudioMixer: Display: 6: SideLeft
+[2021.09.12-23.28.26:116][764]LogAudioMixer: Display: 7: SideRight
+[2021.09.12-23.28.26:166][764]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.12-23.28.26:166][764]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.12-23.28.26:166][764]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.12-23.28.26:166][764]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.12-23.28.26:167][764]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.12-23.28.26:167][764]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.12-23.28.26:167][764]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.12-23.28.26:191][764]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.12-23.28.26:191][764]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.12-23.28.26:191][764]LogInit: FAudioDevice initialized.
+[2021.09.12-23.28.26:191][764]LogAudio: Display: Audio Device (ID: 10) registered with world 'FlyingExampleMap'.
+[2021.09.12-23.28.26:201][764]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.12-23.28.26:207][764]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.13-00.28.26
+[2021.09.12-23.28.26:208][764]LogWorld: Bringing up level for play took: 0.005934
+[2021.09.12-23.28.26:208][764]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2021.09.12-23.28.26:211][764]PIE: Server logged in
+[2021.09.12-23.28.26:212][764]PIE: Play in editor total start time 0.156 seconds.
+[2021.09.12-23.28.33:356][189]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Ground_6)
+[2021.09.12-23.28.35:255][296]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.12-23.28.35:256][296]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.12-23.28.35:256][296]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.12-23.28.35:257][296]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.12-23.28.35:269][296]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.12-23.28.35:271][296]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.12-23.28.35:276][296]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.12-23.28.35:276][296]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.12-23.28.35:278][296]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.12-23.28.35:332][296]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.12-23.28.35:334][296]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2021.09.12-23.28.35:363][297]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2021.09.12-23.28.55:244][449]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2021.09.12-23.29.19:967][895]LogSlate: Window 'Project Settings' being destroyed
+[2021.09.12-23.29.19:974][895]LogSlate: Window 'Project Settings' being destroyed
+[2021.09.12-23.29.30:768][163]Candidate modules for hot reload:
+[2021.09.12-23.29.30:768][163]  UnrealTest
+[2021.09.12-23.29.30:769][163]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UnrealTest,2907 UnrealTestEditor Win64 Development -Project="C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject" "C:/Users/_Maddi/projects/games/unreal/1-test/UnrealTest/UnrealTest.uproject"  -IgnoreJunk]
+[2021.09.12-23.29.30:776][163]Warning: Starting HotReload took  0.0s.
+[2021.09.12-23.29.35:651][431]CompilerResultsLog: New page: Compilation - 13 Sep 2021, 01:29:35
+[2021.09.12-23.29.35:651][431]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\_Maddi\projects\games\unreal\1-test).
+[2021.09.12-23.29.35:651][431]CompilerResultsLog: Building UnrealTestEditor...
+[2021.09.12-23.29.35:651][431]CompilerResultsLog: Using Visual Studio 2019 14.25.28611 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.12-23.29.35:651][431]CompilerResultsLog: Building 4 actions with 8 processes...
+[2021.09.12-23.29.35:651][431]CompilerResultsLog:   [1/4] CarPilot.cpp
+[2021.09.12-23.29.35:651][431]CompilerResultsLog:   [2/4] UE4Editor-UnrealTest-2907.lib
+[2021.09.12-23.29.35:651][431]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2907.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2907.exp
+[2021.09.12-23.29.35:651][431]CompilerResultsLog:   [3/4] UE4Editor-UnrealTest-2907.dll
+[2021.09.12-23.29.35:651][431]CompilerResultsLog:      Creating library C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2907.suppressed.lib and object C:\Users\_Maddi\projects\games\unreal\1-test\UnrealTest\Intermediate\Build\Win64\UE4Editor\Development\UnrealTest\UE4Editor-UnrealTest-2907.suppressed.exp
+[2021.09.12-23.29.35:651][431]CompilerResultsLog:   [4/4] UnrealTestEditor.target
+[2021.09.12-23.29.35:651][431]CompilerResultsLog: Total time in Parallel executor: 3.75 seconds
+[2021.09.12-23.29.35:651][431]CompilerResultsLog: Total execution time: 4.72 seconds
+[2021.09.12-23.29.35:652][431]LogMainFrame: MainFrame: Module compiling took 4.894 seconds
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: 2
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: Hello
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: 2
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: Bello
+
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: 2
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: Hello
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: 2
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: Bello
+
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: 2
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: Hello
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: 2
+[2021.09.12-23.29.35:704][431]LogTemp: Warning: Bello
+
+[2021.09.12-23.29.35:707][431]LogTemp: Warning: 2
+[2021.09.12-23.29.35:707][431]LogTemp: Warning: Hello
+[2021.09.12-23.29.35:707][431]LogTemp: Warning: 2
+[2021.09.12-23.29.35:707][431]LogTemp: Warning: Bello
+
+[2021.09.12-23.29.35:710][431]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UnrealTest' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2021.09.12-23.29.35:712][431]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2021.09.12-23.29.35:757][431]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0134 seconds. Added 3606 classes and 861 folders.
+[2021.09.12-23.29.35:757][431]Display: HotReload took  5.0s.
+[2021.09.12-23.29.37:444][523]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.12-23.29.37:459][523]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.12-23.29.37:459][523]PIE: New page: PIE session: FlyingExampleMap (13 Sep 2021, 01:29:37)
+[2021.09.12-23.29.37:482][523]LogPlayLevel: Creating play world package: /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: 2
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: Hello
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: 2
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: Bello
+
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: 2
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: Hello
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: 2
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: Bello
+
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: 2
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: Hello
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: 2
+[2021.09.12-23.29.37:485][523]LogTemp: Warning: Bello
+
+[2021.09.12-23.29.37:505][523]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022816s)
+[2021.09.12-23.29.37:507][523]LogAIModule: Creating AISystem for world FlyingExampleMap
+[2021.09.12-23.29.37:507][523]LogPlayLevel: PIE: World Init took: (0.001944s)
+[2021.09.12-23.29.37:507][523]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap to /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap (0.025117s)
+[2021.09.12-23.29.37:529][523]LogUObjectHash: Compacting FUObjectHashTables data took   0.79ms
+[2021.09.12-23.29.37:530][523]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2021.09.12-23.29.37:530][523]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.12-23.29.37:530][523]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.12-23.29.37:530][523]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.12-23.29.37:530][523]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.12-23.29.37:530][523]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.12-23.29.37:530][523]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.12-23.29.37:531][523]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.12-23.29.37:531][523]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.12-23.29.37:531][523]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.12-23.29.37:531][523]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.12-23.29.37:536][523]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.12-23.29.37:536][523]LogAudioMixer: Display: 1: FrontRight
+[2021.09.12-23.29.37:536][523]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.12-23.29.37:536][523]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.12-23.29.37:536][523]LogAudioMixer: Display: 4: BackLeft
+[2021.09.12-23.29.37:536][523]LogAudioMixer: Display: 5: BackRight
+[2021.09.12-23.29.37:536][523]LogAudioMixer: Display: 6: SideLeft
+[2021.09.12-23.29.37:536][523]LogAudioMixer: Display: 7: SideRight
+[2021.09.12-23.29.37:588][523]LogAudioMixer: Display: Using Audio Device Headphones (Realtek(R) Audio)
+[2021.09.12-23.29.37:589][523]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.12-23.29.37:589][523]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.12-23.29.37:589][523]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.12-23.29.37:589][523]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.12-23.29.37:590][523]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.12-23.29.37:590][523]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.12-23.29.37:616][523]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.12-23.29.37:616][523]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.12-23.29.37:616][523]LogInit: FAudioDevice initialized.
+[2021.09.12-23.29.37:616][523]LogAudio: Display: Audio Device (ID: 11) registered with world 'FlyingExampleMap'.
+[2021.09.12-23.29.37:629][523]LogLoad: Game class is 'UnrealTestGameMode'
+[2021.09.12-23.29.37:635][523]LogWorld: Bringing World /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap.FlyingExampleMap up for play (max tick rate 60) at 2021.09.13-00.29.37
+[2021.09.12-23.29.37:635][523]LogWorld: Bringing up level for play took: 0.005806
+[2021.09.12-23.29.37:635][523]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2021.09.12-23.29.37:638][523]PIE: Server logged in
+[2021.09.12-23.29.37:639][523]PIE: Play in editor total start time 0.184 seconds.
+[2021.09.12-23.29.42:744][822]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TemplateCube_Rounded_17)
+[2021.09.12-23.29.45:496][983]LogTemp: Warning: Game is exiting
+[2021.09.12-23.29.45:498][983]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.12-23.29.45:501][983]LogWorld: BeginTearingDown for /Game/FlyingCPP/Maps/UEDPIE_0_FlyingExampleMap
+[2021.09.12-23.29.45:503][983]LogWorld: UWorld::CleanupWorld for FlyingExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.12-23.29.45:503][983]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.12-23.29.45:515][983]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.12-23.29.45:517][983]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.12-23.29.45:523][983]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.12-23.29.45:523][983]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.12-23.29.45:524][983]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.12-23.29.45:577][983]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.12-23.29.45:580][983]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2021.09.12-23.29.45:617][984]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2021.09.12-23.29.57:404][661]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2021.09.12-23.30.14:807][687]LogSlate: Window 'Project Settings' being destroyed
+[2021.09.12-23.30.17:769][859]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2021.09.12-23.30.18:514][859]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap3DCD5D1C4D2161BEFAFAEC9DEB30E6BF.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap.umap'
+[2021.09.12-23.30.19:532][859]LogSavePackage: Moving '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Saved/FlyingExampleMap_BuiltData639C8F944C6F8F0C4EB76AB5DDB176D9.tmp' to '../../../../../../Users/_Maddi/projects/games/unreal/1-test/UnrealTest/Content/FlyingCPP/Maps/FlyingExampleMap_BuiltData.uasset'
+[2021.09.12-23.30.19:557][859]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.12-23.30.19:557][859]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FlyingCPP/Maps/FlyingExampleMap_BuiltData.FlyingExampleMap_BuiltData
+[2021.09.12-23.30.19:557][859]LogContentValidation: Display: Validating World /Game/FlyingCPP/Maps/FlyingExampleMap.FlyingExampleMap

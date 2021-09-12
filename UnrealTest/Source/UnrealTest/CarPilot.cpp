@@ -4,6 +4,7 @@
 #include "CarPilot.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/InputComponent.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 #include "FloatyCar.h"
 
@@ -53,6 +54,8 @@ void ACarPilot::SetupInputComponent()
 	check(InputComponent);
 	InputComponent->BindAxis("Thrust", this, &ACarPilot::CallForwardThrust);
 	InputComponent->BindAxis("MoveRight", this, &ACarPilot::CallLeftThrust);
+
+	InputComponent->BindAction("Exit", EInputEvent::IE_Pressed, this, &ACarPilot::Exit);
 }
 
 
@@ -75,4 +78,11 @@ void ACarPilot::CallRightThrust(float Val)
 {
 	//check(LeftThruster);
 	//check(RightThruster);
+}
+
+
+void ACarPilot::Exit()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Game is exiting"));
+	UKismetSystemLibrary::QuitGame(this, this, EQuitPreference::Quit, false);
 }
