@@ -32,9 +32,11 @@ class UNREALTEST_API AFloatyCar : public APawn
 	UPROPERTY(Category = Thrusters, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UThruster* RightThruster;
 
-	/** Spring arm for the camera ofc */
+	/** Spring arms for the camera ofc */
 	UPROPERTY(Category = Cam, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* CamSpringArm;
+	class USpringArmComponent* RotationSpringArm;
+	UPROPERTY(Category = Cam, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class USpringArmComponent* ExtensionSpringArm;
 
 	/** The camera */
 	UPROPERTY(Category = Cam, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))

@@ -83,7 +83,7 @@ AFloatyCar::AFloatyCar()
 	BackThruster->SetRelativeLocation(FVector(-10.f, 0.f, -12.5f));
 	BackThruster->SetRelativeRotation(FRotator(0.f, 180.f, 0.f));
 	BackThruster->SetHoverForce(50000.f);
-	// set back thruster forward force to 300000.0 ---------------------------------------------------------------------------------------------------!!!
+	BackThruster->SetThrustForce(300000.f);
 
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
 	LeftThruster->SetupAttachment(RootComponent);
@@ -98,21 +98,31 @@ AFloatyCar::AFloatyCar()
 	RightThruster->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
 
 	// set up camera
-	CamSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraSpringArm"));
-	CamSpringArm->SetupAttachment(RootComponent);
-	CamSpringArm->SocketOffset = FVector(-150.f, 0.f, 150.f);
-	CamSpringArm->bInheritPitch = false;
-	CamSpringArm->bInheritRoll = false;
-	CamSpringArm->bEnableCameraLag = true;
-	CamSpringArm->CameraLagSpeed = 1.f;
-	CamSpringArm->bEnableCameraRotationLag = true;
-	CamSpringArm->CameraRotationLagSpeed = 1.f;
-	CamSpringArm->CameraLagMaxDistance = 70.f;
+	RotationSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("RotationSpringArm"));
+	RotationSpringArm->SetupAttachment(RootComponent);
+	RotationSpringArm->SocketOffset = FVector(0.f, 0.f, 0.f);
+	RotationSpringArm->TargetArmLength = 0.f;
+	RotationSpringArm->bInheritPitch = false;
+	RotationSpringArm->bInheritYaw = true;
+	RotationSpringArm->bInheritRoll = false;
+	RotationSpringArm->bEnableCameraRotationLag = true;
+	RotationSpringArm->CameraRotationLagSpeed = 3.f;
 
+	ExtensionSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("ExtensionSpringArm"));
+	ExtensionSpringArm->SetupAttachment(RotationSpringArm);
+	ExtensionSpringArm->SetRelativeLocation(FVector(-50.f, 0.f, 50.f));
+	ExtensionSpringArm->SocketOffset = FVector(0.f, 0.f, 130.f);
+	ExtensionSpringArm->TargetArmLength = 500.f;
+	ExtensionSpringArm->bInheritPitch = true;
+	ExtensionSpringArm->bInheritYaw = true;
+	ExtensionSpringArm->bInheritRoll = true;
+	ExtensionSpringArm->bEnableCameraLag = true;
+	ExtensionSpringArm->CameraLagSpeed = 3.f;
+	ExtensionSpringArm->CameraLagMaxDistance = 70.f;
 
 
 	Cam = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
-	Cam->SetupAttachment(CamSpringArm);
+	Cam->SetupAttachment(ExtensionSpringArm);
 
 
 

@@ -34,6 +34,7 @@ public:
 	void SetupPhysicsConstraint(AActor* Parent);
 
 	void SetHoverForce(float val);
+	void SetThrustForce(float val);
 
 protected:
 	// Called when the game starts

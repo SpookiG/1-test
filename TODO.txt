@@ -20,19 +20,9 @@ Essential tasks:
 		- learn level building
 		- create sandboxy terrain area
 		- create some roadways
+		- design to avoid car getting stuck in geometry
 
-	- (1) car
-		- 1 Several control issues with the car
-			- Bonus camera issue:
-				- Camera spring arm keeps hitting the floor when the ship collides to fast into the ground, causing camera to jump into the floor
-				- I can fix this using 2 spring arms!!
-
-			- Getting stuck in geometry (This seems to happen w/ geometry positioned snugly (eg stacked boxes), so you can get around this a bit with level design)
-				- Side note, sometimes u still get launched out vr far with this, I think I need to make a big open level(s)
-
-		- Basically it's not great but I can work around it kind of with level design and I'll have at least an interesting game
-
-	- (2) audio
+	- (6) audio
 		- crash noises on collisions
 		- thruster noises on using car thrusters
 		- hover noises? (maybe optional & potentially adds sound clutter if too loud)
@@ -42,7 +32,7 @@ Essential tasks:
 		- r to reset ship
 
 Optionals (in priority order):
-	- (4) end to the game
+	- (2) end to the game
 		- add some kind of target to reach (checkpoints and goals)
 
 	- (5) unreal lighting effects
@@ -51,7 +41,7 @@ Optionals (in priority order):
 		- lights coming out of car for thrusters and hover thingies
 		- I want a dynamic sun that moves around based on how fast player is moving and where, that would seem really cool (imagine going super fast and the sun drops right in front of u and casts super long shadows oh damn)
 
-	
+	- (4) timer system (attached to checkpoints / goals)
 
 	- start to the game
 		- add a start menu
@@ -80,3 +70,5 @@ Done!!!
 	- Loss of control of car on steep slopes mitigated by adding turning velocity to the actual ship body when at high angles
 	
 	- NO MORE PHYSICS FIXES: This is the point where I'm going to stop focusing on physics issues because there isn't a clear end point to when these issues are going to stop and this is just an engine learning exercise done in my free time. The collision issue can be resolved via level design. The camera issue will be the last fix for the car as this isn't physics. 
+	- thrust force of back thruster now added to constructor so doesn't need resetting every time hover car is spawned
+	- car camera issue resolved using 2 spring arms

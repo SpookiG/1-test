@@ -99,6 +99,11 @@ void UThruster::SetHoverForce(float val)
 	HoverForce = val;
 }
 
+void UThruster::SetThrustForce(float val)
+{
+	ThrustForce = val;
+}
+
 
 
 // Called when the game starts
