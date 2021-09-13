@@ -27,9 +27,6 @@ Essential tasks:
 		- thruster noises on using car thrusters
 		- hover noises? (maybe optional & potentially adds sound clutter if too loud)
 
-	- (1) end game
-		- r to reset ship
-
 Optionals (in priority order):
 	- (2) end to the game
 		- add some kind of target to reach (checkpoints and goals)
@@ -72,3 +69,4 @@ Done!!!
 	- thrust force of back thruster now added to constructor so doesn't need resetting every time hover car is spawned
 	- car camera issue resolved using 2 spring arms
 	- press escape now ends the game
+	- pressing r now resets the ship to a spawn point (This was harder than expected because Unreal engine really doesn't like a physics object made of multiple mesh parts)

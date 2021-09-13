@@ -55,7 +55,9 @@ void ACarPilot::SetupInputComponent()
 	InputComponent->BindAxis("Thrust", this, &ACarPilot::CallForwardThrust);
 	InputComponent->BindAxis("MoveRight", this, &ACarPilot::CallLeftThrust);
 
+	InputComponent->BindAction("Reset", EInputEvent::IE_Pressed, this, &ACarPilot::CallRespawn);
 	InputComponent->BindAction("Exit", EInputEvent::IE_Pressed, this, &ACarPilot::Exit);
+
 }
 
 
@@ -78,6 +80,13 @@ void ACarPilot::CallRightThrust(float Val)
 {
 	//check(LeftThruster);
 	//check(RightThruster);
+}
+
+void ACarPilot::CallRespawn()
+{
+	check(Car1);
+
+	Car1->Respawn();
 }
 
 

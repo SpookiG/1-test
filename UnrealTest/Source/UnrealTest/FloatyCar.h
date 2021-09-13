@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Math/Vector.h"
+#include "Math/Rotator.h"
 #include "FloatyCar.generated.h"
 
 UCLASS()
@@ -69,6 +70,8 @@ public:
 
 	void ForwardThrust(float Val);
 	void LeftThrust(float Val);
+
+	void Respawn();
 	//void RightThrust();
 
 
@@ -83,4 +86,8 @@ private:
 	float lastTickDelta;
 	int collisions;
 	FVector lastVelocity;
+
+	bool doRespawn;
+	FVector respawnPoint;
+	FRotator respawnRotation;
 };

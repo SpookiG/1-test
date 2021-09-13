@@ -106,6 +106,16 @@ void UThruster::SetThrustForce(float val)
 
 
 
+void UThruster::Respawn(FVector respawnTo) {
+	ThrusterMesh->SetRelativeLocation(respawnTo + GetRelativeLocation(), false, nullptr, ETeleportType::ResetPhysics);				// this isn't relative so we need to pass in a respawn point
+
+	ThrusterMesh->SetPhysicsAngularVelocity(FVector::ZeroVector);
+	ThrusterMesh->SetPhysicsLinearVelocity(FVector::ZeroVector);
+}
+
+
+
+
 // Called when the game starts
 void UThruster::BeginPlay()
 {

@@ -38,6 +38,8 @@ protected:
 	/** Bound to the horizontal axis */
 	void CallRightThrust(float Val);
 
+	void CallRespawn();
+
 	void Exit();
 
 

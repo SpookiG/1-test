@@ -35,6 +35,7 @@ public:
 
 	void SetHoverForce(float val);
 	void SetThrustForce(float val);
+	void Respawn(FVector respawnTo);
 
 protected:
 	// Called when the game starts

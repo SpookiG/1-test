@@ -131,6 +131,10 @@ AFloatyCar::AFloatyCar()
 
 	lastTickDelta = 0.f;
 
+	doRespawn = false;
+	respawnPoint = FVector::ZeroVector;
+	respawnRotation = FRotator::ZeroRotator;
+
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
@@ -207,6 +211,24 @@ void AFloatyCar::LeftThrust(float Val)
 
 
 
+void AFloatyCar::Respawn() {
+	SetActorLocationAndRotation(respawnPoint, respawnRotation, false, nullptr, ETeleportType::ResetPhysics);
+
+	CarMesh->SetRelativeLocation(respawnPoint, false, nullptr, ETeleportType::ResetPhysics);							// This isn't relative??? What???? (I think it's because it's a physics mesh so it gets treated as a root component. Unreal are really into the design decision that physics objects should never be combined ever)
+	CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f), false, nullptr, ETeleportType::ResetPhysics);
+	BackThruster->Respawn(respawnPoint);
+	LeftThruster->Respawn(respawnPoint);
+	RightThruster->Respawn(respawnPoint);
+
+
+	CarWrapper->SetPhysicsAngularVelocity(FVector::ZeroVector);
+	CarWrapper->SetPhysicsLinearVelocity(FVector::ZeroVector);
+	CarMesh->SetPhysicsAngularVelocity(FVector::ZeroVector);
+	CarMesh->SetPhysicsLinearVelocity(FVector::ZeroVector);
+}
+
+
+
 // Called when the game starts or when spawned
 void AFloatyCar::BeginPlay()
 {
@@ -214,12 +236,23 @@ void AFloatyCar::BeginPlay()
 
 	collisions = 0;
 	lastVelocity = FVector::ZeroVector;
+
+	respawnPoint = GetActorLocation();
+	respawnRotation = GetActorRotation();
 }
 
 // Called every frame
 void AFloatyCar::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (doRespawn) {
+		CarWrapper->SetSimulatePhysics(true);
+		CarMesh->SetSimulatePhysics(true);
+
+
+		doRespawn = false;
+	}
 
 	//if ((GetVelocity() * GetActorUpVector()).Size() > 900.f) {
 	//	UE_LOG(LogTemp, Warning, TEXT("full body upwards velocity %f"), (GetVelocity() * GetActorUpVector()).Size());
