@@ -22,6 +22,11 @@ Essential tasks:
 		- create some roadways
 		- design to avoid car getting stuck in geometry
 
+		- flat square city block (bouncing)
+		- long flats
+		- hill climb challenge (w/ drops)
+		- downhill challenge (hard)?
+
 	- (6) audio
 		- crash noises on collisions
 		- thruster noises on using car thrusters
@@ -70,3 +75,4 @@ Done!!!
 	- car camera issue resolved using 2 spring arms
 	- press escape now ends the game
 	- pressing r now resets the ship to a spawn point (This was harder than expected because Unreal engine really doesn't like a physics object made of multiple mesh parts)
+	- checkpoints now reset player spawn

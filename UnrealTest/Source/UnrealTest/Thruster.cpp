@@ -105,9 +105,10 @@ void UThruster::SetThrustForce(float val)
 }
 
 
-
+// TODO: Might be able to remove respawn point passed in, will check back later
 void UThruster::Respawn(FVector respawnTo) {
-	ThrusterMesh->SetRelativeLocation(respawnTo + GetRelativeLocation(), false, nullptr, ETeleportType::ResetPhysics);				// this isn't relative so we need to pass in a respawn point
+	ThrusterMesh->SetRelativeLocation(GetComponentLocation(), false, nullptr, ETeleportType::ResetPhysics);
+	ThrusterMesh->SetRelativeRotation(GetComponentRotation(), false, nullptr, ETeleportType::ResetPhysics);
 
 	ThrusterMesh->SetPhysicsAngularVelocity(FVector::ZeroVector);
 	ThrusterMesh->SetPhysicsLinearVelocity(FVector::ZeroVector);

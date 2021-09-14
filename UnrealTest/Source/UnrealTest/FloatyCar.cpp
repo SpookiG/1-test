@@ -2,7 +2,7 @@
 
 
 #include "FloatyCar.h"
-#include "UnrealTestPawn.h"
+//#include "UnrealTestPawn.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
@@ -37,6 +37,10 @@ AFloatyCar::AFloatyCar()
 	static FConstructorStatics ConstructorStatics;
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
+
+
+	// Locking rotation is for some reason based on absolute coordinates so this needs completely redoing
+
 
 
 	// Create car wrapper component
@@ -215,16 +219,22 @@ void AFloatyCar::Respawn() {
 	SetActorLocationAndRotation(respawnPoint, respawnRotation, false, nullptr, ETeleportType::ResetPhysics);
 
 	CarMesh->SetRelativeLocation(respawnPoint, false, nullptr, ETeleportType::ResetPhysics);							// This isn't relative??? What???? (I think it's because it's a physics mesh so it gets treated as a root component. Unreal are really into the design decision that physics objects should never be combined ever)
-	CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f), false, nullptr, ETeleportType::ResetPhysics);
-	BackThruster->Respawn(respawnPoint);
-	LeftThruster->Respawn(respawnPoint);
-	RightThruster->Respawn(respawnPoint);
+	CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f) + respawnRotation, false, nullptr, ETeleportType::ResetPhysics);
+	BackThruster->Respawn(respawnPoint + respawnRotation.RotateVector(BackThruster->GetRelativeLocation()));
+	LeftThruster->Respawn(respawnPoint + respawnRotation.RotateVector(LeftThruster->GetRelativeLocation()));
+	RightThruster->Respawn(respawnPoint + respawnRotation.RotateVector(RightThruster->GetRelativeLocation()));
 
 
 	CarWrapper->SetPhysicsAngularVelocity(FVector::ZeroVector);
 	CarWrapper->SetPhysicsLinearVelocity(FVector::ZeroVector);
 	CarMesh->SetPhysicsAngularVelocity(FVector::ZeroVector);
 	CarMesh->SetPhysicsLinearVelocity(FVector::ZeroVector);
+}
+
+
+void AFloatyCar::SetRespawn(FVector point, FRotator rotation) {
+	respawnPoint = point;
+	respawnRotation = rotation;
 }
 
 
@@ -320,6 +330,8 @@ void AFloatyCar::Tick(float DeltaTime)
 
 void AFloatyCar::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+
+	UE_LOG(LogTemp, Warning, TEXT("Hit checkpoint (car side)!!"));
 	// First check underneath the thruster
 	//FHitResult hitCollision(ForceInit);
 	//FVector start = OverlappedComp->GetComponentLocation();
@@ -343,7 +355,7 @@ void AFloatyCar::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class
 	
 }
 
-void AFloatyCar::NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
+/*void AFloatyCar::NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
 {
 	if (Other != this && NormalImpulse.Size() > 10000.f)
 	{
@@ -363,16 +375,8 @@ void AFloatyCar::NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, cla
 		}
 	}
 	
-}
+}*/
 
 
 
-
-
-// Called to bind functionality to input
-//void AFloatyCar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-//{
-//	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-//}
 
