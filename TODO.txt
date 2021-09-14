@@ -78,3 +78,4 @@ Done!!!
 	- checkpoints now reset player spawn
 	- checkpoints now enable future checkpoints and disable branching checkpoints
 	- checkpoints now have a startup enable boolean that can be set from the editor
+	- checkpoints now load a new level

@@ -62,6 +62,9 @@ private:
 	int Laps;
 
 	UPROPERTY(Category = Checkpoint, EditAnywhere)
+	FName NextLevel;
+
+	UPROPERTY(Category = Checkpoint, EditAnywhere)
 	TArray<ACheckpoint*> EnableThese;
 
 	UPROPERTY(Category = Checkpoint, EditAnywhere)

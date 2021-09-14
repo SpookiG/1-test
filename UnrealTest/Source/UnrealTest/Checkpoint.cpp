@@ -7,6 +7,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
 #include "Components/SceneComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 #include "FloatyCar.h"
 
@@ -48,6 +49,7 @@ ACheckpoint::ACheckpoint()
 	EnabledOnStartup = false;
 	Goal = false;
 	Laps = 0;
+	NextLevel = "CityBlock";
 	//check(EnableThese);					unreal docs don't seem to give a way to initialize TArrays? Seems unsafe, maybe it's a container thing?
 	//check(DisableThese);
 
@@ -75,7 +77,7 @@ void ACheckpoint::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, clas
 		if (Goal) {
 			if (Laps <= 0) {
 				// completed all laps, startup next level
-
+				UGameplayStatics::OpenLevel(GetWorld(), NextLevel, false);
 
 				return;
 			}

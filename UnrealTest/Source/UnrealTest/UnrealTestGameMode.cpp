@@ -7,7 +7,7 @@
 AUnrealTestGameMode::AUnrealTestGameMode()
 {
 	// set default pawn class to our flying pawn
-	DefaultPawnClass = AUnrealTestPawn::StaticClass();
+	DefaultPawnClass = AFloatyCar::StaticClass();
 
 	PlayerControllerClass = ACarPilot::StaticClass();
 }
