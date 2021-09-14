@@ -32,6 +32,7 @@ ACheckpoint::ACheckpoint()
 	CheckpointMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CheckpointMesh"));
 	CheckpointMesh->SetStaticMesh(ConstructorStatics.CheckpointMesh.Get());
 	CheckpointMesh->SetMaterial(0, ConstructorStatics.CheckpointMaterial.Get());
+	CheckpointMesh->SetRelativeScale3D(FVector(20.f, 20.f, 20.f));
 	CheckpointMesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
 	CheckpointMesh->OnComponentBeginOverlap.AddDynamic(this, &ACheckpoint::OnOverlapBegin);						// I'm not sure how the overlap and hit functions on the car have been triggering for the last week or so but you actually need to send the overlap function to the overlap trigger in the constructor like this
 
@@ -44,6 +45,7 @@ ACheckpoint::ACheckpoint()
 	DirectionCheck->SetupAttachment(RespawnPoint);
 
 
+	EnabledOnStartup = false;
 	Goal = false;
 	Laps = 0;
 	//check(EnableThese);					unreal docs don't seem to give a way to initialize TArrays? Seems unsafe, maybe it's a container thing?
@@ -60,16 +62,40 @@ void ACheckpoint::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, clas
 {
 	UE_LOG(LogTemp, Warning, TEXT("Hit checkpoint!!"));
 
-	// set ship respawn point
+	
 	AFloatyCar* car = Cast<AFloatyCar>(OtherActor);
 	if (car) {
+		// set car respawn point
 		car->SetRespawn(RespawnPoint->GetComponentLocation(), RespawnPoint->GetComponentRotation());
+
+		// Disable this checkpoint
+		Disable();
+
+		// check if this is a goal checkpoint
+		if (Goal) {
+			if (Laps <= 0) {
+				// completed all laps, startup next level
+
+
+				return;
+			}
+			else {
+				Laps--;
+			}
+		}
+
+		// Enable next checkpoints
+		for (auto& checkpointToEnable : EnableThese) {
+			checkpointToEnable->Enable();
+		}
+
+		// Disable any checkpoints from branching routes
+		for (auto& checkpointsToDisable : DisableThese) {
+			checkpointsToDisable->Disable();
+		}
+
+		
 	}
-
-
-
-	// Disable this checkpoint
-	Disable();
 }
 
 void ACheckpoint::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
@@ -98,6 +124,12 @@ void ACheckpoint::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	if (EnabledOnStartup) {
+		Enable();					// technically don't need to call this but will put it here anyway just in case I change things about the default checkpoint in the future
+	}
+	else {
+		Disable();
+	}
 }
 
 // Called every frame

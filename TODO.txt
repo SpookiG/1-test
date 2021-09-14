@@ -76,3 +76,5 @@ Done!!!
 	- press escape now ends the game
 	- pressing r now resets the ship to a spawn point (This was harder than expected because Unreal engine really doesn't like a physics object made of multiple mesh parts)
 	- checkpoints now reset player spawn
+	- checkpoints now enable future checkpoints and disable branching checkpoints
+	- checkpoints now have a startup enable boolean that can be set from the editor

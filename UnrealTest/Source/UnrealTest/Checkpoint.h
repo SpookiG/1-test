@@ -53,6 +53,9 @@ protected:
 
 private:
 	UPROPERTY(Category = Checkpoint, EditAnywhere)
+	bool EnabledOnStartup;
+	
+	UPROPERTY(Category = Checkpoint, EditAnywhere)
 	bool Goal;											// if checkpoint is the goal, we want to change to the next level
 
 	UPROPERTY(Category = Checkpoint, EditAnywhere)
