@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UnrealTest.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6CCFA336-5F98-44D6-B608-24C27381EB58}</UniqueIdentifier>
+      <UniqueIdentifier>{4BA9BF7E-B006-4B8D-9993-84B64CF76BC3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealTest.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{92665405-7147-47EE-A706-E462087DC022}</UniqueIdentifier>
+      <UniqueIdentifier>{23DD1F14-30CE-4601-9D95-9E7FC9E2E4E7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UnrealTest">
-      <UniqueIdentifier>{098F14F5-E79A-44AB-9C6B-C3696065C3FC}</UniqueIdentifier>
+      <UniqueIdentifier>{C5E21CBB-4E89-4D59-B736-68216F98F477}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealTest\CarPilot.cpp">
       <Filter>Source\UnrealTest</Filter>
@@ -42,6 +42,12 @@
       <Filter>Source\UnrealTest</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UnrealTest\Checkpoint.h">
+      <Filter>Source\UnrealTest</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealTest\CommittedDJ.cpp">
+      <Filter>Source\UnrealTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealTest\CommittedDJ.h">
       <Filter>Source\UnrealTest</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UnrealTest\FloatyCar.cpp">

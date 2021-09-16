@@ -32,10 +32,13 @@ Essential tasks:
 		- thruster noises on using car thrusters
 		- hover noises? (maybe optional & potentially adds sound clutter if too loud)
 
-Optionals (in priority order):
-	- (2) end to the game
-		- add some kind of target to reach (checkpoints and goals)
+		- audio manager w/ several controlable audio sources
+			- Pass in car
+			- If car meets certain checks, different audio sources are triggered
+			- Loop between A and B parts in irregular timing (Time and variation time variables) (use delta time & tick)
+			- I want thrusters to fade out slowly, because they're tied to the controls if I snap them in and out of the audio there's potential for it to get super annoying vr fast
 
+Optionals (in priority order):
 	- (5) unreal lighting effects
 		- learn the lighting system
 		- pick a nice atmospheric lighting
@@ -79,3 +82,6 @@ Done!!!
 	- checkpoints now enable future checkpoints and disable branching checkpoints
 	- checkpoints now have a startup enable boolean that can be set from the editor
 	- checkpoints now load a new level
+	- now with looping game audio
+	- now with dynamic hover audio
+	- now with dynamic thruster audio

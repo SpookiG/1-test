@@ -72,8 +72,15 @@ public:
 	void Respawn();
 	
 
-
+	// checkpoint accessed functions
 	void SetRespawn(FVector point, FRotator rotation);
+
+	// CommitedDJ accessed functions
+	float GetGroundCheck();
+	bool CheckBackThrusterOn();
+	bool CheckLeftThrusterOn();
+	bool CheckRightThrusterOn();
+	float GetAngularVelocity();
 	
 
 
@@ -92,4 +99,6 @@ private:
 	bool doRespawn;
 	FVector respawnPoint;
 	FRotator respawnRotation;
+
+	float groundCheck;
 };

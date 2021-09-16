@@ -2,7 +2,6 @@
 
 
 #include "FloatyCar.h"
-//#include "UnrealTestPawn.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
@@ -14,6 +13,7 @@
 #include "Engine/StaticMesh.h"
 #include "PhysicalMaterials/PhysicalMaterial.h"
 #include "Math/Vector.h"
+#include "DrawDebugHelpers.h"
 
 #include "Thruster.h"
 
@@ -139,6 +139,8 @@ AFloatyCar::AFloatyCar()
 	respawnPoint = FVector::ZeroVector;
 	respawnRotation = FRotator::ZeroRotator;
 
+	groundCheck = 0.f;
+
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
@@ -238,6 +240,48 @@ void AFloatyCar::SetRespawn(FVector point, FRotator rotation) {
 }
 
 
+float AFloatyCar::GetGroundCheck() {
+
+	FHitResult hitFloor(ForceInit);
+	FVector start = CarMesh->GetComponentLocation();
+	FVector end = start - FVector(0, 0, 200.f);
+	DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .1f);
+	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
+	RV_TraceParams.bTraceComplex = true;
+	RV_TraceParams.bReturnPhysicalMaterial = false;
+
+	GetWorld()->LineTraceSingleByChannel(hitFloor, start, end, ECC_Visibility, RV_TraceParams);
+
+	if (hitFloor.bBlockingHit) {
+		groundCheck = 1.f - (hitFloor.Distance / 200.f);
+	}
+	else {
+		groundCheck = 0.f;
+	}
+
+
+	return groundCheck;
+}
+
+bool AFloatyCar::CheckBackThrusterOn() {
+	return BackThruster->SwitchedOn;
+}
+
+bool AFloatyCar::CheckLeftThrusterOn() {
+	return LeftThruster->SwitchedOn;
+}
+
+bool AFloatyCar::CheckRightThrusterOn() {
+	return RightThruster->SwitchedOn;
+}
+
+float AFloatyCar::GetAngularVelocity() {
+	return 0.f; // TODO when I have the sound
+}
+
+
+
+
 
 // Called when the game starts or when spawned
 void AFloatyCar::BeginPlay()
@@ -270,7 +314,7 @@ void AFloatyCar::Tick(float DeltaTime)
 
 	//UE_LOG(LogTemp, Warning, TEXT("space between front thrusters: %f"), (LeftThruster->GetComponentLocation() - RightThruster->GetComponentLocation()).Size());
 
-	FVector frontOfShip = (LeftThruster->GetComponentLocation() + RightThruster->GetComponentLocation()) * 0.5f;
+	FVector frontOfShip = ((LeftThruster->GetComponentLocation() + RightThruster->GetComponentLocation()) * 0.5f) + (LeftThruster->GetUpVector() * 12.5);
 
 	FHitResult hitFloor(ForceInit);
 	FVector start = frontOfShip;
@@ -289,28 +333,19 @@ void AFloatyCar::Tick(float DeltaTime)
 		//UE_LOG(LogTemp, Warning, TEXT("hit!!"));
 		//SetActorLocation(hitCollision.Location);
 		//OverlappedComp->ComponentVelocity = -OverlappedComp->GetComponentVelocity();
+
+		groundCheck = 1.f - (hitFloor.Distance / 200.f);
+
 		CarWrapper->SetAngularDamping(100.f);
 	}
 	else {
+		groundCheck = 0.f;
+
 		//UE_LOG(LogTemp, Warning, TEXT("No hit!!"));
 		CarWrapper->SetAngularDamping(0.f);
 	}
 
-	//UE_LOG(LogTemp, Warning, TEXT("Angular damping: %f"), CarWrapper->GetAngularDamping());
-
-	/*if (LeftThruster->SwitchedOn) {
-		UE_LOG(LogTemp, Warning, TEXT("Left thruster on"));
-	}
-	else {
-		UE_LOG(LogTemp, Warning, TEXT("Left thruster off"));
-	}
-
-	if (RightThruster->SwitchedOn) {
-		UE_LOG(LogTemp, Warning, TEXT("Right thruster on\n"));
-	}
-	else {
-		UE_LOG(LogTemp, Warning, TEXT("Right thruster off\n"));
-	}*/
+	
 
 
 
@@ -332,24 +367,7 @@ void AFloatyCar::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class
 {
 
 	UE_LOG(LogTemp, Warning, TEXT("Hit checkpoint (car side)!!"));
-	// First check underneath the thruster
-	//FHitResult hitCollision(ForceInit);
-	//FVector start = OverlappedComp->GetComponentLocation();
-	//FVector end = start - (OverlappedComp->GetComponentVelocity() * lastTickDelta * 2.f);
-	//DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .1f);
-	//FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
-	//RV_TraceParams.bTraceComplex = true;
-	//RV_TraceParams.bReturnPhysicalMaterial = false;
-
-	//GetWorld()->LineTraceSingleByChannel(hitCollision, start, end, ECC_Visibility, RV_TraceParams);
-
-
-
-	// If hit, apply force underneath the thruster
-	//if (hitCollision.bBlockingHit) {
-		//SetActorLocation(hitCollision.Location);
-		//OverlappedComp->ComponentVelocity = -OverlappedComp->GetComponentVelocity();
-	//}
+	
 
 
 	
@@ -357,23 +375,7 @@ void AFloatyCar::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class
 
 /*void AFloatyCar::NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
 {
-	if (Other != this && NormalImpulse.Size() > 10000.f)
-	{
-		//collisions++;
-		//UE_LOG(LogTemp, Warning, TEXT("collision %i!! Impluse = %f   problem check = %f"), collisions, NormalImpulse.Size(), (MyComp->ComponentVelocity - GetVelocity()).Size());
-
-		// linecast around car to see if we're colliding with anything in front or behind
-
-		if ((HitNormal * GetActorForwardVector()).Size() > 0.8f)
-		{
-			
-			//UE_LOG(LogTemp, Warning, TEXT("problem collision %i"), collisions, NormalImpulse.Size(), (HitNormal * GetVelocity()).Size());
-			//CarWrapper->SetPhysicsLinearVelocity(lastVelocity);
-			//CarMesh->SetPhysicsLinearVelocity(lastVelocity);
-			//CarWrapper->SetPhysicsAngularVelocity(FVector::ZeroVector);
-			//CarMesh->SetPhysicsLinearVelocity(FVector::ZeroVector);
-		}
-	}
+	
 	
 }*/
 

@@ -77,7 +77,7 @@ void ACheckpoint::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, clas
 		if (Goal) {
 			if (Laps <= 0) {
 				// completed all laps, startup next level
-				UGameplayStatics::OpenLevel(GetWorld(), NextLevel, false);
+				UGameplayStatics::OpenLevel(GetWorld(), NextLevel);
 
 				return;
 			}
@@ -95,8 +95,6 @@ void ACheckpoint::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, clas
 		for (auto& checkpointsToDisable : DisableThese) {
 			checkpointsToDisable->Disable();
 		}
-
-		
 	}
 }
 
