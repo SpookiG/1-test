@@ -15,6 +15,12 @@ ACommittedDJ::ACommittedDJ()
 	AudioContainer = CreateDefaultSubobject<USceneComponent>(TEXT("AudioContainer"));
 	RootComponent = AudioContainer;
 
+	
+	BackingSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("BackingSpeaker"));
+	BackingSpeaker->bAutoActivate = true;
+	BackingSpeaker->VolumeMultiplier = 1.f;
+	BackingSpeaker->SetupAttachment(RootComponent);
+
 	HoverSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("HoverSpeaker1"));
 	HoverSpeaker->bAutoActivate = true;
 	HoverSpeaker->VolumeMultiplier = 1.f;
@@ -35,14 +41,14 @@ ACommittedDJ::ACommittedDJ()
 	RightThrusterSpeaker->VolumeMultiplier = 1.f;
 	RightThrusterSpeaker->SetupAttachment(RootComponent);
 
-	hoverMaxVolume = 1.f;
+	hoverMaxVolume = 1.5f;
 	hoverMinVolume = .01f;
 
 	thrusterMaxVolume = .8f;
 	thrusterMinVolume = .01f;
 	backThrusterFadeInTime = .1f;
 	backThrusterFadeOutTime = 1.f;
-	sideThrusterFadeInTime = .5f;
+	sideThrusterFadeInTime = .1f;
 	sideThrusterFadeOutTime = 1.f;
 	sideThrusterFadeOutDelay = 1.f;
 
@@ -195,7 +201,11 @@ void ACommittedDJ::Tick(float DeltaTime)
 
 
 	
-	
+	// I think for the spin check I want to compare angular velocity to a different value for fading in the spin sound and fading out.
+	// I don't want it to start too eagerly if the car is just, like, turing a bit on the floor but also I want to keep the sound going even if the spinning slows down a bit
+	// idk, just see how a single variable goes for now I guess, can always add later
+
+
 	
 
 
