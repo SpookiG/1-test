@@ -19,38 +19,50 @@ ACommittedDJ::ACommittedDJ()
 	BackingSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("BackingSpeaker"));
 	BackingSpeaker->bAutoActivate = true;
 	BackingSpeaker->VolumeMultiplier = 1.f;
+	BackingSpeaker->VolumeMultiplier = 1.2f;
 	BackingSpeaker->SetupAttachment(RootComponent);
 
-	HoverSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("HoverSpeaker1"));
+	HoverSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("HoverSpeaker"));
 	HoverSpeaker->bAutoActivate = true;
 	HoverSpeaker->VolumeMultiplier = 1.f;
+	HoverSpeaker->VolumeMultiplier = 1.5f;
 	HoverSpeaker->SetupAttachment(RootComponent);
 
-	BackThrusterSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("BackThrusterSpeaker1"));
+	BackThrusterSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("BackThrusterSpeaker"));
 	BackThrusterSpeaker->bAutoActivate = true;
 	BackThrusterSpeaker->VolumeMultiplier = 1.f;
+	BackThrusterSpeaker->VolumeMultiplier = .5f;
 	BackThrusterSpeaker->SetupAttachment(RootComponent);
 
-	LeftThrusterSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("LeftThrusterSpeaker1"));
+	LeftThrusterSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("LeftThrusterSpeaker"));
 	LeftThrusterSpeaker->bAutoActivate = true;
 	LeftThrusterSpeaker->VolumeMultiplier = 1.f;
+	LeftThrusterSpeaker->VolumeMultiplier = .5f;
 	LeftThrusterSpeaker->SetupAttachment(RootComponent);
 
-	RightThrusterSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("RightThrusterSpeaker1"));
+	RightThrusterSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("RightThrusterSpeaker"));
 	RightThrusterSpeaker->bAutoActivate = true;
 	RightThrusterSpeaker->VolumeMultiplier = 1.f;
+	RightThrusterSpeaker->VolumeMultiplier = .5f;
 	RightThrusterSpeaker->SetupAttachment(RootComponent);
 
-	hoverMaxVolume = 1.5f;
+	SpinSpeaker = CreateDefaultSubobject<UAudioComponent>(TEXT("SpinSpeakerr"));
+	SpinSpeaker->bAutoActivate = true;
+	SpinSpeaker->VolumeMultiplier = 1.f;
+	SpinSpeaker->VolumeMultiplier = .9f;
+	SpinSpeaker->SetupAttachment(RootComponent);
+
 	hoverMinVolume = .01f;
 
-	thrusterMaxVolume = .8f;
 	thrusterMinVolume = .01f;
 	backThrusterFadeInTime = .1f;
 	backThrusterFadeOutTime = 1.f;
 	sideThrusterFadeInTime = .1f;
 	sideThrusterFadeOutTime = 1.f;
 	sideThrusterFadeOutDelay = 1.f;
+
+	spinFadeInTime = 2.f;
+	minAngularVelocityForSpinSound = 50.f;
 
 	backThrusterCurrentFadeLength = 0.f;
 	backThrusterFadeTimeRemaining = 0.f;
@@ -64,7 +76,8 @@ ACommittedDJ::ACommittedDJ()
 	rightThrusterFadeTimeRemaining = 0.f;
 	rightThrusterFadingIn = false;
 	
-
+	spinFadeTimeRemaining = 0.f;
+	spinFadingIn = false;
 
 
 
@@ -84,6 +97,7 @@ void ACommittedDJ::BeginPlay()
 	BackThrusterSpeaker->AdjustVolume(0.f, thrusterMinVolume);
 	LeftThrusterSpeaker->AdjustVolume(0.f, thrusterMinVolume);
 	RightThrusterSpeaker->AdjustVolume(0.f, thrusterMinVolume);
+	SpinSpeaker->AdjustVolume(0.f, thrusterMinVolume);
 }
 
 // Called every frame
@@ -92,7 +106,7 @@ void ACommittedDJ::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	// hover gets louder as closer to ground (too far from the ground it fades away completely)
-	float newHoverVolume = FMath::Min(ObserveThis->GetGroundCheck() * 3.5f, hoverMaxVolume);		// need to multiply the ground check because the ship hovers abt .3-.5 off the floor
+	float newHoverVolume = FMath::Min(ObserveThis->GetGroundCheck() * 3.5f, 1.f);		// need to multiply the ground check because the ship hovers abt .3-.5 off the floor
 	HoverSpeaker->AdjustVolume(0.f, FMath::Max(newHoverVolume, hoverMinVolume));								// weird bug, if volume is adjusted to 0 it doesn't come back up again, maybe it's adjusting w/ a multiplier? Funky
 
 
@@ -126,7 +140,6 @@ void ACommittedDJ::Tick(float DeltaTime)
 
 		float newBackThrusterVolume = (backThrusterFadeTimeRemaining / backThrusterCurrentFadeLength);
 		newBackThrusterVolume = backThrusterFadingIn ? 1.f - newBackThrusterVolume : newBackThrusterVolume;
-		newBackThrusterVolume *= thrusterMaxVolume;
 
 		BackThrusterSpeaker->AdjustVolume(0.f, FMath::Max(newBackThrusterVolume, thrusterMinVolume));
 	}
@@ -160,7 +173,6 @@ void ACommittedDJ::Tick(float DeltaTime)
 		float newLeftThrusterVolume = (leftThrusterFadeTimeRemaining / leftThrusterCurrentFadeLength);
 		newLeftThrusterVolume = leftThrusterFadingIn ? 1.f - newLeftThrusterVolume : newLeftThrusterVolume;
 		newLeftThrusterVolume = FMath::Min(newLeftThrusterVolume, 1.f);												// added code for side thrusters to handle delay so sounds stay playing at full volume longer
-		newLeftThrusterVolume *= thrusterMaxVolume;
 
 		LeftThrusterSpeaker->AdjustVolume(0.f, FMath::Max(newLeftThrusterVolume, thrusterMinVolume));
 	}
@@ -194,7 +206,6 @@ void ACommittedDJ::Tick(float DeltaTime)
 		float newRightThrusterVolume = (rightThrusterFadeTimeRemaining / rightThrusterCurrentFadeLength);
 		newRightThrusterVolume = rightThrusterFadingIn ? 1.f - newRightThrusterVolume : newRightThrusterVolume;
 		newRightThrusterVolume = FMath::Min(newRightThrusterVolume, 1.f);											// added code for side thrusters to handle delay so sounds stay playing at full volume longer
-		newRightThrusterVolume *= thrusterMaxVolume;
 
 		RightThrusterSpeaker->AdjustVolume(0.f, FMath::Max(newRightThrusterVolume, thrusterMinVolume));
 	}
@@ -204,7 +215,31 @@ void ACommittedDJ::Tick(float DeltaTime)
 	// I think for the spin check I want to compare angular velocity to a different value for fading in the spin sound and fading out.
 	// I don't want it to start too eagerly if the car is just, like, turing a bit on the floor but also I want to keep the sound going even if the spinning slows down a bit
 	// idk, just see how a single variable goes for now I guess, can always add later
+	if (ObserveThis->GetGroundCheck() == 0.f) {
+		if (!spinFadingIn) {
+			spinFadeTimeRemaining = spinFadeInTime;
+		}
+		spinFadingIn = true;
+	}
+	else {
+		SpinSpeaker->AdjustVolume(0.f, thrusterMinVolume);
+		spinFadeTimeRemaining = 0.f;
+		spinFadingIn = false;
+	}
+	
+	
+	if (spinFadeTimeRemaining > 0.f) {
+		spinFadeTimeRemaining = FMath::Max(spinFadeTimeRemaining - DeltaTime, 0.f);
 
+		float newSpinVolume = 1.f - (spinFadeTimeRemaining / spinFadeInTime);
+
+		SpinSpeaker->AdjustVolume(0.f, FMath::Max(newSpinVolume, thrusterMinVolume));
+	}
+	
+
+	
+	
+	//UE_LOG(LogTemp, Warning, TEXT("Angular velocity: %f"), (ObserveThis->GetAngularVelocity() * FVector(1.f, 1.f, 0.f)).Size());
 
 	
 

@@ -275,8 +275,8 @@ bool AFloatyCar::CheckRightThrusterOn() {
 	return RightThruster->SwitchedOn;
 }
 
-float AFloatyCar::GetAngularVelocity() {
-	return 0.f; // TODO when I have the sound
+FVector AFloatyCar::GetAngularVelocity() {
+	return CarWrapper->GetPhysicsAngularVelocity(); // TODO when I have the sound
 }
 
 

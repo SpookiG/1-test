@@ -80,7 +80,7 @@ public:
 	bool CheckBackThrusterOn();
 	bool CheckLeftThrusterOn();
 	bool CheckRightThrusterOn();
-	float GetAngularVelocity();
+	FVector GetAngularVelocity();			// using this wasn't consistent enough so I'm using the GetGroundCheck to check when to play the spin audio insted, might be able to remove this function later
 	
 
 

@@ -18,22 +18,21 @@ class UNREALTEST_API ACommittedDJ : public AActor
 	UPROPERTY(Category = Audio, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UAudioComponent* BackingSpeaker;
 
-	/** Thruster has a body */
 	UPROPERTY(Category = Audio, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UAudioComponent* HoverSpeaker;
 
-	/** Thruster has a body */
 	UPROPERTY(Category = Audio, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UAudioComponent* BackThrusterSpeaker;
 
-	/** Thruster has a body */
 	UPROPERTY(Category = Audio, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UAudioComponent* LeftThrusterSpeaker;
 
-	/** Thruster has a body */
 	UPROPERTY(Category = Audio, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UAudioComponent* RightThrusterSpeaker;
 	
+	UPROPERTY(Category = Audio, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UAudioComponent* SpinSpeaker;
+
 public:	
 	// Sets default values for this actor's properties
 	ACommittedDJ();
@@ -54,25 +53,28 @@ private:
 	UPROPERTY(Category = Sounds, EditAnywhere)
 	AFloatyCar* ObserveThis;
 
-	UPROPERTY(Category = Sounds, EditAnywhere)
-	float hoverMaxVolume;
-	UPROPERTY(Category = Sounds, EditAnywhere)
+	
+	UPROPERTY(Category = HoverSounds, EditAnywhere)
 	float hoverMinVolume;
-	UPROPERTY(Category = Sounds, EditAnywhere)
-	float thrusterMaxVolume;
-	UPROPERTY(Category = Sounds, EditAnywhere)
-	float thrusterMinVolume;
 
-	UPROPERTY(Category = Sounds, EditAnywhere)
+	
+	UPROPERTY(Category = ThrusterSounds, EditAnywhere)
+	float thrusterMinVolume;
+	UPROPERTY(Category = ThrusterSounds, EditAnywhere)
 	float backThrusterFadeInTime;
-	UPROPERTY(Category = Sounds, EditAnywhere)
+	UPROPERTY(Category = ThrusterSounds, EditAnywhere)
 	float backThrusterFadeOutTime;
-	UPROPERTY(Category = Sounds, EditAnywhere)
+	UPROPERTY(Category = ThrusterSounds, EditAnywhere)
 	float sideThrusterFadeInTime;
-	UPROPERTY(Category = Sounds, EditAnywhere)
+	UPROPERTY(Category = ThrusterSounds, EditAnywhere)
 	float sideThrusterFadeOutTime;
-	UPROPERTY(Category = Sounds, EditAnywhere)
+	UPROPERTY(Category = ThrusterSounds, EditAnywhere)
 	float sideThrusterFadeOutDelay;
+
+	UPROPERTY(Category = SpinSounds, EditAnywhere)
+	float spinFadeInTime;
+	UPROPERTY(Category = SpinSounds, EditAnywhere)
+	float minAngularVelocityForSpinSound;
 
 
 	
@@ -87,4 +89,7 @@ private:
 	float rightThrusterCurrentFadeLength;
 	float rightThrusterFadeTimeRemaining;
 	bool rightThrusterFadingIn;
+
+	float spinFadeTimeRemaining;
+	bool spinFadingIn;
 };
