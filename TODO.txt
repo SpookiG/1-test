@@ -27,10 +27,6 @@ Essential tasks:
 		- hill climb challenge (w/ drops)
 		- downhill challenge (hard)?
 
-	- (6) audio
-		
-		- spin track
-
 		
 Optionals (in priority order):
 	- (5) unreal lighting effects
@@ -82,3 +78,5 @@ Done!!!
 	- now with dynamic thruster audio
 	- backing song added
 	- audio for spinning added, just need coding in the check
+	- spin code added all sounds are done woo!
+	
