@@ -180,7 +180,13 @@ void AFloatyCar::LeftThrust(float Val)
 	//	return;
 	//}
 
-	if ((GetActorUpVector() + Cam->GetUpVector()).Size() > 0.5f && (GetActorUpVector() + Cam->GetUpVector()).Size() < 1.5f) {
+	UE_LOG(LogTemp, Warning, TEXT("%f"), (GetActorUpVector() + Cam->GetUpVector()).Size());
+
+	// TODO: this check is bad. ie 90 degrees = sqrt 2 or 1.41421356237 not 1 even though 0 degrees = 2 and 180 degrees = 0. I need to do an angle check instead
+
+	FVector UpVectorZComponent = GetActorUpVector() * FVector::UpVector;
+
+	if (UpVectorZComponent.Size() > -0.5f && UpVectorZComponent.Size() < 0.5f) {
 		FVector frontOfShip = (LeftThruster->GetComponentLocation() + RightThruster->GetComponentLocation()) * 0.5f;
 
 		FVector leftDir = FVector::CrossProduct(GetActorForwardVector(), FVector(0, 0, 1));
