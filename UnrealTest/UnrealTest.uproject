@@ -12,5 +12,9 @@
 				"Engine"
 			]
 		}
+	],
+	"TargetPlatforms": [
+		"WindowsNoEditorWin32",
+		"WindowsNoEditor"
 	]
 }

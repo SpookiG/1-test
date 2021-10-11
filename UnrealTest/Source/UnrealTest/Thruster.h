@@ -67,11 +67,5 @@ private:
 	float ThrustForce;
 
 
-	bool debug;
 	AActor* parentActor;
-
-	FVector lastRelPos;
-	FVector lastVelocity;
-	int frame;
-
 };

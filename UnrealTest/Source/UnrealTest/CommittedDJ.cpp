@@ -235,46 +235,7 @@ void ACommittedDJ::Tick(float DeltaTime)
 
 		SpinSpeaker->AdjustVolume(0.f, FMath::Max(newSpinVolume, thrusterMinVolume));
 	}
-	
-
-	
-	
-	//UE_LOG(LogTemp, Warning, TEXT("Angular velocity: %f"), (ObserveThis->GetAngularVelocity() * FVector(1.f, 1.f, 0.f)).Size());
-
-	
-
-
-
-	/*if (backThrusterFadeTimeRemaining > 0.f)
-	{
-		backThrusterFadeTimeRemaining = FMath::Max(backThrusterFadeTimeRemaining - DeltaTime, 0.f);
-	}
-	else
-	{
-		if (backThrusterFadedIn) {
-			if (!ObserveThis->CheckBackThrusterOn()) {
-				BackThrusterSpeaker->FadeOut(backThrusterFadeOutTime, .1f);
-				backThrusterFadeTimeRemaining = backThrusterFadeOutTime;
-				backThrusterFadedIn = false;
-			}
-		}
-		else {
-			
-		}
-	}*/
-	
-	//else {
-	//	BackThrusterSpeaker->FadeOut(backThrusterFadeOutTime, 0.1f);
-	//}
-
-	//FString fadingString = BackThrusterSpeaker->bIsFadingOut ? "true" : "false";
-
-	//UE_LOG(LogTemp, Warning, TEXT("fading out? %d"), BackThrusterSpeaker->bIsFadingOut);
 }
-
-//float ACommittedDJ::Fade(float fadeLength, float fadeTimeRemaining) {
-
-//}
 
 
 

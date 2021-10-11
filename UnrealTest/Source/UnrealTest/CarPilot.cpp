@@ -76,11 +76,11 @@ void ACarPilot::CallLeftThrust(float Val)
 	Car1->LeftThrust(Val);
 }
 
-void ACarPilot::CallRightThrust(float Val)
-{
+//void ACarPilot::CallRightThrust(float Val)
+//{
 	//check(LeftThruster);
 	//check(RightThruster);
-}
+//}
 
 void ACarPilot::CallRespawn()
 {
@@ -92,6 +92,6 @@ void ACarPilot::CallRespawn()
 
 void ACarPilot::Exit()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Game is exiting"));
+	//UE_LOG(LogTemp, Warning, TEXT("Game is exiting"));
 	UKismetSystemLibrary::QuitGame(this, this, EQuitPreference::Quit, false);
 }

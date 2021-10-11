@@ -36,7 +36,7 @@ protected:
 	void CallLeftThrust(float Val);
 
 	/** Bound to the horizontal axis */
-	void CallRightThrust(float Val);
+	//void CallRightThrust(float Val);
 
 	void CallRespawn();
 

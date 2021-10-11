@@ -62,7 +62,7 @@ ACheckpoint::ACheckpoint()
 
 void ACheckpoint::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Hit checkpoint!!"));
+	//UE_LOG(LogTemp, Warning, TEXT("Hit checkpoint!!"));
 
 	
 	AFloatyCar* car = Cast<AFloatyCar>(OtherActor);

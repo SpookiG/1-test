@@ -20,122 +20,121 @@
 // Sets default values
 AFloatyCar::AFloatyCar()
 {
-	// Structure to hold one-time initialization
-	struct FConstructorStatics
-	{
-		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> WrapperMesh;
-		ConstructorHelpers::FObjectFinderOptional<UStaticMesh> CarMesh;
-		ConstructorHelpers::FObjectFinderOptional<UObject> SlippyPhysicsMaterial;
-
-		FConstructorStatics() :
-			WrapperMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone")),
-			CarMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone")),
-			SlippyPhysicsMaterial(TEXT("/Game/car/Slippery"))
-		{
-		}
-	};
-	static FConstructorStatics ConstructorStatics;
-
-	AutoPossessPlayer = EAutoReceiveInput::Player0;
-
-
-	// Locking rotation is for some reason based on absolute coordinates so this needs completely redoing
-
-
-
-	// Create car wrapper component
-	CarWrapper = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarWrapper"));
-	CarWrapper->SetStaticMesh(ConstructorStatics.WrapperMesh.Get());					// not using this mesh but physics can't be enabled without a mesh
-	CarWrapper->SetVisibility(false);
-	CarWrapper->SetSimulatePhysics(true);
-	CarWrapper->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	CarWrapper->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);	// collision enabled to allow physics but we're ignoring all collisions lol, what a mess
-	CarWrapper->SetCenterOfMass(FVector(0, 0, 12.5));
-	CarWrapper->SetUseCCD(true);
-	CarWrapper->BodyInstance.bLockYRotation = true;
-	CarWrapper->SetPhysMaterialOverride((UPhysicalMaterial*) ConstructorStatics.SlippyPhysicsMaterial.Get());
-	RootComponent = CarWrapper;
-	
-	// set up car body
-	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarBody"));
-	CarMesh->SetupAttachment(RootComponent);
-	CarMesh->SetStaticMesh(ConstructorStatics.CarMesh.Get());	// Set static mesh
-	CarMesh->SetSimulatePhysics(true);
-	CarMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f));
-	CarMesh->SetRelativeScale3D(FVector(0.25f, 1.f, 2.7f));
-	CarMesh->SetCenterOfMass(FVector(0, 0, 12.5));
-	CarMesh->SetPhysMaterialOverride((UPhysicalMaterial*) ConstructorStatics.SlippyPhysicsMaterial.Get());
-	CarMesh->SetUseCCD(true);
-
-	// Attach car body to wrapper
-	PhysicsConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(TEXT("BodyConstraint"));
-	PhysicsConstraint->SetupAttachment(RootComponent);
-	PhysicsConstraint->ConstraintActor1 = this;
-	PhysicsConstraint->ComponentName1.ComponentName = TEXT("CarWrapper");
-	PhysicsConstraint->ConstraintActor2 = this;
-	PhysicsConstraint->ComponentName2.ComponentName = TEXT("CarBody");
-	PhysicsConstraint->SetAngularSwing1Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
-	PhysicsConstraint->SetAngularSwing2Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
-	PhysicsConstraint->SetAngularTwistLimit(EAngularConstraintMotion::ACM_Locked, 0.f);
-	PhysicsConstraint->SetDisableCollision(true);
-
-	// set up thrusters
 	BackThruster = CreateDefaultSubobject<UThruster>(TEXT("BackThruster"));
-	BackThruster->SetupAttachment(RootComponent);
-	BackThruster->SetupPhysicsConstraint(this);
-	BackThruster->SetRelativeLocation(FVector(-10.f, 0.f, -12.5f));
-	BackThruster->SetRelativeRotation(FRotator(0.f, 180.f, 0.f));
-	BackThruster->SetHoverForce(50000.f);
-	BackThruster->SetThrustForce(300000.f);
-
 	LeftThruster = CreateDefaultSubobject<UThruster>(TEXT("LeftThruster"));
-	LeftThruster->SetupAttachment(RootComponent);
-	LeftThruster->SetupPhysicsConstraint(this);
-	LeftThruster->SetRelativeLocation(FVector(260.f, -100.f, -12.5f));
-	LeftThruster->SetRelativeRotation(FRotator(0.f, -90.f, 0.01f));
-
 	RightThruster = CreateDefaultSubobject<UThruster>(TEXT("RightThruster"));
-	RightThruster->SetupAttachment(RootComponent);
+
+	if (!HasAnyFlags(RF_ClassDefaultObject)) {
+
+		// Structure to hold one-time initialization
+		struct FConstructorStatics
+		{
+			ConstructorHelpers::FObjectFinderOptional<UStaticMesh> WrapperMesh;
+			ConstructorHelpers::FObjectFinderOptional<UStaticMesh> CarMesh;
+			ConstructorHelpers::FObjectFinderOptional<UObject> SlippyPhysicsMaterial;
+
+			FConstructorStatics() :
+				WrapperMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone")),
+				CarMesh(TEXT("/Game/StarterContent/Shapes/Shape_Cone")),
+				SlippyPhysicsMaterial(TEXT("/Game/car/Slippery"))
+			{
+			}
+		};
+		static FConstructorStatics ConstructorStatics;
+
+		AutoPossessPlayer = EAutoReceiveInput::Player0;
+
+
+
+		// Create car wrapper component
+		CarWrapper = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarWrapper"));
+
+		CarWrapper->SetStaticMesh(ConstructorStatics.WrapperMesh.Get());					// not using this mesh but physics can't be enabled without a mesh
+		CarWrapper->SetVisibility(false);
+		CarWrapper->BodyInstance.bSimulatePhysics = true;
+		CarWrapper->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+		CarWrapper->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);	// collision enabled to allow physics but we're ignoring all collisions lol, what a mess
+		CarWrapper->SetCenterOfMass(FVector(0, 0, 12.5));
+		CarWrapper->BodyInstance.bUseCCD = true;
+		CarWrapper->BodyInstance.bLockYRotation = true;
+		CarWrapper->SetPhysMaterialOverride((UPhysicalMaterial*)ConstructorStatics.SlippyPhysicsMaterial.Get());
+		RootComponent = CarWrapper;
+
+		// set up car body
+		CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarBody"));
+		CarMesh->SetupAttachment(RootComponent);
+		CarMesh->SetStaticMesh(ConstructorStatics.CarMesh.Get());	// Set static mesh
+		CarMesh->BodyInstance.bSimulatePhysics = true;
+		CarMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+		CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f));
+		CarMesh->SetRelativeScale3D(FVector(0.25f, 1.f, 2.7f));
+		CarMesh->SetCenterOfMass(FVector(0, 0, 12.5));
+		CarMesh->SetPhysMaterialOverride((UPhysicalMaterial*)ConstructorStatics.SlippyPhysicsMaterial.Get());
+		CarMesh->BodyInstance.bUseCCD = true;
+
+		// Attach car body to wrapper
+		PhysicsConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(TEXT("BodyConstraint"));
+		PhysicsConstraint->SetupAttachment(RootComponent);
+		PhysicsConstraint->ConstraintActor1 = this;
+		PhysicsConstraint->ComponentName1.ComponentName = TEXT("CarWrapper");
+		PhysicsConstraint->ConstraintActor2 = this;
+		PhysicsConstraint->ComponentName2.ComponentName = TEXT("CarBody");
+		PhysicsConstraint->SetAngularSwing1Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
+		PhysicsConstraint->SetAngularSwing2Limit(EAngularConstraintMotion::ACM_Locked, 0.f);
+		PhysicsConstraint->SetAngularTwistLimit(EAngularConstraintMotion::ACM_Locked, 0.f);
+		PhysicsConstraint->SetDisableCollision(true);
+
+		// set up thrusters
+		BackThruster->SetupAttachment(RootComponent);
+		BackThruster->SetRelativeLocation(FVector(-10.f, 0.f, -12.5f));
+		BackThruster->SetRelativeRotation(FRotator(0.f, 180.f, 0.f));
+		BackThruster->SetHoverForce(50000.f);
+		BackThruster->SetThrustForce(300000.f);
+
+		LeftThruster->SetupAttachment(RootComponent);
+		LeftThruster->SetRelativeLocation(FVector(260.f, -100.f, -12.5f));
+		LeftThruster->SetRelativeRotation(FRotator(0.f, -90.f, 0.01f));
+
+		RightThruster->SetupAttachment(RootComponent);
+		RightThruster->SetRelativeLocation(FVector(260.f, 100.f, -12.5f));
+		RightThruster->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
+
+		// set up camera
+		RotationSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("RotationSpringArm"));
+		RotationSpringArm->SetupAttachment(RootComponent);
+		RotationSpringArm->SocketOffset = FVector(0.f, 0.f, 0.f);
+		RotationSpringArm->TargetArmLength = 0.f;
+		RotationSpringArm->bInheritPitch = false;
+		RotationSpringArm->bInheritYaw = true;
+		RotationSpringArm->bInheritRoll = false;
+		RotationSpringArm->bEnableCameraRotationLag = true;
+		RotationSpringArm->CameraRotationLagSpeed = 3.f;
+
+		ExtensionSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("ExtensionSpringArm"));
+		ExtensionSpringArm->SetupAttachment(RotationSpringArm);
+		ExtensionSpringArm->SetRelativeLocation(FVector(-50.f, 0.f, 50.f));
+		ExtensionSpringArm->SocketOffset = FVector(0.f, 0.f, 130.f);
+		ExtensionSpringArm->TargetArmLength = 500.f;
+		ExtensionSpringArm->bInheritPitch = true;
+		ExtensionSpringArm->bInheritYaw = true;
+		ExtensionSpringArm->bInheritRoll = true;
+		ExtensionSpringArm->bEnableCameraLag = true;
+		ExtensionSpringArm->CameraLagSpeed = 3.f;
+		ExtensionSpringArm->CameraLagMaxDistance = 70.f;
+
+
+		Cam = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+		Cam->SetupAttachment(ExtensionSpringArm);
+
+	}
+
+	BackThruster->SetupPhysicsConstraint(this);
+	LeftThruster->SetupPhysicsConstraint(this);
 	RightThruster->SetupPhysicsConstraint(this);
-	RightThruster->SetRelativeLocation(FVector(260.f, 100.f, -12.5f));
-	RightThruster->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
-
-	// set up camera
-	RotationSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("RotationSpringArm"));
-	RotationSpringArm->SetupAttachment(RootComponent);
-	RotationSpringArm->SocketOffset = FVector(0.f, 0.f, 0.f);
-	RotationSpringArm->TargetArmLength = 0.f;
-	RotationSpringArm->bInheritPitch = false;
-	RotationSpringArm->bInheritYaw = true;
-	RotationSpringArm->bInheritRoll = false;
-	RotationSpringArm->bEnableCameraRotationLag = true;
-	RotationSpringArm->CameraRotationLagSpeed = 3.f;
-
-	ExtensionSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("ExtensionSpringArm"));
-	ExtensionSpringArm->SetupAttachment(RotationSpringArm);
-	ExtensionSpringArm->SetRelativeLocation(FVector(-50.f, 0.f, 50.f));
-	ExtensionSpringArm->SocketOffset = FVector(0.f, 0.f, 130.f);
-	ExtensionSpringArm->TargetArmLength = 500.f;
-	ExtensionSpringArm->bInheritPitch = true;
-	ExtensionSpringArm->bInheritYaw = true;
-	ExtensionSpringArm->bInheritRoll = true;
-	ExtensionSpringArm->bEnableCameraLag = true;
-	ExtensionSpringArm->CameraLagSpeed = 3.f;
-	ExtensionSpringArm->CameraLagMaxDistance = 70.f;
-
-
-	Cam = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
-	Cam->SetupAttachment(ExtensionSpringArm);
-
 
 
 	collisions = 0;
 
-
-	lastTickDelta = 0.f;
-
-	doRespawn = false;
 	respawnPoint = FVector::ZeroVector;
 	respawnRotation = FRotator::ZeroRotator;
 
@@ -163,30 +162,21 @@ void AFloatyCar::LeftThrust(float Val)
 	check(LeftThruster);
 	check(RightThruster);
 
+	// assign left and right thruster based on if the ship is upside down or not
 	UThruster* lefty;
 	UThruster* righty;
 
-	if ((GetActorUpVector() + Cam->GetUpVector()).Size() > 1.f) {
-		//UE_LOG(LogTemp, Warning, TEXT("Left"));
+	if (GetActorUpVector().Z > 0.f) {
 		lefty = LeftThruster;
 		righty = RightThruster;
 	}
-	else /*if ((GetActorUpVector() + Cam->GetUpVector()).Size() < .5f)*/ {
-		//UE_LOG(LogTemp, Warning, TEXT("Right"));
+	else {
 		lefty = RightThruster;
 		righty = LeftThruster;
 	}
-	//else {
-	//	return;
-	//}
 
-	UE_LOG(LogTemp, Warning, TEXT("%f"), (GetActorUpVector() + Cam->GetUpVector()).Size());
-
-	// TODO: this check is bad. ie 90 degrees = sqrt 2 or 1.41421356237 not 1 even though 0 degrees = 2 and 180 degrees = 0. I need to do an angle check instead
-
-	FVector UpVectorZComponent = GetActorUpVector() * FVector::UpVector;
-
-	if (UpVectorZComponent.Size() > -0.5f && UpVectorZComponent.Size() < 0.5f) {
+	// if car is angled sideways, add force to the front of the car (because the thrusters aren't facing the right direction)
+	if (GetActorUpVector().Z > -0.5f && GetActorUpVector().Z < 0.5f) {
 		FVector frontOfShip = (LeftThruster->GetComponentLocation() + RightThruster->GetComponentLocation()) * 0.5f;
 
 		FVector leftDir = FVector::CrossProduct(GetActorForwardVector(), FVector(0, 0, 1));
@@ -197,13 +187,9 @@ void AFloatyCar::LeftThrust(float Val)
 		else if (Val > .5f) {
 			CarWrapper->AddForceAtLocation(-leftDir * 40000.0f, frontOfShip);
 		}
-
-		//lefty->SwitchedOn = false;
-		//righty->SwitchedOn = false;
-
-		//return;
 	}
 
+	//switch on the correct thruster based on the direction held
 	check(lefty);
 	check(righty);
 
@@ -226,6 +212,7 @@ void AFloatyCar::LeftThrust(float Val)
 void AFloatyCar::Respawn() {
 	SetActorLocationAndRotation(respawnPoint, respawnRotation, false, nullptr, ETeleportType::ResetPhysics);
 
+	// need to reposition and rotate every thruster attached to the ship as well, or the physics constraints start applying forces
 	CarMesh->SetRelativeLocation(respawnPoint, false, nullptr, ETeleportType::ResetPhysics);							// This isn't relative??? What???? (I think it's because it's a physics mesh so it gets treated as a root component. Unreal are really into the design decision that physics objects should never be combined ever)
 	CarMesh->SetRelativeRotation(FRotator(270.f, 0.f, 0.f) + respawnRotation, false, nullptr, ETeleportType::ResetPhysics);
 	BackThruster->Respawn(respawnPoint + respawnRotation.RotateVector(BackThruster->GetRelativeLocation()));
@@ -246,12 +233,12 @@ void AFloatyCar::SetRespawn(FVector point, FRotator rotation) {
 }
 
 
+// data functions for the reactive music code (CommitedDJ)
 float AFloatyCar::GetGroundCheck() {
-
+	// the ground check here is longer than the one actually used in the physics tick below, this is because the music was chopping and changing too quickly with the shorter check
 	FHitResult hitFloor(ForceInit);
 	FVector start = CarMesh->GetComponentLocation();
 	FVector end = start - FVector(0, 0, 200.f);
-	DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .1f);
 	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
 	RV_TraceParams.bTraceComplex = true;
 	RV_TraceParams.bReturnPhysicalMaterial = false;
@@ -281,6 +268,7 @@ bool AFloatyCar::CheckRightThrusterOn() {
 	return RightThruster->SwitchedOn;
 }
 
+// This wasn't used for dynamic audio in the end. For the intended sound clip, the ground check was used instead as it's more reliable
 FVector AFloatyCar::GetAngularVelocity() {
 	return CarWrapper->GetPhysicsAngularVelocity(); // TODO when I have the sound
 }
@@ -295,7 +283,6 @@ void AFloatyCar::BeginPlay()
 	Super::BeginPlay();
 
 	collisions = 0;
-	lastVelocity = FVector::ZeroVector;
 
 	respawnPoint = GetActorLocation();
 	respawnRotation = GetActorRotation();
@@ -306,84 +293,30 @@ void AFloatyCar::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (doRespawn) {
-		CarWrapper->SetSimulatePhysics(true);
-		CarMesh->SetSimulatePhysics(true);
-
-
-		doRespawn = false;
-	}
-
-	//if ((GetVelocity() * GetActorUpVector()).Size() > 900.f) {
-	//	UE_LOG(LogTemp, Warning, TEXT("full body upwards velocity %f"), (GetVelocity() * GetActorUpVector()).Size());
-	//}
-
-	//UE_LOG(LogTemp, Warning, TEXT("space between front thrusters: %f"), (LeftThruster->GetComponentLocation() - RightThruster->GetComponentLocation()).Size());
 
 	FVector frontOfShip = ((LeftThruster->GetComponentLocation() + RightThruster->GetComponentLocation()) * 0.5f) + (LeftThruster->GetUpVector() * 12.5);
 
 	FHitResult hitFloor(ForceInit);
 	FVector start = frontOfShip;
-	FVector end = start - FVector(0, 0, 200.f/*RightThruster->GetRelativeLocation().Y*/);
-	//DrawDebugLine(GetWorld(), start, end, FColor::Green, false, .1f);
+	FVector end = start - FVector(0, 0, 200.f);
 	FCollisionQueryParams RV_TraceParams = FCollisionQueryParams(FName(TEXT("RV_Trace")), true, this);
 	RV_TraceParams.bTraceComplex = true;
 	RV_TraceParams.bReturnPhysicalMaterial = false;
 
 	GetWorld()->LineTraceSingleByChannel(hitFloor, start, end, ECC_Visibility, RV_TraceParams);
 
-
-
-	// If hit, apply force underneath the thruster
+	// If hit, add angular damping so car has more control on roads etc
 	if (hitFloor.bBlockingHit) {
-		//UE_LOG(LogTemp, Warning, TEXT("hit!!"));
-		//SetActorLocation(hitCollision.Location);
-		//OverlappedComp->ComponentVelocity = -OverlappedComp->GetComponentVelocity();
 
 		groundCheck = 1.f - (hitFloor.Distance / 200.f);
-
 		CarWrapper->SetAngularDamping(100.f);
 	}
 	else {
 		groundCheck = 0.f;
-
-		//UE_LOG(LogTemp, Warning, TEXT("No hit!!"));
 		CarWrapper->SetAngularDamping(0.f);
 	}
-
-	
-
-
-
-	//UE_LOG(LogTemp, Warning, TEXT("Going down! Down speed: %f"), BackThruster->GetComponentLocation().Z - CarWrapper->GetComponentLocation().Z);
-
-	if (BackThruster->GetComponentLocation().Z < LeftThruster->GetComponentLocation().Z + 10.f) {
-		
-	}
-
-
-
-
-	lastTickDelta = DeltaTime;
-	lastVelocity = CarWrapper->GetPhysicsLinearVelocity();
 }
 
-
-void AFloatyCar::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-
-	UE_LOG(LogTemp, Warning, TEXT("Hit checkpoint (car side)!!"));
-	
-
-
-	
-}
-
-/*void AFloatyCar::NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
-{
-	
-	
-}*/
 
 
 
